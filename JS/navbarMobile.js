@@ -1,7 +1,7 @@
-const btnMob = document.getElementById('menuMob')
 const btnNav = document.querySelectorAll(".btn-nav")
 const out = document.querySelector("main")
 const navbar = document.getElementById('navBarMobile')
+const btnMob = document.getElementById('menuMob')
 
 function ToggleMenu() {
     navbar.classList.toggle('active')

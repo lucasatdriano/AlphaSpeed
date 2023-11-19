@@ -23,6 +23,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    main form.filtrar p {
+        font-size: 12px;
+    } 
+
     main form.filtrar input, form.filtrar select {
         font-size: 12px;
         height: 2em;

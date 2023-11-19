@@ -29,6 +29,7 @@
     }
 
     main form.filtrar input[type=range] {
+        width: 80%;
         height: 2em;
     }
 

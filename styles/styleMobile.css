@@ -91,6 +91,7 @@
 
     main #local {
         flex-direction: column;
+        transition: ease 1.5s;
     }
 
     main #local hr {
@@ -134,6 +135,7 @@
     footer #moreUm, #moreDois, #moreTres {
         display: none;
         text-indent: 15px;
+        transition: ease 1.5s;
     }
 
     footer #moreUm.informacoes, #moreDois.informacoes, #moreTres.informacoes {

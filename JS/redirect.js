@@ -1,7 +1,7 @@
 function redirectlogin() {
-    window.location = "/login.html"
+    window.location = "login.html"
 }
 
 function redirectcadastro() {
-    window.location = "/cadastrar.html"
+    window.location = "cadastrar.html"
 }

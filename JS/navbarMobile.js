@@ -7,15 +7,15 @@ function ToggleMenu() {
     navbar.classList.toggle('active')
 
     if(navbar.classList.contains("active")){
-        btnMob.src = "/imagens/fecharHam.png";
+        btnMob.src = "imagens/fecharHam.png";
     }else{
-        btnMob.src = "/imagens/menuHam.png";
+        btnMob.src = "imagens/menuHam.png";
     }
 }
 
 function RemoveMenu() {
     navbar.classList.remove('active')
-    btnMob.src = "/imagens/menuHam.png";
+    btnMob.src = "imagens/menuHam.png";
 }
 
 btnMob.addEventListener('click', ToggleMenu)

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gih(agressora do back), Leandrin(odeia front) e Lucas(R1)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="/imagens/alphaSpeed.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title translate="no">Alpha Speed</title>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html"><img src="/imagens/alphaSpeed.png" alt="Logo da AlphaSpeed"></a>
+
+        <nav id="navBarDesktop">
+            <ul>
+                <li><a href="#modelos" tabindex="1">Modelos</a></li>
+                <li><a href="#imagemFundo" tabindex="2">Filtrar</a></li>
+                <li><a href="#sobre" tabindex="3">Sobre</a></li>
+                <li><a href="#contato" tabindex="4">Contatos</a></li>
+            </ul>
+            <button translate="no" onclick="redirectlogin()" class="btnlogin" tabindex="5">Login</button>
+        </nav>
+        
+        <img id="menuMob" src="/imagens/menuHam.png" alt="Menu hamburguer">
+        <nav id="navBarMobile">
+            <ul>
+                <li class="btn-nav"><a href="#modelos">Modelos</a></li>
+                <li class="btn-nav"><a href="#imagemFundo">Filtrar</a></li>
+                <li class="btn-nav"><a href="#sobre">Sobre</a></li>
+                <li class="btn-nav"><a href="#contato">Contatos</a></li>
+                <li><button translate="no" onclick="redirectlogin()" class="btnlogin">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="carrossel">
+            <img src="/imagens/carrossel/imgCarrossel1.jpg" alt="carrossel" name="slide">
+            <form id="btnSlide">
+                <input type="radio" id="v1" name="mudaSlide" onclick="muda(1)">
+                <input type="radio" id="v2" name="mudaSlide" onclick="muda(2)">
+                <input type="radio" id="v3" name="mudaSlide" onclick="muda(3)">
+                <input type="radio" id="v4" name="mudaSlide" onclick="muda(4)">
+                <input type="radio" id="v5" name="mudaSlide" onclick="muda(5)">
+                <input type="radio" id="v6" name="mudaSlide" onclick="muda(6)">
+            </form>
+        </section>
+
+        <section id="modelos">
+    
+            
+            <h2>Sedan<h2>
+            <article class="sedan">
+
+                <div class="carros">
+                    <img src="/imagens/sedan/audia3.png" alt="Audi A3">
+                    <h4>Audi A3</h4>
+                    <span id="price"></span>
+                </div>
+    
+                <div class="carros">
+                    <img src="/imagens/sedan/audia4.png" alt="Audi A4">
+                    <h4>Audi A4</h4>
+                    <span id="price"></span>
+                </div>
+    
+                <div class="carros">
+                    <img src="/imagens/sedan/bmwSeries3E.png" alt="BMW Series 3E">
+                    <h4>BMW Serie 3E</h4>
+                    <span id="price"></span>
+                </div>
+    
+                <div class="carros">
+                    <img src="/imagens/sedan/volvos60.png" alt="Volvo S60">
+                    <h4>Volvo S60</h4>
+                    <span id="price"></span>
+                </div>
+    
+                <div class="carros">
+                    <img src="/imagens/sedan/hondaCivic.png" alt="Honda Civic">
+                    <h4>Honda Civic</h4>
+                    <span id="price"></span>
+                </div>
+
+            </article>
+
+            <h2>Suv</h2>
+            <article class="suv">
+
+                <div class="carros">
+                    <img src="/imagens/suv/bmwx1.png" alt="BMW X1">
+                    <h4>BMW X1</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/suv/bmw_x3.png" alt="BMW X3">
+                    <h4>BMW X3</h4>
+                    <span id="price"></span>
+                </div>
+   
+                <div class="carros">
+                    <img src="/imagens/suv/lamborghiniurus.png" alt="Lamborghini Urus">
+                    <h4>Lamborghini Urus</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/suv/mercedesgla.png" alt="Mercedes GLA">
+                    <h4>Mercedes GLA</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/suv/range.png" alt="Land Rover Range Rover">
+                    <h4>Land Rover Ranger</h4>
+                    <span id="price"></span>
+                </div>
+
+            </article>
+
+            <h2>Hatch<h2>
+            <article class="hatch">
+              
+                <div class="carros">
+                    <img src="/imagens/hatch/bmwSerie1.png" alt="BMW Serie1">
+                    <h4>BMW Serie 1</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/hatch/mercedesClasseA.png" alt="Mercedes Classe-A">
+                    <h4>Mercedes Classe-A</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/hatch/hondaCityhatchback.png" alt="Honda City Hatchback">
+                    <h4>Honda City Hatchback Touring</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/hatch/MiniCooperS.png" alt="Mini Cooper S">
+                    <h4>BMW Mini Cooper S</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/hatch/toyota-yaris.png" alt="Toyota Yaris">
+                    <h4>Toyota Yaris</h4>
+                    <span id="price"></span>
+                </div>
+
+            </article>
+
+            <h2>Esportivos</h2>
+            <article class="esportivos">
+               
+                <div class="carros">
+                    <img src="/imagens/esportivos/audir8.png" alt="Audi R8">
+                    <h4>Audi R8</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/esportivos/aventador.png" alt="Lamborghini Aventador">
+                    <h4>Lamborghini Aventador</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/esportivos/ferrari458.png" alt="Ferrari 458">
+                    <h4>Ferrari 458</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/esportivos/mclaren765s.png" alt="McLaren 765s">
+                    <h4>McLaren 765s</h4>
+                    <span id="price"></span>
+                </div>
+
+                <div class="carros">
+                    <img src="/imagens/esportivos/mustang_gt.png" alt="Mustang GT">
+                    <h4>Ford Mustang GT</h4>
+                    <span id="price"></span>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="imagemFundo">
+            <img src="/imagens/imagemFundo.png" alt="imagem de fundo">
+        </section>
+        
+        <section id="filtro">
+            <form class="filtrar">
+
+                <label for="iModelo">Modelo:
+                    <input type="text" name="iModelo" id="iModelo">
+                </label>
+
+                <label for="iMarca">Marca:
+                    <select name="iMarca" id="iMarca">
+                        <option value="0" disabled>Selecione:</option>
+                        <option value="0"> --------- </option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="LandRover">Land Rover</option>
+                        <option value="McLaren">McLaren</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volvo">Volvo</option>
+                    </select>
+                </label>
+
+                <label for="iAno">Ano:
+                    <input type="text" name="iAno" id="iAno" maxlength="4">
+                </label>
+
+                <label for="iTipo">Tipo:
+                    <select name="iTipo" id="iTipo">
+                        <option value="0" disabled>Selecione:</option>
+                        <option value="0"> --------- </option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">Suv</option>
+                        <option value="hatch">Hatch</option>
+                        <option value="esportivos">Esportivos</option>
+                    </select>
+                </label>
+
+                <label for="iPreco">Preço:
+                    <input type="range" name="iPreco" id="iPreco" min="100000" max="2000000" value="2000000" step="100000"/>
+                    <p>min: R$ 100000 - max: R$ <output id="value"></output></p>
+                </label>
+
+                <input type="button" value="PROCURAR">
+            </form>
+          
+        </section>
+        
+        <hr>
+        <div class="todosCarros">
+
+            <div class="carros">
+                <img src="/imagens/sedan/audia3.png" alt="Audi A3">
+                <h4>Audi A3</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/sedan/audia4.png" alt="Audi A4">
+                <h4>Audi A4</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/sedan/bmwSeries3E.png" alt="BMW Series 3E">
+                <h4>BMW Serie 3E</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/sedan/volvos60.png" alt="Volvo S60">
+                <h4>Volvo S60</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/sedan/hondaCivic.png" alt="Honda Civic">
+                <h4>Honda Civic</h4>
+                <span id="price"></span>
+            </div>
+            
+            <div class="carros">
+                <img src="/imagens/suv/bmw_x3.png" alt="BMW X3">
+                <h4>BMW X3</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/suv/bmwx1.png" alt="BMW X1">
+                <h4>BMW X1</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/suv/lamborghiniurus.png" alt="Lamborghini Urus">
+                <h4>Lamborghini Urus</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/suv/mercedesgla.png" alt="Mercedes GLA">
+                <h4>Mercedes GLA</h4>
+                <span id="price"></span>
+            </div>
+            
+            <div class="carros">
+                <img src="/imagens/suv/range.png" alt="Land Rover Range Rover">
+                <h4>Land Rover Ranger</h4>
+                <span id="price"></span>
+            </div>
+            
+            <div class="carros">
+                <img src="/imagens/hatch/bmwSerie1.png" alt="BMW Serie1">
+                <h4>BMW Serie 1</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/hatch/mercedesClasseA.png" alt="Mercedes Classe-A">
+                <h4>Mercedes Classe-A</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/hatch/hondaCityhatchback.png" alt="Honda City Hatchback">
+                <h4>Honda City Hatchback Touring</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/hatch/MiniCooperS.png" alt="Mini Cooper S">
+                <h4>Mini Cooper S</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/hatch/toyota-yaris.png" alt="Toyota Yaris">
+                <h4>Toyota Yaris</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/esportivos/audir8.png" alt="Audi R8">
+                <h4>Audi R8</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/esportivos/aventador.png" alt="Lamborghini Aventador">
+                <h4>Lamborghini Aventador</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/esportivos/ferrari458.png" alt="Ferrari 458">
+                <h4>Ferrari 458</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/esportivos/mclaren765s.png" alt="McLaren 765s">
+                <h4>McLaren 765s</h4>
+                <span id="price"></span>
+            </div>
+
+            <div class="carros">
+                <img src="/imagens/esportivos/mustang_gt.png" alt="Mustang GT">
+                <h4>Mustang GT</h4>
+                <span id="price"></span>
+            </div>
+
+        </div>
+     
+
+        <section id="sobre">
+            <h2>SOBRE</h2>
+            <div class="about">
+                <div class="posicionamentoMob">
+                    <p>
+                        <strong>Bem-vindo à Alpha Speed! </strong> 
+                        Somos muito mais do que uma simples concessionária de automóveis. 
+                        Somos comprometidos em proporcionar a você uma experiência excepcional 
+                        na escolha do seu veículo.<br><br>
+
+                        <strong>Nossa História: </strong>
+                        Fundada em 2021, Alpha Speed tem uma longa história de fornecer 
+                        veículos de alta qualidade e serviços excepcionais aos nossos clientes. 
+                        Desde o início, nosso foco tem sido construir relacionamentos duradouros 
+                        com os clientes, baseados na confiança, integridade e excelência no atendimento.
+                    </p>
+                    <img src="/imagens/imgSob1.jpg" alt="imagem ilustrativa">
+                </div>
+                <br>
+                <div class="posicionamentoMobDois">
+                    <img src="/imagens/imgSob2.jpg" alt="imagem ilustrativa">
+                    <p>
+                        <strong>Compromisso com a Qualidade: </strong> 
+                        Garantimos a qualidade e autenticidade de cada veículo em nosso showroom. 
+                        Cada carro passa por rigorosas inspeções para garantir que você esteja recebendo 
+                        um produto confiável e seguro.<br><br>
+
+                        <strong>Nossa Seleção de Veículos: </strong>
+                        Em nossa concessionária, você encontrará uma ampla variedade de veículos novos 
+                        e usados, de diversas marcas e modelos. Nossos especialistas em vendas estão aqui 
+                        para ajudá-lo a encontrar o carro dos seus sonhos, adequado às suas necessidades e 
+                        orçamento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="position"> 
+            <div id="openLocal" class="localidade">
+                <h3>Localidade:</h3>
+                <i id="seta" class="material-symbols-rounded">
+                    arrow_downward
+                </i>
+            </div>
+            <div id="local">
+                <article>
+                    <p>
+                        <strong>Endereço: </strong><adress>R. Guaipa - 678 - Vila Leopoldina - São Paulo - SP</adress>
+                    </p>
+                    <p>
+                        <strong>Telefone: </strong>(11) 92457-6650
+                    </p>
+                </article>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.324773027795!2d-46.73036142467097!3d-23.520818578827694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1698706505547!5m2!1spt-BR!2sbr" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+
+        <section class="footerMobile">
+                <article class="infos">
+                    <div id="containerUm">
+                        <h3>Compra</h3>
+                        <i id="arrowUm" class="material-symbols-rounded">arrow_drop_down</i>
+                    </div>
+                    <ul id="moreUm">
+                        <li><a href="#">Contate um vendedor</a></li>
+                        <li><a href="#">Valor de troca</a></li>
+                        <li><a href="#">Finança</a></li>
+                        <li><a href="#">Solicitar financiamento</a></li>
+                        <li><a href="#">Locação</a></li>
+                    </ul>
+                </article>
+
+                <article class="infos">
+                    <div id="containerDois">
+                        <h3>Loja</h3>
+                        <i id="arrowDois" class="material-symbols-rounded">arrow_drop_down</i>
+                    </div>
+                    <ul id="moreDois">
+                        <li><a href="#">Ofertas especiais</a></li>
+                        <li><a href="#">Encontre um revendedor</a></li>
+                        <li><a href="#">Carros novos</a></li>
+                        <li><a href="#">Carros usados</a></li>
+                        <li><a href="#">Carros usados com certificado</a></li>
+                        <li><a href="#">Carros sob demanda</a></li>
+                    </ul>
+                </article>
+
+                <article class="infos">
+                    <div id="containerTres">
+                        <h3>Suporte</h3>
+                        <i id="arrowTres" class="material-symbols-rounded">arrow_drop_down </i>
+                    </div>
+                    <ul id="moreTres">
+                        <li><a href="#">Contate-nos</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li translate="no"><a href="#">Recals</a></li>
+                    </ul>
+                </article>
+        </section>
+       
+        <section class="footerDesktop">
+            <div class="services">
+                <article>
+                    <h3>Compra</h3>
+                    <ul>
+                        <li><a href="#">Contate um vendedor</a></li>
+                        <li><a href="#">Valor de troca</a></li>
+                        <li><a href="#">Finança</a></li>
+                        <li><a href="#">Solicitar financiamento</a></li>
+                        <li><a href="#">Locação</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Loja</h3>
+                    <ul>
+                        <li><a href="#">Ofertas especiais</a></li>
+                        <li><a href="#">Encontre um revendedor</a></li>
+                        <li><a href="#">Carros novos</a></li>
+                        <li><a href="#">Carros usados</a></li>
+                        <li><a href="#">Carros usados com certificado</a></li>
+                        <li><a href="#">Carros sob demanda</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">Contate-nos</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li translate="no"><a href="#">Recals</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <div>
+            <ul class="socialMedias">
+                <li>
+                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/imagens/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://pt-br.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/imagens/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/imagens/linkedin.png" alt="linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <p class="rodape">
+            <small>&copy;2021 - Alpha Speed<br> Todos os direitos reservados. 
+                Confira a nossa <a href="#" target="_blank">Política de Privacidade</a>.
+            </small>
+            </p>
+
+    </footer>
+
+    <script src="/JS/price.js" defer></script>
+    <script src="/JS/carrossel.js" defer></script>
+    <script src="/JS/valueRange.js" defer></script>
+    <script src="/JS/openLocal.js" defer></script>
+    <script src="/JS/navbarMobile.js" defer></script>
+    <script src="/JS/mostMore.js" defer></script>
+    <script src="/JS/redirect.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1024px) {
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        text-align-last: center;
+    }
+
+    header .logo {
+        width: 15em;
+        margin: 0 0 0 -10em;
+    }
+
+    header #navBarDesktop {
+        display: none;
+    }
+
+    header #menuMob {
+        display: block;
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+    }
+
+    header #navBarMobile {
+        display: block;    
+        visibility: hidden;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 10em;
+        background: linear-gradient( var(--color-secundary), var(--color-primary));
+        height: 0;
+        padding: 1em 0;
+        border-radius: 0 0 10px 10px;
+        transition: ease .2s;
+    }
+
+    header #navBarMobile.active {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        height: 200%;
+        visibility: visible;
+    }
+
+    header #navBarMobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        transition: 0ms;
+    }
+ 
+    header #navBarMobile .btn-nav{
+        font-size: 20px;
+        padding: 0;
+        margin: 1em 0 0 -2.5em;
+        border-bottom: 1.5px solid var(--color-white);
+    }
+
+    header .btnlogin {
+        margin-left: -3em;
+        margin-top: 3em;
+        font-size: 16px;
+    }
+
+
+    /* Main */
+
+    main .carrossel img {
+        position: relative;
+        height: 25em;
+        z-index: -1;
+    }
+
+    main form.filtrar p {
+       font-size: 15px;
+    }
+
+    main form.filtrar input[type=button] {
+        font-size: 18px;
+    }
+
+    
+    /* CSS DO LOGIN E CADASTRO */
+
+    
+    main .login, .cadastro {
+        width: 100%;
+    }
+
+    main .imagemFundoLog ,.imagemFundoCad {
+        display: none;
+    }
+}

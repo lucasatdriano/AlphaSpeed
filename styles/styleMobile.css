@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 600px) {
+
+    header .logo {
+        margin: 0 0 0 -5em;
+    }
+
+    
+        /* Main */
+
+    main .carrossel img{
+        height: 20em;
+    }
+
+    main #filtro {
+        top: -20vh;
+    }
+
+    main form.filtrar {
+        font-size: 18px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main form.filtrar input, form.filtrar select {
+        font-size: 12px;
+        height: 2em;
+    }
+
+    main form.filtrar input[type=range] {
+        height: 2em;
+    }
+
+    main form.filtrar input[type=range]::-webkit-slider-runnable-track {
+        height: 5px;
+    }
+
+    main form.filtrar input[type=range]::-webkit-slider-thumb {
+        height: 14px;
+        width: 14px;
+    }
+
+    main form.filtrar input[type=button] {
+        font-size: 16px;
+    }
+
+    main hr {
+        top: -15em;
+    }
+
+    main #sobre {
+        margin: 5em 0em 0em;
+    }
+
+    main #sobre .about {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:  1fr;
+    }
+
+    main #sobre .posicionamentoMob {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main #sobre .posicionamentoMobDois {
+        flex-direction: column;
+        margin-top: -30em;
+    }
+        
+    main #sobre img {
+        width: 100%;
+        margin: 0;
+    }
+
+    main #sobre p {
+        width: 100%;
+        margin: 2em 0;
+        font-size: 16px;       
+    }
+
+    main #local {
+        flex-direction: column;
+    }
+
+    main #local hr {
+        width: 95%;
+        height: 0em;
+        margin-bottom: 1em;
+    }
+
+    main #local iframe {
+        width: 20em;
+        height: 10em;
+        margin-bottom: 1em;
+    }
+
+
+        /* Footer */
+
+    footer .footerDesktop {
+        display: none;
+    }
+
+    footer .footerMobile {
+        display: block;
+        padding: 1em 0;
+    }
+
+    footer #containerUm, #containerDois, #containerTres {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1.5px solid #b2b2b29f;
+        text-indent: 10px; 
+        overflow-y: hidden;
+    }
+
+    footer #arrowUm, #arrowDois, #arrowTres {
+        font-size: 25px;
+        color: var(--color-white);
+       
+    }
+    
+    footer #moreUm, #moreDois, #moreTres {
+        display: none;
+        text-indent: 15px;
+    }
+
+    footer #moreUm.informacoes, #moreDois.informacoes, #moreTres.informacoes {
+        display: block;
+    }
+
+    footer small {
+        font-size: 12px;
+    }
+}

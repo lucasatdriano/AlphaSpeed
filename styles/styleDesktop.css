@@ -1,0 +1,605 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: .7em;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 0 2em 0 2em;
+    border: 1.5px solid var(--color-white);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+a, p, h3 {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient( var(--color-primary), var(--color-secundary));
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(5px 3px 5px #4e4e4e80);
+    z-index: 0;
+}
+
+header .logo {
+    width: 15em;
+    margin: 0 1em;
+}
+
+header .logo img {
+    width: 10em;
+}
+
+header #navBarMobile {
+    display: none;
+}
+
+header #menuMob {
+    display: none;
+}
+
+header #navBarDesktop {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em 0 0;
+    margin: 0 3em 0 0;
+}    
+
+header #navBarDesktop ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+}
+
+header #navBarDesktop ul li {
+    padding: 2em 0;
+}
+
+header #navBarDesktop a:hover {
+    font-size: 22px;
+    border-top: 1.5px solid var(--color-white);
+    border-bottom: 1.5px solid var(--color-white);
+    transition: ease 0.1s; 
+}       
+
+header .btnlogin {
+    color:var(--color-white);
+    padding: 0 2em;
+    border-radius: 3em;
+    background-color: transparent;
+    font-size: 20px;
+    border: 1.5px solid var(--color-white);
+    cursor: pointer;
+}
+
+header .btnlogin:hover {
+    background-color: var(--color-white);
+    border: .3vh solid var(--color-primary);
+    color: var(--color-primary);
+    transition: ease 1s; 
+}
+
+    /* Main */
+
+main .carrossel img {
+    object-fit: cover;
+    width: 100%;
+    height: 35em;
+    border-radius: 0 0 20px 20px;
+    filter: drop-shadow(5px 3px 5px #73737380);
+}
+
+main #btnSlide {
+    margin-top: -.5em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.5;
+}
+
+main #btnSlide:hover {
+    opacity: 0.7;
+}
+
+main #btnSlide input[type=radio] {
+    width: 20px;
+    border: 3px solid;
+    -webkit-appearance: none;
+    filter: drop-shadow(5px 3px 5px #73737380);
+    cursor: pointer;
+}
+
+main #btnSlide input[type=radio]:checked {
+    border: 3px solid red;
+}
+
+main #modelos {
+    margin: 1em 0;
+}
+
+main #modelos h2 {
+    font-family: var(--font-main);
+    margin: 0 2em;
+    text-align: start;
+}
+
+main .sedan, .suv, .hatch, .esportivos {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 14px;
+    text-align: center;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+main .sedan::-webkit-scrollbar, .suv::-webkit-scrollbar, .hatch::-webkit-scrollbar, .esportivos::-webkit-scrollbar {
+    display: none;
+}
+
+main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:hover .carros:not(:hover), .esportivos:hover .carros:not(:hover) {
+    transform: scale(0.8);
+    filter: blur(.7px);
+    opacity: .7;
+}
+
+main .suv, .esportivos {
+    margin-left: 3em;
+}
+
+main .carros {
+    width: 35em;
+    height: 18em;
+    margin: 0 -5em 0;
+    object-fit: contain;
+    cursor: pointer;
+    transform: scale(0.9);
+    scroll-snap-align: start;
+}
+
+main .carros img {
+    width: 100%;
+    height: 10em;
+    object-fit: contain;
+    filter: drop-shadow(5px 3px 5px #73737380);
+}
+
+main .carros span{
+    font-weight: 400;
+    color: var(--color-black);
+    visibility: hidden;
+}
+
+main .carros:hover {
+    transform: scale(1);
+    max-height: 100%;
+}
+
+main .carros:hover::after {
+    font-weight: 400;
+    content: "R$ 500.000,00";
+}
+
+main #imagemFundo img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    border: 1px double var(--color-black);
+    position: relative;
+    border-radius: 10px;
+    filter: blur(.8px);
+    box-shadow: 3px 3px 3px #73737380;
+}
+
+main #filtro {
+    position: relative;
+    background-color: #ffffffef;
+    top: -15vh;
+    left: 12%;
+    width: 75vw;
+    border-radius: 20px;
+    border: 2px solid var(--color-black);
+    z-index: 100;
+    box-shadow: 5px 3px 5px #73737380;
+}
+
+main form.filtrar {
+    font-size: 20px;
+    padding: 1.5em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+}
+
+main form.filtrar p {
+    color: var(--color-black);
+}
+
+main form.filtrar input, form.filtrar select {
+    text-indent: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 95%;
+    height: 1.5em;
+    border: 1px solid;
+}
+
+main form.filtrar input[type=date] {
+    width: 90%;
+}
+
+main form.filtrar input[type=range] {
+    margin-top: 1.3em;
+    height: 1.5em;
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    cursor: grab;
+}
+
+main form.filtrar input[type=range]:active  {
+    cursor: grabbing;
+}
+
+main form.filtrar input[type=range]::-webkit-slider-runnable-track {
+    width: 3em;
+    height: 6px;
+    background: var(--color-secundary);
+    border-radius: 3px;
+    margin-top: .5em;
+}
+
+main form.filtrar input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    margin-top: -.3em;
+}
+
+main form.filtrar input[type=button] {
+    height: 2em;
+    width: auto;
+    margin: 1em auto;
+    padding: 0 1em;
+    border-radius: 20px;
+    background: #740b0b;
+    color: var(--color-white);
+    font-size: 22px;
+    border: 3px solid var(--color-primary);
+    cursor: pointer;
+}
+
+main form.filtrar input[type=button]:hover {
+    background-color: var(--color-primary);
+    transition: all .1s; 
+}
+
+main hr {
+    position: relative;
+    top: -13em;
+}
+
+main .todosCarros {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    margin-top: -5em;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+main .todosCarros::-webkit-scrollbar {
+    display: none;
+}
+
+main .todosCarros:hover .carros:not(:hover) {
+    transform: scale(0.8);
+    filter: blur(.7px);
+    opacity: .7;
+}
+
+main #sobre {
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em 0em;
+}
+
+main #sobre .about{
+    margin: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  1fr;
+
+}
+
+main #sobre .posicionamentoMob, .posicionamentoMobDois {
+    display: flex;
+    flex-direction: row;
+}
+
+main #sobre .posicionamentoMobDois {
+    margin-top: -10em;
+}
+  
+main #sobre img {
+    height: 15em;
+    width: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 2.5em 0;
+    filter: drop-shadow(5px 3px 5px #73737380);
+}
+
+main #sobre p {
+    color: var(--color-black);
+    font-size: 16px;
+    text-align: justify;
+    width: 50%;
+    margin: 0 2.5em 0;
+}
+
+main .localidade {
+    background: var(--color-darkGray);
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 2em;
+    border-radius: 10px 10px 0 0;
+}
+
+main .localidade h3 {
+    color: var(--color-gray);
+    font-size: 22px;
+}
+
+main .localidade i {
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--color-gray);
+    
+}
+
+main .localidade i:hover {
+    font-size: 32px;
+}
+
+main #local {
+    background: var(--color-darkGray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: ease 1s;
+}
+
+main #local p {
+    color: var(--color-gray);
+    font-size: 20px;
+    padding: 1em;
+}
+
+main #local hr {
+    width: 0;
+    height: 16em;
+    position: relative;
+    top: 0;
+    margin: .5em;
+    border: 2px solid var(--color-gray);
+    border-radius: 5px;
+}
+
+main #local iframe {
+    width: 30em;
+    height: 15em;
+    margin-right: 1em;
+    border-radius: 2vw;
+    border: 2px solid var(--color-gray);
+    filter: drop-shadow(5px 3px 5px #73737380);
+}
+
+main #local {
+    display: none;
+}
+
+main #local.ativo {
+    display: flex;
+}
+
+
+    /* Footer */
+
+footer {
+    background: linear-gradient( var(--color-primary), var(--color-secundary));
+    box-shadow: 5px 3px 5px 0 #73737380;
+}
+
+footer .footerMobile {
+    display: none;
+}
+
+footer .services {
+    font-size: 18px;
+    display: flex;
+    padding-top: 1em;
+    justify-content: space-around;
+}
+
+footer .services ul {
+    list-style: none;
+}
+
+
+footer .services a:hover {
+    text-decoration: underline;
+}
+
+footer .socialMedias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0 2em 1em;   
+ 
+}
+
+footer .socialMedias li {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s;   
+}
+
+footer .socialMedias li a {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer .socialMedias img {
+    width: 2em;
+    stroke-width: 1.75;
+    transition: 0.8s;
+}
+
+footer .socialMedias li:hover img {
+    transform: rotateY(360deg);
+    stroke-width: 1.5px;
+}
+
+footer hr {
+    border: 1px solid var(--color-white);
+}
+
+footer p.rodape {
+    text-align: center;
+}
+
+footer .rodape a {
+    text-decoration: underline;
+}
+
+
+    /* CSS DO LOGIN E CADASTRO */
+
+
+main .login, .cadastro {
+    width: 40%;
+    margin: 2em 0;
+    gap: 1.5em;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+main .formLog, .formCad {
+    width: 80%;
+} 
+
+main .login label, .cadastro label {
+    display: none;
+}
+
+main .login input, .cadastro input {
+    text-indent: 40px;
+    margin: 0;
+    width: 18.5em;
+    font-size: 16px;
+    height: 2em;
+    z-index: 0;
+    border-radius: 15px;
+    border: .3vh solid var(--color-gray);
+}
+
+main .login i, .cadastro i {
+    position: relative;
+    top: 1.4em;
+    left: .1em;
+    color: var(--color-black);
+    font-size: 27px;
+    width: 3em;
+    z-index: 1;
+    padding: .15em;
+}
+
+main .login span, .cadastro span {
+    color: #bc0000;
+    display: none;
+}
+
+main .login input[type=button], .cadastro input[type=button] {
+    color:var(--color-white);
+    text-indent: 0;
+    margin: 1.5em 0 0;
+    letter-spacing: 1px;
+    background-color: #740b0b;
+    font-size: 16px;
+    border: 2px solid var(--color-secundary);
+    cursor: pointer;
+}
+
+main .login input[type=button]:hover, .cadastro input[type=button]:hover {
+    background-color: var(--color-primary);
+}
+
+main .login button {
+    margin-right: 1vw;
+    color:var(--color-primary);
+    padding: 0 6em;
+    border-radius: 15px;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 16px;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+main .login button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: all .5s; 
+}
+
+main .imagemFundoLog img {
+    height: 25em;
+    width: 100%;
+    position: relative;
+    margin-top: -21em;
+    left: 40%;
+    object-fit: cover;
+    filter: drop-shadow(7px 5px 7px #73737380);
+    border-radius: 20px 0 0 20px;
+}
+
+main .imagemFundoCad img {
+    height: 35em;
+    width: 100%;
+    position: relative;
+    margin-top: -31em;
+    left: 40%;
+    object-fit: cover;
+    filter: drop-shadow(7px 5px 7px #73737380);
+    border-radius: 20px 0 0 20px;
+}

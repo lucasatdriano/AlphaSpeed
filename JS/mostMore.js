@@ -16,10 +16,10 @@ function moreInfosUm() {
     }
 }
 
-containerUm.addEventListener("click", removeInfosDois)
-containerUm.addEventListener("click", removeInfosTres)
+containerUm.addEventListener('touchstart', removeInfosDois)
+containerUm.addEventListener('touchstart', removeInfosTres)
 
-containerUm.addEventListener('click', moreInfosUm);
+containerUm.addEventListener('touchstart', moreInfosUm);
 
 
             // infos Dois
@@ -40,10 +40,10 @@ function moreInfosDois() {
     }
 }
 
-containerDois.addEventListener("click", removeInfosUm)
-containerDois.addEventListener("click", removeInfosTres)
+containerDois.addEventListener('touchstart', removeInfosUm)
+containerDois.addEventListener('touchstart', removeInfosTres)
 
-containerDois.addEventListener('click', moreInfosDois);
+containerDois.addEventListener('touchstart', moreInfosDois);
 
 
             // infos Tres
@@ -64,10 +64,10 @@ function moreInfosTres() {
     }
 }
 
-containerTres.addEventListener("click", removeInfosUm)
-containerTres.addEventListener("click", removeInfosDois)
+containerTres.addEventListener('touchstart', removeInfosUm)
+containerTres.addEventListener('touchstart', removeInfosDois)
 
-containerTres.addEventListener('click', moreInfosTres);
+containerTres.addEventListener('touchstart', moreInfosTres);
 
 
             // Removes

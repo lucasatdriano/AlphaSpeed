@@ -14,7 +14,7 @@ function mostPrice() {
     }
 }
 
-carro.addEventListener('mouseenter', mostPrice);
+carro.addEventListener('mouseover', mostPrice);
 
 
 function teste() {

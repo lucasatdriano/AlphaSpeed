@@ -15,3 +15,4 @@ function LocalAbrir() {
 }
 
 abrir.addEventListener('click', LocalAbrir)
+abrir.addEventListener('touchstart', LocalAbrir)

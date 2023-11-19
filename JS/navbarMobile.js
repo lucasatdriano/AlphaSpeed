@@ -18,10 +18,10 @@ function RemoveMenu() {
     btnMob.src = "imagens/menuHam.png";
 }
 
-btnMob.addEventListener('click', ToggleMenu)
+btnMob.addEventListener('touchstart', ToggleMenu)
 
 for(let i = 0; i < btnNav.length; i++){
-    btnNav[i].addEventListener("click", RemoveMenu)
+    btnNav[i].addEventListener('touchstart', RemoveMenu)
 }
 
-out.addEventListener("click", RemoveMenu)
+out.addEventListener('touchstart', RemoveMenu)

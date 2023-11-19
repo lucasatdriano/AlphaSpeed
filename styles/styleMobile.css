@@ -13,6 +13,10 @@
         height: 20em;
     }
 
+    main .carros img {
+        height: 13em;
+    }
+
     main #filtro {
         top: -20vh;
     }

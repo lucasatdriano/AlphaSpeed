@@ -418,7 +418,7 @@ main #local iframe {
     margin-right: 1em;
     border-radius: 2vw;
     border: 2px solid var(--color-gray);
-    filter: drop-shadow(5px 3px 5px #73737380);
+    filter: drop-shadow(5px 3px 5px #0c0c0cba);
 }
 
 main #local {

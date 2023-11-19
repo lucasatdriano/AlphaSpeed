@@ -54,6 +54,7 @@
     }
  
     header #navBarMobile .btn-nav{
+        text-indent: 3em;
         font-size: 20px;
         padding: 0;
         margin: 1em 0 0 -2.5em;
@@ -61,7 +62,6 @@
     }
 
     header .btnlogin {
-        margin-left: -3em;
         margin-top: 3em;
         font-size: 16px;
     }

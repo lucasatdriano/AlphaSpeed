@@ -1,4 +1,4 @@
-            // infos Um
+// infos Um
 
 const infosUm = document.getElementById("moreUm")
 const arrowUm = document.getElementById("arrowUm")
@@ -16,10 +16,10 @@ function moreInfosUm() {
     }
 }
 
-containerUm.addEventListener('touchstart', removeInfosDois)
-containerUm.addEventListener('touchstart', removeInfosTres)
+containerUm.addEventListener('click', removeInfosDois)
+containerUm.addEventListener('click', removeInfosTres)
 
-containerUm.addEventListener('touchstart', moreInfosUm);
+containerUm.addEventListener('click', moreInfosUm);
 
 
             // infos Dois
@@ -40,10 +40,10 @@ function moreInfosDois() {
     }
 }
 
-containerDois.addEventListener('touchstart', removeInfosUm)
-containerDois.addEventListener('touchstart', removeInfosTres)
+containerDois.addEventListener('click', removeInfosUm)
+containerDois.addEventListener('click', removeInfosTres)
 
-containerDois.addEventListener('touchstart', moreInfosDois);
+containerDois.addEventListener('click', moreInfosDois);
 
 
             // infos Tres
@@ -64,17 +64,17 @@ function moreInfosTres() {
     }
 }
 
-containerTres.addEventListener('touchstart', removeInfosUm)
-containerTres.addEventListener('touchstart', removeInfosDois)
+containerTres.addEventListener('click', removeInfosUm)
+containerTres.addEventListener('click', removeInfosDois)
 
-containerTres.addEventListener('touchstart', moreInfosTres);
+containerTres.addEventListener('click', moreInfosTres);
 
 
             // Removes
 
 function removeInfosUm() {
     infosUm.classList.remove('informacoes')
-
+    
     arrowUm.style.transform = "rotateX(0deg)"
     arrowUm.style.transition = "ease .3s"
 }

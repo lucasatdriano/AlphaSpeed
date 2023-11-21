@@ -1,4 +1,5 @@
-// script slides //
+// script slides
+
 var contador = 1;
 var img1="imagens/carrossel/imgCarrossel2.jpg";
 var img2="imagens/carrossel/imgCarrossel3.jpg";

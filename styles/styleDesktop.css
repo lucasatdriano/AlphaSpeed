@@ -24,8 +24,13 @@ h2 {
     text-align: center;
 }
 
-a, p, h3 {
+a, h3 {
     color: var(--color-white);
+    text-decoration: none;
+}
+
+p {
+    color: var(--color-black);
     text-decoration: none;
 }
 
@@ -146,7 +151,7 @@ main #modelos h2 {
 main .sedan, .suv, .hatch, .esportivos {
     display: grid;
     grid-auto-flow: column;
-    font-size: 14px;
+    font-size: 22px;
     text-align: center;
 
     overflow-x: scroll;
@@ -161,6 +166,7 @@ main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:ho
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
+    transition: ease .5s;
 }
 
 main .suv, .esportivos {
@@ -177,6 +183,12 @@ main .carros {
     scroll-snap-align: start;
 }
 
+main .carros:hover {
+    transform: scale(1);
+    max-height: 100%;
+    transition: ease .5s;
+}
+
 main .carros img {
     width: 100%;
     height: 10em;
@@ -185,19 +197,13 @@ main .carros img {
 }
 
 main .carros span{
-    font-weight: 400;
-    color: var(--color-black);
     visibility: hidden;
-}
-
-main .carros:hover {
-    transform: scale(1);
-    max-height: 100%;
-}
-
-main .carros:hover::after {
     font-weight: 400;
-    content: "R$ 500.000,00";
+    font-size: 22px;
+}
+
+main .carros:hover span{
+    visibility: visible;
 }
 
 main #imagemFundo img {
@@ -322,6 +328,7 @@ main .todosCarros:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
+    transition: ease .5s;
 }
 
 main #sobre {
@@ -370,6 +377,7 @@ main .localidade {
     justify-content: space-between;
     padding: .5em 2em;
     border-radius: 10px 10px 0 0;
+    cursor: pointer;
 }
 
 main .localidade h3 {
@@ -393,7 +401,7 @@ main #local {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: ease 1s;
+    transition: ease .2s;
 }
 
 main #local p {
@@ -427,6 +435,7 @@ main #local {
 
 main #local.ativo {
     display: flex;
+    transition: ease .5s;
 }
 
 
@@ -495,6 +504,7 @@ footer hr {
 }
 
 footer p.rodape {
+    color: var(--color-white);
     text-align: center;
 }
 

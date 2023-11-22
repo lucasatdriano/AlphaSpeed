@@ -61,6 +61,10 @@
         border-bottom: 1.5px solid var(--color-white);
     }
 
+    header #navBarMobile .op1 {
+        transition-delay: 1s;
+    }
+
     header .btnlogin {
         margin-top: 3em;
         font-size: 16px;

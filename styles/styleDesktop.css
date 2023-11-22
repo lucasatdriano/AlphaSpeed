@@ -2,7 +2,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -151,7 +150,7 @@ main .sedan, .suv, .hatch, .esportivos {
     text-align: center;
 
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 }
 
 main .sedan::-webkit-scrollbar, .suv::-webkit-scrollbar, .hatch::-webkit-scrollbar, .esportivos::-webkit-scrollbar {

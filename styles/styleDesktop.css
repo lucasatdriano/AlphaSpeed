@@ -29,11 +29,6 @@ a, h3 {
     text-decoration: none;
 }
 
-p {
-    color: var(--color-black);
-    text-decoration: none;
-}
-
 header {
     background: linear-gradient( var(--color-primary), var(--color-secundary));
     display: flex;
@@ -166,11 +161,19 @@ main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:ho
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
-    transition: ease .5s;
+    transition: ease .3s;
+}
+
+main .suv, .esportivos, .sedan, .hatch {
+    margin-left: -3em;
 }
 
 main .suv, .esportivos {
-    margin-left: 3em;
+    padding-left: 3em;
+}
+
+.sedan, .hatch {
+    margin-right: -3em;
 }
 
 main .carros {
@@ -186,7 +189,7 @@ main .carros {
 main .carros:hover {
     transform: scale(1);
     max-height: 100%;
-    transition: ease .5s;
+    transition: ease .3s;
 }
 
 main .carros img {
@@ -328,7 +331,7 @@ main .todosCarros:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
-    transition: ease .5s;
+    transition: ease .3s;
 }
 
 main #sobre {

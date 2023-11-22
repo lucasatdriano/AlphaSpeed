@@ -148,9 +148,19 @@ main .sedan, .suv, .hatch, .esportivos {
     grid-auto-flow: column;
     font-size: 22px;
     text-align: center;
+    padding-right: 5em;
+    margin-left: -3em;
 
     overflow-x: scroll;
     scroll-snap-type: x proximity;
+}
+
+main .suv, .esportivos {
+    padding-left: 4em;
+}
+
+.sedan, .hatch {
+    margin-right: -3em;
 }
 
 main .sedan::-webkit-scrollbar, .suv::-webkit-scrollbar, .hatch::-webkit-scrollbar, .esportivos::-webkit-scrollbar {
@@ -164,25 +174,17 @@ main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:ho
     transition: ease .3s;
 }
 
-main .suv, .esportivos, .sedan, .hatch {
-    margin-left: -3em;
-}
-
-main .suv, .esportivos {
-    padding-left: 4em;
-}
-
-.sedan, .hatch {
-    margin-right: -3em;
-}
-
 main .scrollDesk {
     display: grid;
     place-items: center;
+    width: 4em;
     height: 20em;
     background: var(--color-white);
     position: relative;
+    bottom: 40vh;
+    left: 95.5%;
 }
+
 
 
 

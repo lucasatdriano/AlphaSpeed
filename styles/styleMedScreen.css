@@ -86,19 +86,19 @@
     }
     
     header #navBarMobile.active #op2 {
-        transition-delay: .3s;
+        transition-delay: .2s;
     }
     
     header #navBarMobile.active #op3 {
-        transition-delay: .5s;
+        transition-delay: .4s;
     }
     
     header #navBarMobile.active #op4 {
-        transition-delay: .7s;
+        transition-delay: .6s;
     }
 
     header #navBarMobile.active #op5 {
-        transition-delay: .9s;
+        transition-delay: .8s;
     }
 
     header .btnlogin {

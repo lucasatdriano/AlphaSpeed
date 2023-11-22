@@ -168,14 +168,39 @@ main .suv, .esportivos, .sedan, .hatch {
     margin-left: -3em;
 }
 
+main .suv, .esportivos {
+    padding-left: 4em;
+}
+
 .sedan, .hatch {
     margin-right: -3em;
 }
 
+main .scrollDesk {
+    display: grid;
+    place-items: center;
+    height: 20em;
+    background: var(--color-white);
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main .carros {
-    width: 35em;
+    width: 30em;
     height: 18em;
-    margin: 0 -5em 0;
+    margin: 0 -2em 0 0;
     object-fit: contain;
     cursor: pointer;
     transform: scale(0.9);

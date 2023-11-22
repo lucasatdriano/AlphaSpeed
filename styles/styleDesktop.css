@@ -177,11 +177,11 @@ main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:ho
 main .scrollDesk {
     display: grid;
     place-items: center;
-    width: 4em;
+    width: 5em;
     height: 20em;
     background: var(--color-white);
-    position: relative;
-    bottom: 40vh;
+    position: absolute;
+    bottom: 50vh;
     left: 95.5%;
 }
 

@@ -146,6 +146,7 @@ main #modelos h2 {
 main .sedan, .suv, .hatch, .esportivos {
     display: grid;
     grid-auto-flow: column;
+    position: relative;
     font-size: 22px;
     text-align: center;
     padding-right: 5em;

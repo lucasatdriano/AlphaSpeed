@@ -35,7 +35,22 @@
         height: 0;
         padding: 1em 0;
         border-radius: 0 0 10px 10px;
-        transition: ease .2s;
+        transition: ease .8s;
+    }
+    
+    header #navBarMobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        transition: 0ms;
+    }
+    
+    header #navBarMobile .btn-nav{
+        text-indent: 3em;
+        font-size: 20px;
+        padding: 0;
+        margin: 1em 0 0 -2.5em;
+        border-bottom: 1.5px solid var(--color-white);
     }
 
     header #navBarMobile.active {
@@ -46,23 +61,44 @@
         visibility: visible;
     }
 
-    header #navBarMobile ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        transition: 0ms;
+    header #navBarMobile #op1 {
+        transition-delay: .5s;
     }
- 
-    header #navBarMobile .btn-nav{
-        text-indent: 3em;
-        font-size: 20px;
-        padding: 0;
-        margin: 1em 0 0 -2.5em;
-        border-bottom: 1.5px solid var(--color-white);
+    
+    header #navBarMobile #op2 {
+        transition-delay: .4s;
+    }
+    
+    header #navBarMobile #op3 {
+        transition-delay: .3s;
+    }
+    
+    header #navBarMobile #op4 {
+        transition-delay: .2s;
+    }
+    
+    header #navBarMobile #op5 {
+        transition-delay: .1s;
     }
 
-    header #navBarMobile .op1 {
-        transition-delay: 1s;
+    header #navBarMobile.active #op1 {
+        transition-delay: .1s;
+    }
+    
+    header #navBarMobile.active #op2 {
+        transition-delay: .3s;
+    }
+    
+    header #navBarMobile.active #op3 {
+        transition-delay: .5s;
+    }
+    
+    header #navBarMobile.active #op4 {
+        transition-delay: .7s;
+    }
+
+    header #navBarMobile.active #op5 {
+        transition-delay: .9s;
     }
 
     header .btnlogin {

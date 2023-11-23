@@ -175,14 +175,15 @@ main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:ho
 }
 
 main .scrollDesk {
-    display: grid;
-    place-items: center;
-    width: 5em;
-    height: 20em;
-    background: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    padding: 5px 0;
     position: relative;
-    bottom: 50vh;
-    left: 95.5%;
+    top: -10vh;
+    left: 94%;
+    cursor: pointer;
 }
 
 

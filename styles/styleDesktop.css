@@ -517,6 +517,7 @@ footer .socialMedias li:hover img {
 }
 
 footer hr {
+    width: 96%;
     border: 1px solid var(--color-white);
 }
 

@@ -2,11 +2,13 @@ const btnSedan = document.getElementById('btnScrollSedan')
 const btnSuv = document.getElementById('btnScrollSuv')
 const btnHatch = document.getElementById('btnScrollHatch')
 const btnSport = document.getElementById('btnScrollSport')
+const btnAll = document.getElementById('btnScrollAll')
 
 const sedans = document.getElementById('sedan')
 const suvs = document.getElementById('suv')
 const hatchs = document.getElementById('hatch')
 const sports = document.getElementById('esportivos')
+const all = document.getElementById('todosCarros')
 
 function scrollSedan() {
     sedans.scrollTo(1000, 0);
@@ -28,4 +30,7 @@ function scrollSports() {
 }
 btnSport.addEventListener('click', scrollSports)
 
-
+function scrollAll() {
+    all.scrollTo(1000, 0);
+}
+btnAll.addEventListener('click', scrollAll)

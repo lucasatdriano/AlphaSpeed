@@ -327,7 +327,7 @@ main hr {
     top: -13em;
 }
 
-main .todosCarros {
+main #todosCarros {
     display: grid;
     grid-auto-flow: column;
     text-align: center;
@@ -337,11 +337,11 @@ main .todosCarros {
     scroll-snap-type: x mandatory;
 }
 
-main .todosCarros::-webkit-scrollbar {
+main #todosCarros::-webkit-scrollbar {
     display: none;
 }
 
-main .todosCarros:hover .carros:not(:hover) {
+main #todosCarros:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;

@@ -143,7 +143,7 @@ main #modelos h2 {
     text-align: start;
 }
 
-main .sedan, .suv, .hatch, .esportivos {
+main #sedan, #suv, #hatch, #esportivos {
     display: grid;
     grid-auto-flow: column;
     font-size: 22px;
@@ -155,19 +155,19 @@ main .sedan, .suv, .hatch, .esportivos {
     scroll-snap-type: x proximity;
 }
 
-main .suv, .esportivos {
+main #suv, #esportivos {
     padding-left: 4em;
 }
 
-.sedan, .hatch {
+#sedan, #hatch {
     margin-right: -3em;
 }
 
-main .sedan::-webkit-scrollbar, .suv::-webkit-scrollbar, .hatch::-webkit-scrollbar, .esportivos::-webkit-scrollbar {
+main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar {
     display: none;
 }
 
-main .sedan:hover .carros:not(:hover), .suv:hover .carros:not(:hover), .hatch:hover .carros:not(:hover), .esportivos:hover .carros:not(:hover) {
+main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:hover .carros:not(:hover), #esportivos:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;

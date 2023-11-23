@@ -115,8 +115,22 @@
         z-index: -1;
     }
 
+    main #suv, #esportivos {
+        padding: 0em;
+        margin-left: 0em;
+    }
+
     main .scrollDesk {
         display: none;
+    }
+
+    main .carros {
+        height: 15em;
+        margin: 0 -2.5em 0;
+    }
+
+    main .carros img {
+        width: 25em;
     }
 
     main form.filtrar p {

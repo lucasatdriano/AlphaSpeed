@@ -18,6 +18,7 @@
     }
 
     main .carros img {
+        width: 15em;
         height: 13em;
     }
 

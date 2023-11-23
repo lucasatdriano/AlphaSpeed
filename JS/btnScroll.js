@@ -16,21 +16,21 @@ function scrollSedan() {
 btnSedan.addEventListener('click', scrollSedan)
 
 function scrollSuv() {
-    suvs.scrollTo(1000, 0);
+    suvs.scrollTo(3000, 0);
 }
 btnSuv.addEventListener('click', scrollSuv)
 
 function scrollHatch() {
-    hatchs.scrollTo(1000, 0);
+    hatchs.scrollTo(3000, 0);
 }
 btnHatch.addEventListener('click', scrollHatch)
 
 function scrollSports() {
-    sports.scrollTo(1000, 0);
+    sports.scrollTo(3000, 0);
 }
 btnSport.addEventListener('click', scrollSports)
 
 function scrollAll() {
-    all.scrollTo(1000, 0);
+    all.scrollTo(3000, 0);
 }
 btnAll.addEventListener('click', scrollAll)

@@ -115,6 +115,10 @@
         z-index: -1;
     }
 
+    main .scrollDesk {
+        display: none;
+    }
+
     main form.filtrar p {
        font-size: 15px;
     }

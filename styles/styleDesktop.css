@@ -186,19 +186,9 @@ main .scrollDesk {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+main .scrollDesk:hover {
+    transform:scale(1.1);
+}
 
 main .carros {
     width: 30em;

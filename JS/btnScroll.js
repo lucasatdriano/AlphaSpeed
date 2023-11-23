@@ -9,22 +9,22 @@ const hatchs = document.getElementById('hatch')
 const sports = document.getElementById('esportivos')
 
 function scrollSedan() {
-    sedans.scrollTo(100, 0);
+    sedans.scrollTo(1000, 0);
 }
 btnSedan.addEventListener('click', scrollSedan)
 
 function scrollSuv() {
-    suvs.scrollTo(100, 0);
+    suvs.scrollTo(1000, 0);
 }
 btnSuv.addEventListener('click', scrollSuv)
 
 function scrollHatch() {
-    hatchs.scrollTo(100, 0);
+    hatchs.scrollTo(1000, 0);
 }
 btnHatch.addEventListener('click', scrollHatch)
 
 function scrollSports() {
-    sports.scrollTo(100, 0);
+    sports.scrollTo(1000, 0);
 }
 btnSport.addEventListener('click', scrollSports)
 

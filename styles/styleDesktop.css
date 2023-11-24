@@ -190,10 +190,6 @@ main #btnScrollSedan, #btnScrollSuv, #btnScrollHatch, #btnScrollSport, #btnScrol
     left: 94%;
 }
 
-main #btnScrollSedanLeft, #btnScrollSuvLeft, #btnScrollHatchLeft, #btnScrollSportLeft, #btnScrollAllLeft {
-    right: 94%;
-}
-
 main .carros {
     width: 30em;
     height: 18em;

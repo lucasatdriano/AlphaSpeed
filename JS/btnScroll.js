@@ -33,10 +33,10 @@ function scrollHatch() {
 }
 btnHatch.addEventListener('click', scrollHatch)
 
-function scrollSports() {
+function scrollSport() {
     sports.scrollTo(3000, 0);
 }
-btnSport.addEventListener('click', scrollSports)
+btnSport.addEventListener('click', scrollSport)
 
 function scrollAll() {
     all.scrollTo(3000, 0);
@@ -61,10 +61,10 @@ function scrollHatchLeft() {
 }
 btnHatchLeft.addEventListener('click', scrollHatchLeft)
 
-function scrollSportsLeft() {
+function scrollSportLeft() {
     sports.scrollTo(-3000, 0);
 }
-btnSportLeft.addEventListener('click', scrollSportsLeft)
+btnSportLeft.addEventListener('click', scrollSportLeft)
 
 function scrollAllLeft() {
     all.scrollTo(-3000, 0);

@@ -92,6 +92,11 @@
                     arrow_forward_ios
                 </i>
             </div>
+            <div class="scrollDesk" id="btnScrollSedanLeft">
+                <i class="material-symbols-rounded">
+                    arrow_back_ios
+                </i>
+            </div>
 
             <h2>Suv</h2>
             <article id="suv">
@@ -132,6 +137,11 @@
                     arrow_forward_ios
                 </i>
             </div>
+            <div class="scrollDesk" id="btnScrollSuvLeft">
+                <i class="material-symbols-rounded">
+                    arrow_back_ios
+                </i>
+            </div>
 
             <h2>Hatch<h2>
             <article id="hatch">
@@ -170,6 +180,11 @@
             <div class="scrollDesk" id="btnScrollHatch">
                 <i class="material-symbols-rounded">
                     arrow_forward_ios
+                </i>
+            </div>
+            <div class="scrollDesk" id="btnScrollHatchLeft">
+                <i class="material-symbols-rounded">
+                    arrow_back_ios
                 </i>
             </div>
 
@@ -213,193 +228,209 @@
                     arrow_forward_ios
                 </i>
             </div>
+            <div class="scrollDesk" id="btnScrollSportLeft">
+                <i class="material-symbols-rounded">
+                    arrow_back_ios
+                </i>
+            </div>
 
         </section>
 
-        <section id="imagemFundo">
-            <img src="imagens/imagemFundo.png" alt="imagem de fundo">
+        <section>
+
+            <article id="imagemFundo">
+                <img src="imagens/imagemFundo.png" alt="imagem de fundo">
+            </article>
+            
+            <article id="filtro">
+                <form class="filtrar">
+
+                    <label for="iModelo">Modelo:
+                        <input type="text" name="iModelo" id="iModelo">
+                    </label>
+
+                    <label for="iMarca">Marca:
+                        <select name="iMarca" id="iMarca">
+                            <option value="0" disabled>Selecione:</option>
+                            <option value="0"> --------- </option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="LandRover">Land Rover</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Mini">Mini</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volvo">Volvo</option>
+                        </select>
+                    </label>
+
+                    <label for="iAno">Ano:
+                        <input type="number" name="iAno" id="iAno" max="3000">
+                    </label>
+
+                    <label for="iTipo">Tipo:
+                        <select name="iTipo" id="iTipo">
+                            <option value="0" disabled>Selecione:</option>
+                            <option value="0"> --------- </option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">Suv</option>
+                            <option value="hatch">Hatch</option>
+                            <option value="esportivos">Esportivos</option>
+                        </select>
+                    </label>
+
+                    <label for="iPreco">Preço:
+                        <input type="range" name="iPreco" id="iPreco" min="100000" max="4000000" value="4000000" step="100000"/>
+                        <p>min: R$ 100000 - max: R$ <output id="value"></output></p>
+                    </label>
+
+                    <input type="button" value="PROCURAR">
+                </form>
+            
+            </article>
+
+            <hr>
+            <article id="todosCarros">
+
+                <div class="carros">
+                    <img src="imagens/sedan/volvos60.png" alt="Volvo S60">
+                    <h4>Volvo S60</h4>
+                    <span id="price">R$338.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/sedan/audia3.png" alt="Audi A3">
+                    <h4>Audi A3</h4>
+                    <span id="price">R$280.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/sedan/audia4.png" alt="Audi A4">
+                    <h4>Audi A4</h4>
+                    <span id="price">R$300.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/sedan/bmwSeries3E.png" alt="BMW Series 3E">
+                    <h4>BMW Serie 3E</h4>
+                    <span id="price">R$308.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/sedan/hondaCivic.png" alt="Honda Civic">
+                    <h4>Honda Civic</h4>
+                    <span id="price">R$245.000</span>
+                </div>
+                
+                <div class="carros">
+                    <img src="imagens/suv/bmwX6.png" alt="BMW X6">
+                    <h4>BMW X6</h4>
+                    <span id="price">R$812.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/suv/bmw_x3.png" alt="BMW X3">
+                    <h4>BMW X3</h4>
+                    <span id="price">R$448.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/suv/lamborghiniurus.png" alt="Lamborghini Urus">
+                    <h4>Lamborghini Urus</h4>
+                    <span id="price">R$3.785.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/suv/mercedesgla.png" alt="Mercedes GLA">
+                    <h4>Mercedes GLA</h4>
+                    <span id="price">R$360.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/suv/range.png" alt="Land Rover Range Rover">
+                    <h4>Land Rover Ranger</h4>
+                    <span id="price">R$512.000</span>
+                </div>
+                
+                <div class="carros">
+                    <img src="imagens/hatch/mercedesClasseA.png" alt="Mercedes Classe-A">
+                    <h4>Mercedes Classe-A</h4>
+                    <span id="price">R$345.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/hatch/bmwSerie1.png" alt="BMW Serie1">
+                    <h4>BMW Serie 1</h4>
+                    <span id="price">R$314.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/hatch/hondaCityhatchback.png" alt="Honda City Hatchback">
+                    <h4>Honda City Hatchback Touring</h4>
+                    <span id="price">R$128.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/hatch/MiniCooperS.png" alt="Mini Cooper S">
+                    <h4>Mini Cooper S</h4>
+                    <span id="price">R$304.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/hatch/toyota-yaris.png" alt="Toyota Yaris">
+                    <h4>Toyota Yaris</h4>
+                    <span id="price">R$121.000</span>
+                </div>
+            
+                <div class="carros">
+                    <img src="imagens/esportivos/audir8.png" alt="Audi R8">
+                    <h4>Audi R8</h4>
+                    <span id="price">R$1.549.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/esportivos/aventador.png" alt="Lamborghini Aventador">
+                    <h4>Lamborghini Aventador</h4>
+                    <span id="price">R$3.870.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/esportivos/ferrari458.png" alt="Ferrari 458">
+                    <h4>Ferrari 458</h4>
+                    <span id="price">R$3.667.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/esportivos/mcLarenArtura.png" alt="McLaren Artura">
+                    <h4>McLaren Artura</h4>
+                    <span id="price">R$2.349.000</span>
+                </div>
+
+                <div class="carros">
+                    <img src="imagens/esportivos/mustang_gt.png" alt="Mustang GT">
+                    <h4>Ford Mustang GT</h4>
+                    <span id="price">R$566.000</span>
+                </div>
+
+            </article>
+
+            <div class="scrollDesk" id="btnScrollAll">
+                <i class="material-symbols-rounded">
+                    arrow_forward_ios
+                </i>
+            </div>
+            <div class="scrollDesk" id="btnScrollAllLeft">
+                <i class="material-symbols-rounded">
+                    arrow_back_ios
+                </i>
+            </div>
+
         </section>
         
-        <section id="filtro">
-            <form class="filtrar">
-
-                <label for="iModelo">Modelo:
-                    <input type="text" name="iModelo" id="iModelo">
-                </label>
-
-                <label for="iMarca">Marca:
-                    <select name="iMarca" id="iMarca">
-                        <option value="0" disabled>Selecione:</option>
-                        <option value="0"> --------- </option>
-                        <option value="Audi">Audi</option>
-                        <option value="BMW">BMW</option>
-                        <option value="Ferrari">Ferrari</option>
-                        <option value="Ford">Ford</option>
-                        <option value="Honda">Honda</option>
-                        <option value="Lamborghini">Lamborghini</option>
-                        <option value="LandRover">Land Rover</option>
-                        <option value="McLaren">McLaren</option>
-                        <option value="Mercedes">Mercedes</option>
-                        <option value="Mini">Mini</option>
-                        <option value="Toyota">Toyota</option>
-                        <option value="Volvo">Volvo</option>
-                    </select>
-                </label>
-
-                <label for="iAno">Ano:
-                    <input type="number" name="iAno" id="iAno" max="3000">
-                </label>
-
-                <label for="iTipo">Tipo:
-                    <select name="iTipo" id="iTipo">
-                        <option value="0" disabled>Selecione:</option>
-                        <option value="0"> --------- </option>
-                        <option value="sedan">Sedan</option>
-                        <option value="suv">Suv</option>
-                        <option value="hatch">Hatch</option>
-                        <option value="esportivos">Esportivos</option>
-                    </select>
-                </label>
-
-                <label for="iPreco">Preço:
-                    <input type="range" name="iPreco" id="iPreco" min="100000" max="4000000" value="4000000" step="100000"/>
-                    <p>min: R$ 100000 - max: R$ <output id="value"></output></p>
-                </label>
-
-                <input type="button" value="PROCURAR">
-            </form>
-          
-        </section>
-        <hr>
-        <div id="todosCarros">
-
-            <div class="carros">
-                <img src="imagens/sedan/volvos60.png" alt="Volvo S60">
-                <h4>Volvo S60</h4>
-                <span id="price">R$338.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/sedan/audia3.png" alt="Audi A3">
-                <h4>Audi A3</h4>
-                <span id="price">R$280.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/sedan/audia4.png" alt="Audi A4">
-                <h4>Audi A4</h4>
-                <span id="price">R$300.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/sedan/bmwSeries3E.png" alt="BMW Series 3E">
-                <h4>BMW Serie 3E</h4>
-                <span id="price">R$308.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/sedan/hondaCivic.png" alt="Honda Civic">
-                <h4>Honda Civic</h4>
-                <span id="price">R$245.000</span>
-            </div>
-            
-            <div class="carros">
-                <img src="imagens/suv/bmwX6.png" alt="BMW X6">
-                <h4>BMW X6</h4>
-                <span id="price">R$812.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/suv/bmw_x3.png" alt="BMW X3">
-                <h4>BMW X3</h4>
-                <span id="price">R$448.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/suv/lamborghiniurus.png" alt="Lamborghini Urus">
-                <h4>Lamborghini Urus</h4>
-                <span id="price">R$3.785.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/suv/mercedesgla.png" alt="Mercedes GLA">
-                <h4>Mercedes GLA</h4>
-                <span id="price">R$360.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/suv/range.png" alt="Land Rover Range Rover">
-                <h4>Land Rover Ranger</h4>
-                <span id="price">R$512.000</span>
-            </div>
-            
-            <div class="carros">
-                <img src="imagens/hatch/mercedesClasseA.png" alt="Mercedes Classe-A">
-                <h4>Mercedes Classe-A</h4>
-                <span id="price">R$345.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/hatch/bmwSerie1.png" alt="BMW Serie1">
-                <h4>BMW Serie 1</h4>
-                <span id="price">R$314.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/hatch/hondaCityhatchback.png" alt="Honda City Hatchback">
-                <h4>Honda City Hatchback Touring</h4>
-                <span id="price">R$128.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/hatch/MiniCooperS.png" alt="Mini Cooper S">
-                <h4>Mini Cooper S</h4>
-                <span id="price">R$304.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/hatch/toyota-yaris.png" alt="Toyota Yaris">
-                <h4>Toyota Yaris</h4>
-                <span id="price">R$121.000</span>
-            </div>
-           
-            <div class="carros">
-                <img src="imagens/esportivos/audir8.png" alt="Audi R8">
-                <h4>Audi R8</h4>
-                <span id="price">R$1.549.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/esportivos/aventador.png" alt="Lamborghini Aventador">
-                <h4>Lamborghini Aventador</h4>
-                <span id="price">R$3.870.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/esportivos/ferrari458.png" alt="Ferrari 458">
-                <h4>Ferrari 458</h4>
-                <span id="price">R$3.667.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/esportivos/mcLarenArtura.png" alt="McLaren Artura">
-                <h4>McLaren Artura</h4>
-                <span id="price">R$2.349.000</span>
-            </div>
-
-            <div class="carros">
-                <img src="imagens/esportivos/mustang_gt.png" alt="Mustang GT">
-                <h4>Ford Mustang GT</h4>
-                <span id="price">R$566.000</span>
-            </div>
-
-        </div>
-        <div class="scrollDesk" id="btnScrollAll">
-            <i class="material-symbols-rounded">
-                arrow_forward_ios
-            </i>
-        </div>
-     
         <section id="sobre">
             <h2>SOBRE</h2>
             <div class="about">

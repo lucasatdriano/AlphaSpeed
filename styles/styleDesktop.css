@@ -179,12 +179,19 @@ main .scrollDesk {
     padding: 5px 0;
     position: relative;
     top: -10vh;
-    left: 94%;
     cursor: pointer;
 }
 
 main .scrollDesk:hover {
     transform:scale(1.1);
+}
+
+main #btnScrollSedan, #btnScrollSuv, #btnScrollHatch, #btnScrollSport, #btnScrollAll {
+    left: 94%;
+}
+
+main #btnScrollSedanLeft, #btnScrollSuvLeft, #btnScrollHatchLeft, #btnScrollSportLeft, #btnScrollAllLeft {
+    right: 94%;
 }
 
 main .carros {

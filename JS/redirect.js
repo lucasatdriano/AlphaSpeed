@@ -1,3 +1,5 @@
+        // Script para redirecionar buttons
+
 function redirectlogin() {
     window.location = "login.html"
 }

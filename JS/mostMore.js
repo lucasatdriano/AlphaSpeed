@@ -1,3 +1,6 @@
+        // Script para mostrar mais no footer mobile
+
+
 // infos Um
 
 const infosUm = document.getElementById("moreUm")
@@ -22,7 +25,7 @@ containerUm.addEventListener('click', removeInfosTres)
 containerUm.addEventListener('click', moreInfosUm);
 
 
-            // infos Dois
+    // infos Dois
 
 const infosDois = document.getElementById("moreDois")
 const arrowDois = document.getElementById("arrowDois")
@@ -46,7 +49,7 @@ containerDois.addEventListener('click', removeInfosTres)
 containerDois.addEventListener('click', moreInfosDois);
 
 
-            // infos Tres
+    // infos Tres
 
 const infosTres = document.getElementById("moreTres")
 const arrowTres = document.getElementById("arrowTres")
@@ -70,7 +73,7 @@ containerTres.addEventListener('click', removeInfosDois)
 containerTres.addEventListener('click', moreInfosTres);
 
 
-            // Removes
+    // Removes
 
 function removeInfosUm() {
     infosUm.classList.remove('informacoes')

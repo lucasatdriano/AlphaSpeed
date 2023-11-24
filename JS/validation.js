@@ -1,3 +1,5 @@
+        // Script para validar cadastro
+
 let rnome = document.getElementById("iNome");
 let rtel = document.getElementById("iTel");
 let remail = document.getElementById("iEmail");

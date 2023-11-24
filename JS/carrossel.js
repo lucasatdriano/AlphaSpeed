@@ -1,4 +1,4 @@
-// script slides
+        // Script para rodar slides
 
 var contador = 1;
 var img1="imagens/carrossel/imgCarrossel2.jpg";

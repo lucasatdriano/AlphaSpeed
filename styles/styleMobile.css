@@ -12,6 +12,10 @@
     main .carrossel img{
         height: 20em;
     }
+
+    main .scrollDesk {
+        display: none;
+    }
     
     main .carros {
         font-size: 16px;

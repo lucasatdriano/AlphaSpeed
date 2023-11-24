@@ -1,3 +1,5 @@
+        // Script para abrir localização
+
 const localizacao = document.getElementById("local")
 const seta = document.getElementById("seta")
 const abrir = document.getElementById("openLocal")

@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     overflow-x: hidden;
 }
@@ -152,6 +148,7 @@ main #sedan, #suv, #hatch, #esportivos {
     margin-left: -3em;
 
     overflow-x: scroll;
+    scroll-behavior: smooth;
     scroll-snap-type: x proximity;
 }
 
@@ -517,7 +514,8 @@ footer .socialMedias li:hover img {
 }
 
 footer hr {
-    width: 96%;
+    margin: auto;
+    width: 97%;
     border: 1px solid var(--color-white);
 }
 

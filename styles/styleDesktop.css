@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track {
+    border-radius: 0 2em 0 2em;
+}
+
 body::-webkit-scrollbar {
     width: .7em;
 }
@@ -172,14 +176,15 @@ main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:ho
 }
 
 main .scrollDesk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    padding: 5px 0;
+    display:grid;
+    place-items: center;
+    width: 2em;
+    padding: .3em .3em;
     position: relative;
     top: -10vh;
     cursor: pointer;
+    border: 1.5px solid;
+    border-radius: 50%;
 }
 
 main .scrollDesk:hover {

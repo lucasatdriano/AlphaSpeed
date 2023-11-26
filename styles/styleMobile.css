@@ -13,6 +13,10 @@
         height: 20em;
     }
 
+    main #sedan, #hatch {
+        width: 140%;
+    }
+
     main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
         display: none;
     }

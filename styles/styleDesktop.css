@@ -167,10 +167,6 @@ main #suv, #esportivos {
     padding-left: 4em;
 }
 
-#sedan, #hatch {
-    margin-right: -3em;
-}
-
 main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
     height: .5em;
     background: var(--color-white);
@@ -312,7 +308,7 @@ main form.filtrar input[type=range]::-webkit-slider-thumb {
 main form.filtrar input[type=button] {
     height: 2em;
     width: auto;
-    margin: 1em auto;
+    margin: 2.5em auto 0;
     padding: 0 1em;
     border-radius: 20px;
     background: #740b0b;

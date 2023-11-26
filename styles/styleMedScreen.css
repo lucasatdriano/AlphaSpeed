@@ -34,7 +34,7 @@
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 6em;
+        top: 7.2em;
         background: linear-gradient( var(--color-secundary), var(--color-primary));
         height: 0;
         padding: 0 0 1.5em;
@@ -124,6 +124,10 @@
         margin-left: 0em;
     }
 
+    main #sedan, #hatch {
+        width: 118%;
+    }
+
     main .carros {
         margin: 0 -2.5em 0;
     }
@@ -145,6 +149,10 @@
     
     main .login, .cadastro {
         width: 100%;
+    }
+
+    main .formLog, .formCad {
+        width: 65%;
     }
 
     main .imagemFundoLog ,.imagemFundoCad {

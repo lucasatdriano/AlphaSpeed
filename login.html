@@ -40,24 +40,27 @@
     <main>
 
         <section class="login">
-            <form class="formLog" action="" method="post">    
+            <form class="formLog" method="post">    
                 <h2>LOGIN</h2>
+                <div id='msgError'></div>
+
                 <p>
-                    <label for="iNome">E-mail:</label>
+                    <label id="usuario" for="iUsuario">Usuário:</label>
                     <i class="material-symbols-rounded">person</i>
-                    <input type="text" name="iNome" id="iNome" placeholder="Digite seu Nome de usuário" required>
+                    <input type="text" name="iUsuario" id="iUsuario" placeholder="Digite seu Nome de usuário">
                 </p>
                 <span id="spanNome"></span>
                 
                 <p>
-                    <label for="iSenha">Senha:</label>
+                    <label id="senha" for="iSenha">Senha:</label>
                     <i class="material-symbols-rounded">password</i>
-                    <input type="password" name="iSenha" id="iSenha" placeholder="Digite sua Senha" minlength="8" required>
+                    <input type="password" name="iSenha" id="iSenha" placeholder="Digite sua Senha">
+                    <i class="material-symbols-rounded visibility">visibility</i>
                 </p>
                 <span id="spanSenha"></span>
 
                 <p>
-                    <input type="button" onclick="validaLog()" value="LOGIN">
+                    <input id="btnLogin" onclick='login()' onclick="validaLog()" type="button" value="LOGIN">
                 </p>
 
             </form>
@@ -204,7 +207,7 @@
 
     </footer>
 
-    <script src="JS/validation.js" defer></script>
+    <script src="JS/login.js"></script>
     <script src="JS/openLocal.js" defer></script>
     <script src="JS/navbarMobile.js" defer></script>
     <script src="JS/mostMore.js" defer></script>

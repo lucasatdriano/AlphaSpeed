@@ -5,17 +5,19 @@ body {
 }
 
 body::-webkit-scrollbar-track {
-    border-radius: 0 2em 0 2em;
+    background-color: var(--color-white);
+    border-radius: 0 50em 0 50em;
 }
 
 body::-webkit-scrollbar {
     width: .7em;
+    background: linear-gradient( var(--color-primary), var(--color-secundary));
 }
   
 body::-webkit-scrollbar-thumb {
     background-color: var(--color-primary);
     border-radius: 0 2em 0 2em;
-    border: 1.5px solid var(--color-white);
+    border: 1px solid var(--color-white);
 }
 
 h2 {
@@ -143,17 +145,22 @@ main #modelos h2 {
     text-align: start;
 }
 
-main #sedan, #suv, #hatch, #esportivos {
+main #sedan, #suv, #hatch, #esportivos, #todosCarros {
     display: grid;
     grid-auto-flow: column;
+    width: 100%;
     font-size: 22px;
     text-align: center;
     padding-right: 5em;
-    margin-left: -3em;
 
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x proximity;
+}
+
+main #sedan, #hatch {
+    width: 108.5%;
+    margin-left: -2.7em;
 }
 
 main #suv, #esportivos {
@@ -164,8 +171,21 @@ main #suv, #esportivos {
     margin-right: -3em;
 }
 
-main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar {
-    display: none;
+main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
+    height: .5em;
+    background: var(--color-white);
+}
+
+main #sedan::-webkit-scrollbar-track, #suv::-webkit-scrollbar-track, #hatch::-webkit-scrollbar-track, #esportivos::-webkit-scrollbar-track, #todosCarros::-webkit-scrollbar-track {
+    background-color: #f1f1f1c8;
+    border-radius: 0 50em 0 50em;
+}
+
+main #sedan::-webkit-scrollbar-thumb, #suv::-webkit-scrollbar-thumb, #hatch::-webkit-scrollbar-thumb, #esportivos::-webkit-scrollbar-thumb, #todosCarros::-webkit-scrollbar-thumb {
+    height: .5em;
+    background-color: var(--color-primary);
+    border-radius: 0 2em 0 2em;
+    border: 1px solid var(--color-white);
 }
 
 main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:hover .carros:not(:hover), #esportivos:hover .carros:not(:hover) {
@@ -175,34 +195,14 @@ main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:ho
     transition: ease .3s;
 }
 
-main .scrollDesk {
-    display:grid;
-    place-items: center;
-    width: 2em;
-    padding: .3em .3em;
-    position: relative;
-    top: -10vh;
-    cursor: pointer;
-    border: 1.5px solid;
-    border-radius: 50%;
-}
-
-main .scrollDesk:hover {
-    transform:scale(1.1);
-}
-
-main #btnScrollSedan, #btnScrollSuv, #btnScrollHatch, #btnScrollSport, #btnScrollAll {
-    left: 94%;
-}
-
 main .carros {
     width: 30em;
     height: 18em;
     margin: 0 -2em 0 0;
     object-fit: contain;
-    cursor: pointer;
     transform: scale(0.9);
     scroll-snap-align: center;
+    cursor: pointer;
 }
 
 main .carros:hover {
@@ -333,17 +333,8 @@ main hr {
 }
 
 main #todosCarros {
-    display: grid;
-    grid-auto-flow: column;
-    text-align: center;
-    margin-top: -5em;
-
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-main #todosCarros::-webkit-scrollbar {
-    display: none;
+    margin: -5em 0 0 0;
+    padding: 0;
 }
 
 main #todosCarros:hover .carros:not(:hover) {
@@ -464,6 +455,7 @@ main #local.ativo {
     /* Footer */
 
 footer {
+    border-top: 1.5px solid var(--color-gray);
     background: linear-gradient( var(--color-primary), var(--color-secundary));
     box-shadow: 5px 3px 5px 0 #73737380;
 }
@@ -550,8 +542,21 @@ main .login, .cadastro {
 }
 
 main .formLog, .formCad {
-    width: 80%;
-} 
+    width: 60%;
+}
+
+main #msgError {
+    text-align: center;
+    color: #bc0000;
+    padding: 1em;
+    display: none;
+}
+
+main #msgSuccess{
+    text-align: center;
+    padding: 1em;
+    display: none;
+}
 
 main .login label, .cadastro label {
     display: none;
@@ -579,15 +584,36 @@ main .login i, .cadastro i {
     padding: .15em;
 }
 
+main .login .visibility, .cadastro .visibility {
+    position: relative;
+    top: -1.2em;
+    left: 9.7em;
+    color: var(--color-darkGray);
+    cursor: pointer;
+}
+
 main .login span, .cadastro span {
     color: #bc0000;
     display: none;
 }
 
+main #spanSenha, #spanConf, #iConfSenha, input[type=button] {
+    position: relative;
+    top: -2.5em;
+}
+
+main #confirmarsenha .visibility {
+    top: -2.7em;
+}
+
+main #confirmarsenha .cadeado {
+    top: -.1em;
+}
+
 main .login input[type=button], .cadastro input[type=button] {
     color:var(--color-white);
     text-indent: 0;
-    margin: 1.5em 0 0;
+    margin: 2em 0 0;
     letter-spacing: 1px;
     background-color: #740b0b;
     font-size: 16px;
@@ -600,8 +626,10 @@ main .login input[type=button]:hover, .cadastro input[type=button]:hover {
 }
 
 main .login button {
-    margin-right: 1vw;
+    top: -2em;
+    margin: 0 0 0 1vw;
     color:var(--color-primary);
+    position: relative;
     padding: 0 6em;
     border-radius: 15px;
     text-decoration: underline;
@@ -621,7 +649,7 @@ main .imagemFundoLog img {
     height: 25em;
     width: 100%;
     position: relative;
-    margin-top: -21em;
+    margin-top: -27em;
     left: 40%;
     object-fit: cover;
     filter: drop-shadow(7px 5px 7px #73737380);
@@ -632,7 +660,7 @@ main .imagemFundoCad img {
     height: 35em;
     width: 100%;
     position: relative;
-    margin-top: -31em;
+    margin-top: -37em;
     left: 40%;
     object-fit: cover;
     filter: drop-shadow(7px 5px 7px #73737380);

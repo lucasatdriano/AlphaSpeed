@@ -41,43 +41,48 @@
         <section class="cadastro">
             <form class="formCad" method="post">
                 <h2>Cadastro</h2>
+                <div id='msgError'></div>
+                <div id='msgSuccess'></div>
+
                 <p>
-                    <label for="iNome">Nome:</label>
+                    <label id="nome" for="iUsuario">Usuário:</label>
                     <i class="material-symbols-rounded">person</i>
-                    <input type="text" name="iNome" id="iNome" placeholder="Digite seu Nome" maxlength="40">
+                    <input type="text" name="iUsuario" id="iUsuario" placeholder="Digite seu Nome" maxlength="40">
                 </p>
                 <span id="spanNome"></span>
 
                 <p>
-                    <label for="iTel">Telefone:</label>
+                    <label id="tel" for="iTel">Telefone:</label>
                     <i class="material-symbols-rounded">call</i>                                                                                                                                
                     <input type="tel" name="iTel" id="iTel" placeholder="Digite seu Telefone" pattern="^\d{11}$" maxlength="14">
                 </p>
                 <span id="spanTel"></span>
 
                 <p>
-                    <label for="iEmail">E-mail:</label>
+                    <label id="email" for="iEmail">E-mail:</label>
                     <i class="material-symbols-rounded">mail</i>
                     <input type="email" name="iEmail" id="iEmail" placeholder="Digite seu Email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$" maxlength="30">
                 </p>
                 <span id="spanEmail"></span>
 
                 <p>
-                    <label for="iSenha">Senha:</label>
+                    <label id="senha" for="iSenha">Senha:</label>
                     <i class="material-symbols-rounded">password</i>
                     <input type="password" name="iSenha" id="iSenha" placeholder="Digite sua Senha" minlength="8">
+                    <i id="verSenha" class="material-symbols-rounded visibility">visibility</i>
                 </p>
                 <span id="spanSenha"></span>
 
-                <p>
-                    <label for="iConfSenha">Confirmar senha:</label>
-                    <i class="material-symbols-rounded">encrypted</i>
+                <p id="confirmarsenha">
+                    <label id="labelConfSenha" for="iConfSenha">Confirmar senha:</label>
+                    <i class="material-symbols-rounded cadeado">encrypted</i>
                     <input type="password" name="iConfSenha" id="iConfSenha" placeholder="Confirme a sua Senha">
+                    <i id="verConfirmSenha" class="material-symbols-rounded visibility">visibility</i>
                 </p>
                 <span id="spanConf"></span>
 
                 <p>
-                    <input onclick="valida()" type="button" value="CADASTRAR">
+                    <input id="btnCadastrar" onclick='cadastrar()' onclick="valida()" type="button" value="CADASTRAR">
                 </p>
             </form>
         </section>
@@ -220,7 +225,7 @@
 
     </footer>
 
-    <script src="JS/validation.js" defer></script>
+    <script src="JS/cadastro.js"></script>
     <script src="JS/openLocal.js" defer></script>
     <script src="JS/navbarMobile.js" defer></script>
     <script src="JS/mostMore.js" defer></script>

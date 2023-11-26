@@ -13,7 +13,7 @@
         height: 20em;
     }
 
-    main .scrollDesk {
+    main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
         display: none;
     }
     

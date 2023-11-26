@@ -165,6 +165,7 @@ main #sedan, #hatch {
 
 main #suv, #esportivos {
     padding-left: 4em;
+    margin-left: -3em;
 }
 
 main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
@@ -623,7 +624,7 @@ main .login input[type=button]:hover, .cadastro input[type=button]:hover {
 
 main .login button {
     top: -2em;
-    margin: 0 0 0 1vw;
+    margin: 0 0 0 1.5em;
     color:var(--color-primary);
     position: relative;
     padding: 0 6em;

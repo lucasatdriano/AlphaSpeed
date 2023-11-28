@@ -17,22 +17,24 @@
 
         <nav id="navBarDesktop">
             <ul>
-                <li><a href="index.html" tabindex="1">Modelos</a></li>
-                <li><a href="index.html" tabindex="2">Filtrar</a></li>
-                <li><a href="index.html" tabindex="3">Sobre</a></li>
-                <li><a href="index.html" tabindex="4">Contatos</a></li>
+                <li><a href="#modelos" tabindex="1">Modelos</a></li>
+                <li><a href="#filtragem" tabindex="2">Filtrar</a></li>
+                <li><a href="#sobre" tabindex="3">Sobre</a></li>
+                <li><a href="#contato" tabindex="4">Contatos</a></li>
             </ul>
             <button translate="no" onclick="redirectlogin()" class="btnlogin" tabindex="5">Login</button>
         </nav>
         
-        <img id="menuMob" src="imagens/menuHam.png" alt="Menu hamburguer">
+        <a id="menuMob" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <i id="hamburguer"></i>
+        </a>
         <nav id="navBarMobile">
             <ul>
-                <li class="btn-nav"><a href="index.html">Modelos</a></li>
-                <li class="btn-nav"><a href="index.html">Filtrar</a></li>
-                <li class="btn-nav"><a href="index.html">Sobre</a></li>
-                <li class="btn-nav"><a href="index.html">Contatos</a></li>
-                <li><button translate="no" onclick="redirectlogin()" class="btnlogin">Login</button></li>
+                <li class="btn-nav" id="op1"><a href="#modelos">Modelos</a></li>
+                <li class="btn-nav" id="op2"><a href="#filtragem">Filtrar</a></li>
+                <li class="btn-nav" id="op3"><a href="#sobre">Sobre</a></li>
+                <li class="btn-nav" id="op4"><a href="#contato">Contatos</a></li>
+                <li id="op5"><button translate="no" onclick="redirectlogin()" class="btnlogin">Login</button></li>
             </ul>
         </nav>
     </header>
@@ -96,10 +98,11 @@
 
     </main>
 
-    <footer>
+    <footer id="contato">
 
-        <section class="footerMobile">
-                <article class="infos">
+        <section>
+            <div class="services">
+                <div class="infos">
                     <div id="containerUm">
                         <h3>Compra</h3>
                         <i id="arrowUm" class="material-symbols-rounded">arrow_drop_down</i>
@@ -111,9 +114,9 @@
                         <li><a href="#">Solicitar financiamento</a></li>
                         <li><a href="#">Locação</a></li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="infos">
+                <div class="infos">
                     <div id="containerDois">
                         <h3>Loja</h3>
                         <i id="arrowDois" class="material-symbols-rounded">arrow_drop_down</i>
@@ -126,9 +129,9 @@
                         <li><a href="#">Carros usados com certificado</a></li>
                         <li><a href="#">Carros sob demanda</a></li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="infos">
+                <div class="infos">
                     <div id="containerTres">
                         <h3>Suporte</h3>
                         <i id="arrowTres" class="material-symbols-rounded">arrow_drop_down </i>
@@ -142,44 +145,7 @@
                         <li><a href="#">Acessibilidade</a></li>
                         <li translate="no"><a href="#">Recals</a></li>
                     </ul>
-                </article>
-        </section>
-       
-        <section class="footerDesktop">
-            <div class="services">
-                <article>
-                    <h3>Compra</h3>
-                    <ul>
-                        <li><a href="#">Contate um vendedor</a></li>
-                        <li><a href="#">Valor de troca</a></li>
-                        <li><a href="#">Finança</a></li>
-                        <li><a href="#">Solicitar financiamento</a></li>
-                        <li><a href="#">Locação</a></li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Loja</h3>
-                    <ul>
-                        <li><a href="#">Ofertas especiais</a></li>
-                        <li><a href="#">Encontre um revendedor</a></li>
-                        <li><a href="#">Carros novos</a></li>
-                        <li><a href="#">Carros usados</a></li>
-                        <li><a href="#">Carros usados com certificado</a></li>
-                        <li><a href="#">Carros sob demanda</a></li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Suporte</h3>
-                    <ul>
-                        <li><a href="#">Contate-nos</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Carreiras</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Acessibilidade</a></li>
-                        <li translate="no"><a href="">Recals</a></li>
-                    </ul>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -202,8 +168,13 @@
                 </li>
             </ul>
         </div>
+
         <hr>
-        <p class="rodape"><small>&copy;2021 - Alpha Speed<br> Todos os direitos reservados. Confira a nossa <a href="#" target="_blank">Política de Privacidade</a>.</small></p>
+        <p class="rodape">
+            <small>&copy;2021 - Alpha Speed<br> Todos os direitos reservados. 
+                Confira a nossa <a href="#" target="_blank">Política de Privacidade</a>.
+            </small>
+        </p>
 
     </footer>
 

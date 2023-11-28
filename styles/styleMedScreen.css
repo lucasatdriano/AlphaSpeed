@@ -22,10 +22,31 @@
     }
 
     header #menuMob {
-        display: block;
-        width: 2em;
-        height: 2em;
+        --menu-size: 2.5em;
+        display: flex;
+        align-items: center;
         cursor: pointer;
+    }
+
+    header #hamburguer, #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        border-radius: 2em;
+        width: var(--menu-size);
+        height: calc(var(--menu-size) / 10);
+        background-color: var(--color-white);
+        position: absolute;
+
+        transition: all 200ms linear;
+    }
+
+    header #hamburguer::after {
+        transform: translateY(calc(var(--menu-size) / 2.5));
+        top: -2px;
+    }
+
+    header #hamburguer::before {
+        transform: translateY(calc(var(--menu-size) / -3));
     }
 
     header #navBarMobile {
@@ -46,7 +67,7 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        transition: 0ms;
+        transition: all 0ms ease;
     }
     
     header #navBarMobile .btn-nav{
@@ -65,44 +86,17 @@
         visibility: visible;
     }
 
-    header #navBarMobile #op1 {
-        transition-delay: .5s;
-    }
-    
-    header #navBarMobile #op2 {
-        transition-delay: .4s;
-    }
-    
-    header #navBarMobile #op3 {
-        transition-delay: .3s;
-    }
-    
-    header #navBarMobile #op4 {
-        transition-delay: .2s;
-    }
-    
-    header #navBarMobile #op5 {
-        transition-delay: .1s;
+    header #navBarMobile.active #hamburguer {
+        background-color: transparent;
     }
 
-    header #navBarMobile.active #op1 {
-        transition-delay: .1s;
-    }
+    header #navBarMobile.active #hamburguer::after {
+        transform: rotate(135deg);
+    } 
     
-    header #navBarMobile.active #op2 {
-        transition-delay: .2s;
-    }
-    
-    header #navBarMobile.active #op3 {
-        transition-delay: .4s;
-    }
-    
-    header #navBarMobile.active #op4 {
-        transition-delay: .6s;
-    }
-
-    header #navBarMobile.active #op5 {
-        transition-delay: .8s;
+    header #navBarMobile.active #hamburguer::before {
+        transform: rotate(-135deg);
+        top: -2px;
     }
 
     header .btnlogin {
@@ -153,6 +147,7 @@
 
     main .formLog, .formCad {
         width: 70%;
+        
     }
 
     main .imagemFundoLog ,.imagemFundoCad {

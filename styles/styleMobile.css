@@ -104,7 +104,7 @@
 
     main #local {
         flex-direction: column;
-        transition: ease 1.5s;
+        transition: all 1.5s ease;
     }
 
     main #local hr {
@@ -122,13 +122,11 @@
 
         /* Footer */
 
-    footer .footerDesktop {
-        display: none;
-    }
-
-    footer .footerMobile {
-        display: block;
-        padding: 1em 0;
+    footer .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1.5em;
     }
 
     footer #containerUm, #containerDois, #containerTres {
@@ -140,15 +138,15 @@
     }
 
     footer #arrowUm, #arrowDois, #arrowTres {
+        display: block;
         font-size: 25px;
         color: var(--color-white);
-       
     }
     
     footer #moreUm, #moreDois, #moreTres {
         display: none;
         text-indent: 15px;
-        transition: ease 1.5s;
+        transition: all 1.5s ease;
     }
 
     footer #moreUm.informacoes, #moreDois.informacoes, #moreTres.informacoes {

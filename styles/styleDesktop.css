@@ -81,7 +81,7 @@ header #navBarDesktop a:hover {
     font-size: 22px;
     border-top: 1.5px solid var(--color-white);
     border-bottom: 1.5px solid var(--color-white);
-    transition: ease 0.1s; 
+    transition: all 0.1s ease; 
 }       
 
 header .btnlogin {
@@ -98,7 +98,7 @@ header .btnlogin:hover {
     background-color: var(--color-white);
     border: .3vh solid var(--color-primary);
     color: var(--color-primary);
-    transition: ease 1s; 
+    transition: all 1s ease;   
 }
 
     /* Main */
@@ -164,8 +164,8 @@ main #sedan, #hatch {
 }
 
 main #suv, #esportivos {
-    padding-left: 4em;
-    margin-left: -3em;
+    width: 100%;
+    padding-left: 1em;
 }
 
 main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
@@ -189,7 +189,7 @@ main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:ho
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
-    transition: ease .3s;
+    all: all ease .3s ease; 
 }
 
 main .carros {
@@ -205,7 +205,7 @@ main .carros {
 main .carros:hover {
     transform: scale(1);
     max-height: 100%;
-    transition: ease .3s;
+    transition: all .3s ease; 
 }
 
 main .carros img {
@@ -321,7 +321,7 @@ main form.filtrar input[type=button] {
 
 main form.filtrar input[type=button]:hover {
     background-color: var(--color-primary);
-    transition: all .1s; 
+    transition: all .1s ease;  
 }
 
 main hr {
@@ -338,7 +338,7 @@ main #todosCarros:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
-    transition: ease .3s;
+    transition: all .3s ease; 
 }
 
 main #sobre {
@@ -411,7 +411,7 @@ main #local {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: ease .2s;
+    transition: all .2s ease; 
 }
 
 main #local p {
@@ -445,7 +445,7 @@ main #local {
 
 main #local.ativo {
     display: flex;
-    transition: ease .5s;
+    transition: all .5s ease; 
 }
 
 
@@ -457,7 +457,7 @@ footer {
     box-shadow: 5px 3px 5px 0 #73737380;
 }
 
-footer .footerMobile {
+footer #arrowUm, #arrowDois, #arrowTres {
     display: none;
 }
 
@@ -489,7 +489,7 @@ footer .socialMedias li {
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: all 0.3s;   
+    transition: all 0.3s ease;   
 }
 
 footer .socialMedias li a {
@@ -502,7 +502,7 @@ footer .socialMedias li a {
 footer .socialMedias img {
     width: 2em;
     stroke-width: 1.75;
-    transition: 0.8s;
+    transition: all 0.8s ease;
 }
 
 footer .socialMedias li:hover img {
@@ -639,7 +639,7 @@ main .login button {
 main .login button:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
-    transition: all .5s; 
+    transition: all .5s ease; 
 }
 
 main .imagemFundoLog img {

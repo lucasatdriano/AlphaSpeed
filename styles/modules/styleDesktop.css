@@ -117,6 +117,10 @@ main .topo {
     transition: 1s;
 }
 
+main .topo:hover {
+    opacity: 1;
+}
+
 main .topo.showBtn {
     right: 1em;
 }

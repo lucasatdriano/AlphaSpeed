@@ -9,8 +9,8 @@
     }
 
     header .logo {
-        width: 15em;
-        margin: 0 0 0 -10em;
+        width: 10em;
+        margin: 0 -10em;
     }
 
     header .logo img {
@@ -22,6 +22,7 @@
     }
 
     header #menuMob {
+        margin-left: 20em;
         --menu-size: 2.5em;
         display: flex;
         align-items: center;
@@ -61,6 +62,7 @@
         padding: 0 0 1.5em;
         border-radius: 0 0 10px 10px;
         transition: ease .8s;
+        list-style: none;
     }
     
     header #navBarMobile ul {
@@ -78,23 +80,23 @@
         border-bottom: 1.5px solid var(--color-white);
     }
 
-    header #navBarMobile.active {
+    header #nav.active #navBarMobile {
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 1000;
         height: auto;
         visibility: visible;
     }
 
-    header #navBarMobile.active #hamburguer {
+    header #nav.active #hamburguer {
         background-color: transparent;
     }
 
-    header #navBarMobile.active #hamburguer::after {
+    header #nav.active #hamburguer::after {
         transform: rotate(135deg);
     } 
     
-    header #navBarMobile.active #hamburguer::before {
+    header #nav.active #hamburguer::before {
         transform: rotate(-135deg);
         top: -2px;
     }
@@ -149,7 +151,7 @@
         width: 70%;
         
     }
-
+    
     main .imagemFundoLog ,.imagemFundoCad {
         display: none;
     }

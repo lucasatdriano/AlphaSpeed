@@ -268,7 +268,9 @@ main form.filtrar input, form.filtrar select {
     font-size: 18px;
     width: 95%;
     height: 1.5em;
-    border: 1px solid;
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
 }
 
 main form.filtrar input[type=date] {
@@ -561,13 +563,16 @@ main .login label, .cadastro label {
 
 main .login input, .cadastro input {
     text-indent: 40px;
+    display: inline-block;
     margin: 0;
     width: 18.5em;
     font-size: 16px;
     height: 2em;
     z-index: 0;
     border-radius: 15px;
-    border: .3vh solid var(--color-gray);
+    border: none;
+    border-bottom: .3vh solid var(--color-gray);
+    background-color: transparent;
 }
 
 main .login i, .cadastro i {

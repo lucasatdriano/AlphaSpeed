@@ -8,12 +8,12 @@
         text-align-last: center;
     }
 
-    header .logo {
+    header #logo {
         width: 10em;
-        margin: 0 -10em;
+        margin: 0 -5em;
     }
 
-    header .logo img {
+    header #logo img {
         width: 7em;
     }
 
@@ -49,43 +49,49 @@
     header #hamburguer::before {
         transform: translateY(calc(var(--menu-size) / -3));
     }
-
+    
     header #navBarMobile {
-        display: block;    
+        display: flex;
+        flex-direction: column;
+        list-style: none;
         visibility: hidden;
         position: absolute;
-        text-align: center;
-        width: 100%;
-        top: 7.2em;
         background: linear-gradient( var(--color-secundary), var(--color-primary));
-        height: 0;
+        width: 0;
+        right: 0;
+        top: 7.2em;
+        height: auto;
         padding: 0 0 1.5em;
         border-radius: 0 0 10px 10px;
-        transition: ease .8s;
-        list-style: none;
+        border: 2px solid var(--color-white);
+        border-top: none;
+        border-right: none;
+        filter: drop-shadow(5px 5px 3px 5px #4e4e4e80);
+        transition: all .6s ease-in;
     }
     
-    header #navBarMobile ul {
-        list-style: none;
+    header #navBarMobile li.btn-nav {
         display: flex;
-        flex-direction: column;
-        transition: all 0ms ease;
-    }
-    
-    header #navBarMobile .btn-nav{
-        text-indent: 3em;
+        align-items: center;
         font-size: 20px;
-        padding: 0;
-        margin: .75em 0 0 -2.5em;
+        padding: 20px 25% 5px;
         border-bottom: 1.5px solid var(--color-white);
+        margin-left: 50px;
+        opacity: 0;
+        transition: .5s;
     }
 
-    header #nav.active #navBarMobile {
+    header .btnlogin {
         display: flex;
-        flex-direction: column;
-        z-index: 1000;
-        height: auto;
-        visibility: visible;
+        align-items: center;
+        font-size: 18px;
+        margin: 25px 20% 0 30%;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    header #navBarMobile .btn-nav:hover {
+        font-size: 22px;
     }
 
     header #nav.active #hamburguer {
@@ -101,9 +107,20 @@
         top: -2px;
     }
 
-    header .btnlogin {
-        margin-top: 3em;
-        font-size: 16px;
+    header #nav.active #navBarMobile {
+        z-index: 1000;
+        width: 40%;
+        visibility: visible;
+    }
+
+    header #nav.active #navBarMobile li.btn-nav {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    header #nav.active #navBarMobile .btnlogin {
+        margin-left: 20%;
+        opacity: 1;
     }
 
 
@@ -148,10 +165,13 @@
     }
 
     main .formLog, .formCad {
-        width: 70%;
-        
+        width: 65%;
     }
-    
+
+    main .login button {
+        margin: 0;
+    }
+
     main .imagemFundoLog ,.imagemFundoCad {
         display: none;
     }

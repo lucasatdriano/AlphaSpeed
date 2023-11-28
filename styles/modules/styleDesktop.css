@@ -35,17 +35,18 @@ header {
     background: linear-gradient( var(--color-primary), var(--color-secundary));
     display: flex;
     align-items: center;
+    width: 100%;
     filter: drop-shadow(5px 3px 5px #4e4e4e80);
-    z-index: 0;
+    z-index: 1000;
 }
 
-header .logo {
-    width: 15em;
-    margin: 0 1em;
-}
-
-header .logo img {
+header #logo {
     width: 10em;
+    margin: 0 2em;
+}
+
+header #logo img {
+    width: 8em;
 }
 
 header #navBarMobile {
@@ -103,6 +104,24 @@ header .btnlogin:hover {
 
     /* Main */
 
+
+main .topo {
+    position: fixed;
+    right: -10em;
+    bottom: 1em;
+    background-color: var(--color-primary);
+    padding: .5em .5em .2em;
+    border-radius: 50%;
+    font-size: 18px;
+    opacity: .7;
+    z-index: 100;
+    transition: 1s;
+}
+
+main .topo.showBtn {
+    right: 1em;
+}
+
 main .carrossel img {
     object-fit: cover;
     width: 100%;
@@ -116,11 +135,11 @@ main #btnSlide {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    opacity: 0.5;
+    opacity: .5;
 }
 
 main #btnSlide:hover {
-    opacity: 0.7;
+    opacity: .7;
 }
 
 main #btnSlide input[type=radio] {
@@ -244,7 +263,7 @@ main #filtro {
     width: 75vw;
     border-radius: 20px;
     border: 2px solid var(--color-black);
-    z-index: 100;
+    z-index: 10;
     box-shadow: 5px 3px 5px #73737380;
 }
 
@@ -588,6 +607,7 @@ main .login i, .cadastro i {
 
 main .login .visibility, .cadastro .visibility {
     position: relative;
+    z-index: -1;
     top: -1.2em;
     left: 9.7em;
     color: var(--color-darkGray);
@@ -618,6 +638,7 @@ main .login input[type=button], .cadastro input[type=button] {
     margin: 2em 0 0;
     letter-spacing: 1px;
     background-color: #740b0b;
+    z-index: -1;
     font-size: 16px;
     border: 2px solid var(--color-secundary);
     cursor: pointer;

@@ -101,8 +101,8 @@ header .btnlogin:hover {
     transition: all 1s ease;   
 }
 
-    /* Main */
 
+    /* Main */
 
 main .topo {
     position: fixed;
@@ -118,7 +118,7 @@ main .topo {
 }
 
 main .topo:hover {
-    opacity: 1;
+    opacity: .9;
 }
 
 main .topo.showBtn {
@@ -376,7 +376,6 @@ main #sobre .about{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns:  1fr;
-
 }
 
 main #sobre .posicionamentoMob, .posicionamentoMobDois {
@@ -423,7 +422,6 @@ main .localidade i {
     cursor: pointer;
     font-size: 30px;
     color: var(--color-gray);
-    
 }
 
 main .localidade i:hover {
@@ -496,7 +494,6 @@ footer .services ul {
     list-style: none;
 }
 
-
 footer .services a:hover {
     text-decoration: underline;
 }
@@ -505,8 +502,7 @@ footer .socialMedias {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    margin: 0 2em 1em;   
- 
+    margin: 0 2em 1em;
 }
 
 footer .socialMedias li {
@@ -551,7 +547,6 @@ footer .rodape a {
 
 
     /* CSS DO LOGIN E CADASTRO */
-
 
 main .login, .cadastro {
     width: 40%;
@@ -644,11 +639,11 @@ main .login input[type=button], .cadastro input[type=button] {
     z-index: -1;
     font-size: 16px;
     border: 2px solid var(--color-secundary);
-    cursor: pointer;
 }
 
 main .login input[type=button]:hover, .cadastro input[type=button]:hover {
     background-color: var(--color-primary);
+    cursor: pointer;
 }
 
 main .login button {

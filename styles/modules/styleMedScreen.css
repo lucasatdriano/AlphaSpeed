@@ -128,9 +128,12 @@
     /* Main */
 
     main .carrossel img {
-        position: relative;
-        height: 25em;
-        z-index: -1;
+        height: 30em;
+    }
+
+    main .carrossel #setaSlidesAnt, #setaSlidesProx {
+        bottom: 65%;
+        padding: 2em .5em;
     }
 
     main #suv, #esportivos {

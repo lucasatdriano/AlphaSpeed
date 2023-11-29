@@ -1,27 +1,98 @@
         // Script para rodar slides
 
-var contador = 1;
-var img1="../imagens/carrossel/imgCarrossel2.jpg";
-var img2="../imagens/carrossel/imgCarrossel3.jpg";
-var img3="../imagens/carrossel/imgCarrossel4.jpg";
-var img4="../imagens/carrossel/imgCarrossel5.jpg";
-var img5="../imagens/carrossel/imgCarrossel6.jpg";
-var img6="../imagens/carrossel/imgCarrossel1.jpg";
-var tempo=2500;
-var exibir=setInterval("exibindo()",tempo);
+var contador = 1
+const img1 = "../imagens/carrossel/imgCarrossel2.jpg"
+const img2 = "../imagens/carrossel/imgCarrossel3.jpg"
+const img3 = "../imagens/carrossel/imgCarrossel4.jpg"
+const img4 = "../imagens/carrossel/imgCarrossel5.jpg"
+const img5 = "../imagens/carrossel/imgCarrossel6.jpg"
+const img6 = "../imagens/carrossel/imgCarrossel1.jpg"
+var tempo = 2500
+var exibir = setInterval("Exibindo()",tempo)
 
-function exibindo() {
-    document.images["slide"].src=eval("img"+contador);
-    document.getElementById("v"+contador).checked=true;
+function Exibindo() {
+    document.images["slide"].src=eval("img"+contador)
+    document.getElementById("v"+contador).checked=true
 
-    if (contador<6)
-        contador++;
-    else
-        contador=1;
+    if (contador < 6) {
+        contador++
+    }
+    else {
+        contador = 1
+    }
 }
 
-function muda(x) {
-    clearInterval(exibir);
-    contador=x;
-    exibir=setInterval(exibindo(),tempo);
+function Muda(x) {
+    clearInterval(exibir)
+    contador = x
+    exibir = setInterval(Exibindo(),tempo)
 }
+
+const btnProx = document.querySelector('#setaSlidesProx')
+const btnAnt = document.querySelector('#setaSlidesAnt')
+
+function Anterior() {
+    document.images["slide"].src=eval("img"+contador)
+    
+    if (contador == 6) {
+        Muda(5)
+        contador = 5
+    }
+    else if (contador == 5) {
+        Muda(4)
+        contador = 4
+    }
+    else if (contador == 4) {
+        Muda(3)
+        contador = 3
+    }
+    else if (contador == 3) {
+        Muda(2)
+        contador = 2
+    }
+    else if (contador == 2) {
+        Muda(1)
+        contador = 1
+    }
+    else {
+        Muda(6)
+        contador = 6
+    }
+    
+    clearInterval(exibir)
+    exibir=setInterval("Exibindo()",tempo)
+}
+btnAnt.addEventListener('click', Anterior)
+    
+function Proximo() {
+    document.images["slide"].src=eval("img"+contador)
+    
+    if (contador == 1) {
+        Muda(1)
+        contador = 2
+    }
+    else if (contador == 2) {
+        Muda(2)
+        contador = 3
+    }
+    else if (contador == 3) {
+        Muda(3)
+        contador = 4
+    }
+    else if (contador == 4) {
+        Muda(4)
+        contador = 5
+    }
+    else if (contador == 5) {
+        Muda(5)
+        contador = 6
+    }
+    else {
+        Muda(6)
+        contador = 1
+    }
+    
+    clearInterval(exibir)
+    exibir=setInterval("Exibindo()",tempo)
+}
+btnProx.addEventListener('click', Proximo)

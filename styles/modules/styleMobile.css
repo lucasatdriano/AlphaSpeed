@@ -25,10 +25,6 @@
     
         /* Main */
 
-    main .carrossel img{
-        height: 30em;
-    }
-
     main #sedan, #hatch {
         width: 140%;
     }

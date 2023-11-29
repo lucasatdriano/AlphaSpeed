@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 3rem;
     font-family: var(--font-title);
     text-align: center;
 }
@@ -58,7 +58,7 @@ header #menuMob {
 
 header #navBarDesktop {
     width: 100%;
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +78,7 @@ header #navBarDesktop ul li {
 }
 
 header #navBarDesktop a:hover {
-    font-size: 22px;
+    font-size: 2.2rem;
     border-top: 1.5px solid var(--color-white);
     border-bottom: 1.5px solid var(--color-white);
     transition: all 0.1s ease; 
@@ -89,7 +89,7 @@ header .btnlogin {
     padding: 0 2em;
     border-radius: 3em;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 2rem;
     border: 1.5px solid var(--color-white);
     cursor: pointer;
 }
@@ -101,8 +101,8 @@ header .btnlogin:hover {
     transition: all 1s ease;   
 }
 
-
     /* Main */
+
 
 main .topo {
     position: fixed;
@@ -111,7 +111,7 @@ main .topo {
     background-color: var(--color-primary);
     padding: .5em .5em .2em;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 1.8rem;
     opacity: .7;
     z-index: 100;
     transition: 1s;
@@ -139,6 +139,7 @@ main #btnSlide {
     left: 50%;
     transform: translate(-50%, 0);
     opacity: .5;
+    z-index: -1;
 }
 
 main #btnSlide:hover {
@@ -171,7 +172,7 @@ main #sedan, #suv, #hatch, #esportivos, #todosCarros {
     display: grid;
     grid-auto-flow: column;
     width: 100%;
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
     padding-right: 5em;
 
@@ -240,7 +241,7 @@ main .carros img {
 main .carros span{
     visibility: hidden;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 main .carros:hover span{
@@ -271,7 +272,7 @@ main #filtro {
 }
 
 main form.filtrar {
-    font-size: 20px;
+    font-size: 2rem;
     padding: 1.5em;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -280,14 +281,14 @@ main form.filtrar {
 }
 
 main form.filtrar p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--color-black);
 }
 
 main form.filtrar input, form.filtrar select {
     text-indent: 5px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 1.8rem;
     width: 95%;
     height: 1.5em;
     border: none;
@@ -338,7 +339,7 @@ main form.filtrar input[type=button] {
     border-radius: 20px;
     background: #740b0b;
     color: var(--color-white);
-    font-size: 22px;
+    font-size: 2.2rem;
     border: 3px solid var(--color-primary);
     cursor: pointer;
 }
@@ -376,6 +377,7 @@ main #sobre .about{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns:  1fr;
+
 }
 
 main #sobre .posicionamentoMob, .posicionamentoMobDois {
@@ -398,7 +400,7 @@ main #sobre img {
 
 main #sobre p {
     color: var(--color-black);
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: justify;
     width: 50%;
     margin: 0 2.5em 0;
@@ -415,17 +417,18 @@ main .localidade {
 
 main .localidade h3 {
     color: var(--color-gray);
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 main .localidade i {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--color-gray);
+    
 }
 
 main .localidade i:hover {
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 main #local {
@@ -438,7 +441,7 @@ main #local {
 
 main #local p {
     color: var(--color-gray);
-    font-size: 20px;
+    font-size: 2rem;
     padding: 1em;
 }
 
@@ -484,7 +487,7 @@ footer #arrowUm, #arrowDois, #arrowTres {
 }
 
 footer .services {
-    font-size: 18px;
+    font-size: 1.8rem;
     display: flex;
     padding-top: 1em;
     justify-content: space-around;
@@ -493,6 +496,7 @@ footer .services {
 footer .services ul {
     list-style: none;
 }
+
 
 footer .services a:hover {
     text-decoration: underline;
@@ -520,7 +524,7 @@ footer .socialMedias li a {
 }
 
 footer .socialMedias img {
-    width: 2em;
+    width: 3em;
     stroke-width: 1.75;
     transition: all 0.8s ease;
 }
@@ -547,6 +551,7 @@ footer .rodape a {
 
 
     /* CSS DO LOGIN E CADASTRO */
+
 
 main .login, .cadastro {
     width: 40%;
@@ -583,7 +588,7 @@ main .login input, .cadastro input {
     display: inline-block;
     margin: 0;
     width: 18.5em;
-    font-size: 16px;
+    ize: 16px;
     height: 2em;
     z-index: 0;
     border-radius: 15px;
@@ -597,7 +602,7 @@ main .login i, .cadastro i {
     top: 1.4em;
     left: .1em;
     color: var(--color-black);
-    font-size: 27px;
+    font-size: 2.7rem;
     width: 3em;
     z-index: 1;
     padding: .15em;
@@ -637,13 +642,13 @@ main .login input[type=button], .cadastro input[type=button] {
     letter-spacing: 1px;
     background-color: #740b0b;
     z-index: -1;
-    font-size: 16px;
+    font-size: 1.6rem;
     border: 2px solid var(--color-secundary);
+    cursor: pointer;
 }
 
 main .login input[type=button]:hover, .cadastro input[type=button]:hover {
     background-color: var(--color-primary);
-    cursor: pointer;
 }
 
 main .login button {
@@ -655,7 +660,7 @@ main .login button {
     border-radius: 15px;
     text-decoration: underline;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 1.6rem;
     border: 2px solid var(--color-primary);
     cursor: pointer;
 }

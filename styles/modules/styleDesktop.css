@@ -41,11 +41,11 @@ header {
 
 header #logo {
     width: 10em;
-    margin: 0 2em;
+    margin: 0 5em 0 2em;
 }
 
 header #logo img {
-    width: 8em;
+    width: 12em;
 }
 
 header #navBarMobile {
@@ -390,7 +390,7 @@ main #sobre .posicionamentoMobDois {
 }
   
 main #sobre img {
-    height: 15em;
+    height: 25em;
     width: 45%;
     object-fit: cover;
     border-radius: 10px;
@@ -456,7 +456,7 @@ main #local hr {
 }
 
 main #local iframe {
-    width: 30em;
+    width: 40em;
     height: 15em;
     margin-right: 1em;
     border-radius: 2vw;

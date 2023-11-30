@@ -1,4 +1,4 @@
-        // script para button:  voltar ao topo
+        // script para button: back to top
         
 const btnTopo = document.querySelector(".topo")
 
@@ -7,16 +7,13 @@ function BackTop() {
 }
 btnTopo.addEventListener("click", BackTop)
 
-const scrollAnima = document.querySelector('[data-anima="scroll"]');
-const metadeWindow = window.innerHeight * 5.2;
-
-function AnimarScroll() {
-    const topoItem = scrollAnima.getBoundingClientRect().top;
-    const itemVisivel = topoItem - metadeWindow < 0;
-    if (itemVisivel) {
-        scrollAnima.classList.add('showBtn');
+const backToTop = () => {
+    if (window.scrollY >= 100) {
+        btnTopo.classList.add('showBtn')
     } else {
-        scrollAnima.classList.remove('showBtn');
-    };
-};
-window.addEventListener('scroll', AnimarScroll);
+        btnTopo.classList.remove('showBtn')
+    }
+}
+window.addEventListener('scroll', function () {
+    backToTop()
+})

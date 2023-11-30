@@ -10,7 +10,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar {
-    width: .7em;
+    width: 1.2em;
     background: linear-gradient( var(--color-primary), var(--color-secundary));
 }
   
@@ -41,11 +41,11 @@ header {
 
 header #logo {
     width: 10em;
-    margin: 0 5em 0 2em;
+    margin: 0 7em 0 2em;
 }
 
 header #logo img {
-    width: 12em;
+    width: 13em;
 }
 
 header #navBarMobile {
@@ -81,7 +81,7 @@ header #navBarDesktop a:hover {
     font-size: 2.2rem;
     border-top: 1.5px solid var(--color-white);
     border-bottom: 1.5px solid var(--color-white);
-    transition: all 0.1s ease; 
+    transition: all .3s ease; 
 }       
 
 header .btnlogin {
@@ -112,13 +112,13 @@ main .topo {
     padding: .5em .5em .2em;
     border-radius: 50%;
     font-size: 1.8rem;
-    opacity: .7;
     z-index: 100;
     transition: 1s;
+    opacity: .3;
 }
 
 main .topo:hover {
-    opacity: .9;
+    opacity: .8;
 }
 
 main .topo.showBtn {
@@ -130,7 +130,7 @@ main .carrossel img {
     z-index: -1;
     object-fit: cover;
     width: 100%;
-    height: 45em;
+    height: 60em;
     border-radius: 0 0 20px 20px;
     filter: drop-shadow(5px 3px 5px #73737380);
 }
@@ -165,7 +165,7 @@ main .carrossel #setaSlidesAnt, #setaSlidesProx {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     padding: 2em 1em;
     color: var(--color-gray);
     background-color: #1c1c1caa;
@@ -241,7 +241,7 @@ main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:ho
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;
-    all: all ease .3s ease; 
+    transition: all .5s ease; 
 }
 
 main .carros {
@@ -257,7 +257,7 @@ main .carros {
 main .carros:hover {
     transform: scale(1);
     max-height: 100%;
-    transition: all .3s ease; 
+    transition: all .5s ease; 
 }
 
 main .carros img {
@@ -701,8 +701,7 @@ main .login button:hover {
     transition: all .5s ease; 
 }
 
-main .imagemFundoLog img {
-    height: 25em;
+main .imagemFundoLog img, .imagemFundoCad img {
     width: 100%;
     position: relative;
     margin-top: -27em;
@@ -712,13 +711,12 @@ main .imagemFundoLog img {
     border-radius: 20px 0 0 20px;
 }
 
+main .imagemFundoLog img {
+    height: 40em;
+    margin-top: -35em;
+}
+
 main .imagemFundoCad img {
-    height: 35em;
-    width: 100%;
-    position: relative;
-    margin-top: -37em;
-    left: 40%;
-    object-fit: cover;
-    filter: drop-shadow(7px 5px 7px #73737380);
-    border-radius: 20px 0 0 20px;
+    height: 55em;
+    margin-top: -55em;
 }

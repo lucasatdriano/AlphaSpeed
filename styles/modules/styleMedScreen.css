@@ -63,10 +63,10 @@
         background: linear-gradient( var(--color-secundary), var(--color-primary));
         width: 0;
         right: 0;
-        top: 9em;
+        top: 9.1em;
         height: auto;
         padding: 0 0 1.5em;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 15px 15px;
         border: 2px solid var(--color-white);
         border-top: none;
         border-right: none;

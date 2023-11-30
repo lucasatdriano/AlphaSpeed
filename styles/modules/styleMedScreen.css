@@ -136,7 +136,7 @@
     }
 
     main .carrossel #setaSlidesAnt, #setaSlidesProx {
-        bottom: 65%;
+        bottom: 60%;
         padding: 2em .5em;
     }
 

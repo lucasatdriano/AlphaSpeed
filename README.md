@@ -5,9 +5,11 @@ With HTML:
 - We create the pages and connect them to each other;
 - We put the links for redirects;
 - And we added the images;
+
 With CSS:
 - We styled these pages;
 - And we create pseudocodes for further decoration in specific elements;
+
 With JavaScript:
 - Create the slide carousel and functions;
 - Create the cadastro screen functional and login screen functional;

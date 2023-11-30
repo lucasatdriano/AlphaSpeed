@@ -26,7 +26,7 @@
         /* Main */
 
     main #sedan, #hatch {
-        width: 140%;
+        width: 150%;
     }
 
     main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
@@ -165,4 +165,14 @@
         display: block;
     }
 
+    
+    /* CSS DA TELA DE LOGIN*/
+
+    main .formLog, .formCad {
+        width: 70%;
+    }
+    
+    main .login button {
+        margin: 0 .1em 0 0;
+    }
 }

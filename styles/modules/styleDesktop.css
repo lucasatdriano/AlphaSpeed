@@ -141,7 +141,7 @@ main #btnSlide {
     left: 50%;
     transform: translate(-50%, 0);
     opacity: .5;
-    z-index: 1;
+    z-index: -1;
 }
 
 main #btnSlide:hover {
@@ -162,7 +162,7 @@ main #btnSlide input[type=radio]:checked {
 
 main .carrossel #setaSlidesAnt, #setaSlidesProx {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     bottom: 40%;
     padding: 2em 1em;
     color: var(--color-gray);
@@ -294,7 +294,7 @@ main #filtro {
     width: 75vw;
     border-radius: 20px;
     border: 2px solid var(--color-black);
-    z-index: 10;
+    z-index: 1;
     box-shadow: 5px 3px 5px #73737380;
 }
 
@@ -622,7 +622,6 @@ main .login input, .cadastro input {
     width: 18.5em;
     font-size: 1.6rem;
     height: 2em;
-    z-index: 0;
     border-radius: 15px;
     border: none;
     border-bottom: .3vh solid var(--color-gray);
@@ -631,22 +630,39 @@ main .login input, .cadastro input {
 
 main .login i, .cadastro i {
     position: relative;
-    top: 1.4em;
+    top: 1.3em;
     left: .1em;
     color: var(--color-black);
     font-size: 2.7rem;
     width: 3em;
-    z-index: 1;
+    z-index: -1;
     padding: .15em;
 }
 
 main .login .visibility, .cadastro .visibility {
-    position: relative;
-    z-index: -1;
     top: -1.2em;
     left: 9.7em;
     color: var(--color-darkGray);
     cursor: pointer;
+}
+
+main .cadastro .visibility  {
+    z-index: 1;
+}
+
+main #spanSenha, #spanConf, #iConfSenha {
+    position: relative;
+    top: -2.5em;
+}
+
+main #confirmarsenha .visibility  {
+    z-index: 1;
+    top: -2.7em;
+}
+
+
+main #confirmarsenha .cadeado {
+    top: -.2em;
 }
 
 main .login span, .cadastro span {
@@ -654,26 +670,13 @@ main .login span, .cadastro span {
     display: none;
 }
 
-main #spanSenha, #spanConf, #iConfSenha, input[type=button] {
-    position: relative;
-    top: -2.5em;
-}
-
-main #confirmarsenha .visibility {
-    top: -2.7em;
-}
-
-main #confirmarsenha .cadeado {
-    top: -.1em;
-}
-
 main .login input[type=button], .cadastro input[type=button] {
     color:var(--color-white);
     text-indent: 0;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     letter-spacing: 1px;
     background-color: #740b0b;
-    z-index: -1;
+    z-index: 1;
     font-size: 1.6rem;
     border: 2px solid var(--color-secundary);
     cursor: pointer;
@@ -684,11 +687,11 @@ main .login input[type=button]:hover, .cadastro input[type=button]:hover {
 }
 
 main .login button {
-    top: -2em;
-    margin: 0 0 0 1.5em;
+    margin: 0 0 3em 1.5em;
     color:var(--color-primary);
     position: relative;
     padding: 0 6em;
+    z-index: 1;
     border-radius: 15px;
     text-decoration: underline;
     background-color: transparent;
@@ -716,7 +719,6 @@ main .imagemFundoLog img, .imagemFundoCad img {
 main .imagemFundoLog img {
     height: 40em;
     margin-top: -35em;
-
 }
 
 main .imagemFundoCad img {

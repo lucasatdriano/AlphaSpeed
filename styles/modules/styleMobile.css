@@ -165,10 +165,14 @@
         display: block;
     }
 
-
+    
     /* CSS DA TELA DE LOGIN*/
 
     main .formLog, .formCad {
         width: 70%;
+    }
+    
+    main .login button {
+        margin: 0 -.5em 0 0;
     }
 }

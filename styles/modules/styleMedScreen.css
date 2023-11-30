@@ -10,20 +10,24 @@
 
     header #logo {
         width: 10em;
-        margin: 0 -10em;
+        margin: 0 0 0 -20em;
     }
 
     header #logo img {
-        width: 7em;
+        width: 9em;
     }
 
     header #navBarDesktop {
         display: none;
     }
 
+    header #nav {
+        margin: 0 -15em;
+    }
+
     header #menuMob {
         margin-left: 20em;
-        --menu-size: 2.5em;
+        --menu-size: 3em;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -59,7 +63,7 @@
         background: linear-gradient( var(--color-secundary), var(--color-primary));
         width: 0;
         right: 0;
-        top: 7.2em;
+        top: 9em;
         height: auto;
         padding: 0 0 1.5em;
         border-radius: 0 0 10px 10px;

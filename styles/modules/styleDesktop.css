@@ -161,10 +161,8 @@ main #btnSlide input[type=radio]:checked {
 }
 
 main .carrossel #setaSlidesAnt, #setaSlidesProx {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
+    z-index: -1;
     bottom: 40%;
     padding: 2em 1em;
     color: var(--color-gray);
@@ -307,6 +305,10 @@ main form.filtrar {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5em;
+}
+
+main form.filtrar label{
+    text-indent: 5px;
 }
 
 main form.filtrar p {
@@ -714,6 +716,7 @@ main .imagemFundoLog img, .imagemFundoCad img {
 main .imagemFundoLog img {
     height: 40em;
     margin-top: -35em;
+
 }
 
 main .imagemFundoCad img {

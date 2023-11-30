@@ -7,7 +7,7 @@
     }
 
     header #logo {
-        margin: 0 15em 0 0 ;
+        margin: 0 0 0 -18em;
     }
 
     header #navBarDesktop {
@@ -24,6 +24,10 @@
 
     
         /* Main */
+
+    main .carrossel img{
+        height: 30em;
+    }
 
     main #sedan, #hatch {
         width: 140%;

@@ -595,14 +595,12 @@ main .login, .cadastro {
 }
 
 main .formLog, .formCad {
+    display: grid;
     margin: 4em 0 0;
     width: 100%;
     position:relative;
+    gap: 2em;
 } 
-
-main .formLog h2, .formCad h2 {
-    margin: 0 0 3em;
-}
 
 main #msgError {
     font-size: 1.5em;
@@ -622,7 +620,7 @@ main #msgSuccess{
 
 main .single-input {
     position: relative;
-    margin: 25px 0;
+    margin: 15px 0;
     z-index: -1;
 }
 
@@ -720,8 +718,8 @@ main .imagemFundoLog img, .imagemFundoCad img {
 }
 
 main .imagemFundoLog img {
-    height: 32em;
-    margin-top: -26em;
+    height: 50em;
+    margin-top: -37em;
 }
 
 main .imagemFundoCad img {

@@ -1,3 +1,5 @@
+            // Script para utilizar a função login
+
 let btn = document.querySelector('.visibility')
 
 btn.addEventListener('click', ()=>{

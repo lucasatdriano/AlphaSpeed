@@ -1,9 +1,5 @@
-        // Script para redirecionar buttons
+        // Script para redirecionar button
 
 function redirectlogin() {
     window.location = "login.html"
-}
-
-function redirectcadastro() {
-    window.location = "cadastrar.html"
 }

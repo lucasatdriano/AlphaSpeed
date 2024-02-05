@@ -1,3 +1,5 @@
+        // Script para se cadastrar ao site salvando os seus dados
+
 let usuario = document.querySelector('#iUsuario')
 let spanUsuario = document.querySelector("#spanNome");
 let validUsuario = false

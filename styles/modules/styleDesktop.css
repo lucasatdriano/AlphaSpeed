@@ -77,12 +77,16 @@ header #navBarDesktop ul li {
     padding: 2em 0;
 }
 
+header #navBarDesktop ul li:hover {
+    scale: 1.1;
+    transition: ease-out 0.3s; 
+}
+
 header #navBarDesktop a:hover {
-    scale: 1.2;
     border-top: 1.5px solid var(--color-white);
     border-bottom: 1.5px solid var(--color-white);
-    transition: all .3s ease; 
-}       
+    transition: ease-out 0.3s; 
+}           
 
 header .btnlogin {
     color:var(--color-white);

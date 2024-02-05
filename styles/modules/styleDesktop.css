@@ -96,9 +96,9 @@ header .btnlogin {
 
 header .btnlogin:hover {
     background-color: var(--color-white);
-    border: .3vh solid var(--color-primary);
     color: var(--color-primary);
-    transition: all 1s ease;   
+    transition: ease 1s;
+    box-shadow: 1px 1px 2px #d6d6d6c9;
 }
 
     /* Main */

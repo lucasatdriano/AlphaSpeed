@@ -630,7 +630,7 @@ main .single-input i {
     position: absolute;
     color: var(--color-black);
     font-size: 27px;
-    width: 3em;
+    left: 3px;
     padding: .15em;
 }
 
@@ -638,7 +638,7 @@ main .single-input input {
     text-indent: 40px;
     margin: 0;
     width: 18.5em;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     height: 2em;
     z-index: 0;
     border: none;
@@ -680,7 +680,7 @@ main .login input[type=button]:hover, .cadastro input[type=button]:hover {
     box-shadow: 1px 1px 2px var(--color-gray);
 }
 
-main .login button {
+main .login a {
     width: 100%;
     margin-top: 30px;
     height: 35px;
@@ -694,7 +694,7 @@ main .login button {
     cursor: pointer;
 }
 
-main .login button:hover {
+main .login a:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: 1px 1px 2px var(--color-gray);
@@ -720,8 +720,3 @@ main .imagemFundoCad img {
     height: 40em;
     margin-top: -34em;
 }
-
-
-
-
-

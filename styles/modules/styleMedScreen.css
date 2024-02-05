@@ -96,7 +96,7 @@
     }
 
     header #navBarMobile .btn-nav:hover {
-        font-size: 2.2rem;
+        scale: 1.2;
     }
 
     header #nav.active #hamburguer {

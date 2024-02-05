@@ -181,14 +181,7 @@
     
     main .login, .cadastro {
         width: 100%;
-    }
-
-    main .formLog, .formCad {
-        width: 65%;
-    }
-
-    main .login button {
-        margin: 0 .5em 0 0;
+        margin: 1em 0 5em;
     }
 
     main .imagemFundoLog ,.imagemFundoCad {

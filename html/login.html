@@ -50,18 +50,19 @@
         </div>
 
         <section class="login">
-            <form class="formLog" method="post">    
+            <form class="formLog" method="post"> 
                 <h2>LOGIN</h2>
+                
                 <div id='msgError'></div>
 
-                <p>
+                <p class="single-input">
                     <label id="usuario" for="iUsuario">Usuário:</label>
                     <i class="material-symbols-rounded">person</i>
                     <input type="text" name="iUsuario" id="iUsuario" placeholder="Digite seu Nome de usuário">
                 </p>
                 <span id="spanNome"></span>
                 
-                <p>
+                <p class="single-input">
                     <label id="senha" for="iSenha">Senha:</label>
                     <i class="material-symbols-rounded">password</i>
                     <input type="password" name="iSenha" id="iSenha" placeholder="Digite sua Senha">
@@ -73,10 +74,11 @@
                     <input id="btnLogin" onclick='login()' onclick="validaLog()" type="button" value="LOGIN">
                 </p>
 
+                <p>
+                    <button translate="no" onclick="redirectcadastro()" id="btnCadastre">CADASTRE-SE</button>
+                </p>
             </form>
-            <p>
-                <button translate="no" onclick="redirectcadastro()" id="btnCadastre">CADASTRE-SE</button>
-            </p>
+
         </section>
 
         <section class="imagemFundoLog">

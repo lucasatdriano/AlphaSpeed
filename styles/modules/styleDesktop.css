@@ -597,17 +597,21 @@ main .login, .cadastro {
 main .formLog, .formCad {
     margin: 4em 0 0;
     width: 100%;
+    position:relative;
 } 
 
 main .formLog h2, .formCad h2 {
-    margin: 0 0 2em;
+    margin: 0 0 3em;
 }
 
 main #msgError {
+    font-size: 1.5em;
     text-align: center;
     color: #bc0000;
     padding: 1em;
     display: none;
+    position: absolute;
+    top: 40px;
 }
 
 main #msgSuccess{
@@ -655,6 +659,10 @@ main .single-input input:focus {
 main .single-input input:valid {
     background-color: transparent;
     border-bottom: 2px solid #000000;
+}
+
+main .single-input .visibility {
+    left: 10em;
 }
 
 main .login span, .cadastro span {
@@ -717,6 +725,6 @@ main .imagemFundoLog img {
 }
 
 main .imagemFundoCad img {
-    height: 40em;
-    margin-top: -34em;
+    height: 60em;
+    margin-top: -52em;
 }

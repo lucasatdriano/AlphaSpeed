@@ -95,10 +95,6 @@
         transition: .5s;
     }
 
-    header #navBarMobile .btn-nav:hover {
-        scale: 1.2;
-    }
-
     header #nav.active #hamburguer {
         background-color: transparent;
     }

@@ -31,6 +31,8 @@ a, h3 {
     text-decoration: none;
 }
 
+        /* header */
+
 header {
     background: linear-gradient( var(--color-primary), var(--color-secundary));
     display: flex;
@@ -600,11 +602,16 @@ main .login, .cadastro {
 
 main .formLog, .formCad {
     display: grid;
+    justify-content: center;
     margin: 4em 0 0;
     width: 100%;
-    position:relative;
+    position: relative;
     gap: 2em;
 } 
+
+main .formLog h2, .formCad h2 {
+    z-index: -1;
+}
 
 main #msgError {
     font-size: 1.5em;
@@ -625,7 +632,6 @@ main #msgSuccess{
 main .single-input {
     position: relative;
     margin: 15px 0;
-    z-index: -1;
 }
 
 main .login label, .cadastro label {
@@ -638,6 +644,7 @@ main .single-input i {
     font-size: 27px;
     left: 3px;
     padding: .15em;
+    z-index: -1;
 }
 
 main .single-input input {
@@ -693,9 +700,9 @@ main .login input[type=button]:hover, .cadastro input[type=button]:hover {
 main .login a {
     width: 100%;
     margin-top: 30px;
-    height: 35px;
+    height: 40px;
     color:var(--color-primary);
-    padding: 0 6em;
+    padding: 0 105px;
     border-radius: 15px;
     text-decoration: underline;
     background-color: transparent;

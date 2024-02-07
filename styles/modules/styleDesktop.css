@@ -201,7 +201,7 @@ main #modelos h2 {
     text-align: start;
 }
 
-main #sedan, #suv, #hatch, #esportivos, #todosCarros {
+main #sedan, #suv, #hatch, #esportivo, #todosCarros {
     display: grid;
     grid-auto-flow: column;
     width: 100%;
@@ -219,29 +219,29 @@ main #sedan, #hatch {
     margin-left: -2.7em;
 }
 
-main #suv, #esportivos {
+main #suv, #esportivo {
     width: 100%;
     padding-left: 1em;
 }
 
-main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivos::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
+main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivo::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
     height: .5em;
     background: var(--color-white);
 }
 
-main #sedan::-webkit-scrollbar-track, #suv::-webkit-scrollbar-track, #hatch::-webkit-scrollbar-track, #esportivos::-webkit-scrollbar-track, #todosCarros::-webkit-scrollbar-track {
+main #sedan::-webkit-scrollbar-track, #suv::-webkit-scrollbar-track, #hatch::-webkit-scrollbar-track, #esportivo::-webkit-scrollbar-track, #todosCarros::-webkit-scrollbar-track {
     background-color: #f1f1f1c8;
     border-radius: 0 50em 0 50em;
 }
 
-main #sedan::-webkit-scrollbar-thumb, #suv::-webkit-scrollbar-thumb, #hatch::-webkit-scrollbar-thumb, #esportivos::-webkit-scrollbar-thumb, #todosCarros::-webkit-scrollbar-thumb {
+main #sedan::-webkit-scrollbar-thumb, #suv::-webkit-scrollbar-thumb, #hatch::-webkit-scrollbar-thumb, #esportivo::-webkit-scrollbar-thumb, #todosCarros::-webkit-scrollbar-thumb {
     height: .5em;
     background-color: var(--color-primary);
     border-radius: 0 2em 0 2em;
     border: 1px solid var(--color-white);
 }
 
-main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:hover .carros:not(:hover), #esportivos:hover .carros:not(:hover) {
+main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:hover .carros:not(:hover), #esportivo:hover .carros:not(:hover) {
     transform: scale(0.8);
     filter: blur(.7px);
     opacity: .7;

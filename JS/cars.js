@@ -190,66 +190,6 @@ const sports = [
     }
 ]
 
-mostrarSedans = () => {
-    let containerSedan = document.getElementById('sedan')
-    sedans.map((carro) => {
-       if(containerSedan != null) {
-        containerSedan.innerHTML += 
-            '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-mostrarSedans()
-
-mostrarSuvs = () => {
-    let containerSuv = document.getElementById('suv')
-    suvs.map((carro) => {
-       if(containerSuv != null) {
-        containerSuv.innerHTML += 
-            '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-mostrarSuvs()
-
-mostrarHatchs = () => {
-    let containerHatch = document.getElementById('hatch')
-    hatchs.map((carro) => {
-       if(containerHatch != null) {
-        containerHatch.innerHTML += 
-            '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-mostrarHatchs()
-
-mostrarSports = () => {
-    let containerSport = document.getElementById('esportivo')
-    sports.map((carro) => {
-       if(containerSport != null) {
-        containerSport.innerHTML += 
-            '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-mostrarSports()
-
 const allCars = [
     {
         modelo: 'S60',
@@ -431,13 +371,13 @@ const allCars = [
         ano: 2023,
         imagem: 'esportivo/mustangGT.png'
     }
-] 
+]
 
-mostrarAllCars = () => {
-    let containerCars = document.getElementById('todosCarros')
-    allCars.map((carro) => {
-       if(containerCars != null) {
-        containerCars.innerHTML += 
+showSedans = () => {
+    let containerSedan = document.getElementById('sedan')
+    sedans.map((carro) => {
+       if(containerSedan != null) {
+        containerSedan.innerHTML += 
             '<div class="carros">' +
                 '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
@@ -446,4 +386,160 @@ mostrarAllCars = () => {
        }
     })
 }
-mostrarAllCars()
+showSedans()
+
+showSuvs = () => {
+    let containerSuv = document.getElementById('suv')
+    suvs.map((carro) => {
+       if(containerSuv != null) {
+        containerSuv.innerHTML += 
+            '<div class="carros">' +
+                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
+                '<span id="price">R$' + carro.preco + '</span>' +
+            '</div>'
+       }
+    })
+}
+showSuvs()
+
+showHatchs = () => {
+    let containerHatch = document.getElementById('hatch')
+    hatchs.map((carro) => {
+       if(containerHatch != null) {
+        containerHatch.innerHTML += 
+            '<div class="carros">' +
+                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
+                '<span id="price">R$' + carro.preco + '</span>' +
+            '</div>'
+       }
+    })
+}
+showHatchs()
+
+showSports = () => {
+    let containerSport = document.getElementById('esportivo')
+    sports.map((carro) => {
+       if(containerSport != null) {
+        containerSport.innerHTML += 
+            '<div class="carros">' +
+                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
+                '<span id="price">R$' + carro.preco + '</span>' +
+            '</div>'
+       }
+    })
+}
+showSports()
+
+const categorias = [...new Set(allCars.map((item) => {return item}))]
+
+const displayItem = (items) => {
+    document.getElementById('todosCarros').innerHTML = items.map((item) => {
+        let {modelo, preco, tipo, cor, marca, ano, imagem} = item;
+        return(
+            `<div class="carros">
+                <img src="../imagens/${imagem}" alt="${marca} ${modelo}" />
+                <h4>${marca} ${modelo}</h4>
+                <span id="price">R$${preco}</span>
+            </div>`
+        )
+    }).join('')
+};
+displayItem(categorias)
+
+
+  // filter Modelos
+
+const modelo = document.getElementById('iModelo');
+
+modelo.addEventListener('keyup', (e) => {
+    const searchData = e.target.value.toLowerCase()
+    const filterData = categorias.filter((item) => {
+        return (
+            item.modelo.toLocaleLowerCase().includes(searchData)
+        )
+    });
+    displayItem(filterData);
+});
+
+
+    // filter Marcas
+
+const selectBoxMarcas = document.querySelector('.selectBoxMarcas');
+const selectOptionMarcas = document.querySelector('.selectContentMarcas');
+const iconMarcas = document.querySelector(".selectContentMarcas i");
+const marca = document.querySelector('#selectMarca');
+const optionsMarcas = document.querySelector('.optionsMarcas');
+const optionsListMarcas = document.querySelectorAll('.optionsMarcas li');
+
+selectOptionMarcas.addEventListener('click', function() {
+    selectBoxMarcas.classList.toggle('active');
+    
+    if(selectBoxMarcas.classList.contains("active")) {
+        iconMarcas.style.transform = "rotateX(-180deg)";
+        iconMarcas.style.transition = "ease .5s";
+    } else {
+        iconMarcas.style.transform = "rotateX(0deg)";
+        iconMarcas.style.transition = "ease .5s";
+    }
+});
+
+optionsListMarcas.forEach(function(optionsListMarcasSingle) {
+    optionsListMarcasSingle.addEventListener('click', function() {
+        text = this.textContent;
+        marca.value = text;
+        selectBoxMarcas.classList.remove('active');
+    });
+});
+
+marca.addEventListener('keyup', (e) => {
+    const searchData = e.target.value.toLowerCase()
+    const filterData = categorias.filter((item) => {
+        return (
+            item.marca.toLocaleLowerCase().includes(searchData)
+        )
+    });
+    displayItem(filterData);
+});
+
+
+    // filter Tipos
+
+const selectBoxTipos = document.querySelector('.selectBoxTipos');
+const selectOptionTipos = document.querySelector('.selectContentTipos');
+const iconTipos = document.querySelector(".selectContentTipos i");
+const tipo = document.querySelector('#selectTipo');
+const optionsTipos = document.querySelector('.optionsTipos');
+const optionsListTipos = document.querySelectorAll('.optionsTipos li')
+
+selectOptionTipos.addEventListener('click', function() {
+    selectBoxTipos.classList.toggle('active');
+    
+    if(selectBoxTipos.classList.contains("active")) {
+        iconTipos.style.transform = "rotateX(-180deg)";
+        iconTipos.style.transition = "ease .5s";
+    } else {
+        iconTipos.style.transform = "rotateX(0deg)";
+        iconTipos.style.transition = "ease .5s";
+    }
+});
+
+optionsListTipos.forEach(function(optionsListTiposSingle) {
+    optionsListTiposSingle.addEventListener('click', function() {
+        text = this.textContent;
+        tipo.value = text;
+        selectBoxTipos.classList.remove('active');
+    });
+});
+
+tipo.addEventListener('keyup', (e) => {
+    const searchData = e.target.value.toLowerCase()
+    const filterData = categorias.filter((item) => {
+        return (
+            item.tipo.toLocaleLowerCase().includes(searchData)
+        )
+    });
+    displayItem(filterData);
+});

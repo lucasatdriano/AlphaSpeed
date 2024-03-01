@@ -1,3 +1,5 @@
+// Arrays dos carros
+
 const sedans = [
     {
         modelo: 'S60',
@@ -193,8 +195,8 @@ const sports = [
 const allCars = [
     {
         modelo: 'S60',
-        preco: '338.000',
-        tipo: 'Sedan',
+        preco: 338,
+        tipo: 'sedan',
         cor: 'Vermelho',
         marca: 'Volvo',
         ano: 2023,
@@ -202,8 +204,8 @@ const allCars = [
     },
     {
         modelo: 'A3',
-        preco: '280.000',
-        tipo: 'Sedan',
+        preco: 280,
+        tipo: 'sedan',
         cor: 'Azul',
         marca: 'Audi',
         ano: 2023,
@@ -211,8 +213,8 @@ const allCars = [
     },
     {
         modelo: 'A4',
-        preco: '300.000',
-        tipo: 'Sedan',
+        preco: 300,
+        tipo: 'sedan',
         cor: 'Cinza',
         marca: 'Audi',
         ano: 2023,
@@ -220,8 +222,8 @@ const allCars = [
     },
     {
         modelo: 'Serie 3E',
-        preco: '308.000',
-        tipo: 'Sedan',
+        preco: 308,
+        tipo: 'sedan',
         cor: 'Branco',
         marca: 'BMW',
         ano: 2023,
@@ -229,8 +231,8 @@ const allCars = [
     },
     {
         modelo: 'Civic',
-        preco: '245.000',
-        tipo: 'Sedan',
+        preco: 245,
+        tipo: 'sedan',
         cor: 'Preto Fosco',
         marca: 'Honda',
         ano: 2023,
@@ -238,8 +240,8 @@ const allCars = [
     },
     {
         modelo: 'X6',
-        preco: '812.000',
-        tipo: 'Suv',
+        preco: 812,
+        tipo: 'suv',
         cor: 'Cinza',
         marca: 'BMW',
         ano: 2023,
@@ -247,8 +249,8 @@ const allCars = [
     },
     {
         modelo: 'X3',
-        preco: '448.000',
-        tipo: 'Suv',
+        preco: 448,
+        tipo: 'suv',
         cor: 'Preto',
         marca: 'BMW',
         ano: 2023,
@@ -256,8 +258,8 @@ const allCars = [
     },
     {
         modelo: 'Urus',
-        preco: '3.785.000',
-        tipo: 'Suv',
+        preco: 3785,
+        tipo: 'suv',
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
@@ -265,8 +267,8 @@ const allCars = [
     },
     {
         modelo: 'GLA',
-        preco: '360.000',
-        tipo: 'Suv',
+        preco: 360,
+        tipo: 'suv',
         cor: 'Vermelho',
         marca: 'Mercedes',
         ano: 2023,
@@ -274,8 +276,8 @@ const allCars = [
     },
     {
         modelo: 'Ranger',
-        preco: '512.000',
-        tipo: 'Suv',
+        preco: 512,
+        tipo: 'suv',
         cor: 'Branca',
         marca: 'Land Rover',
         ano: 2023,
@@ -283,8 +285,8 @@ const allCars = [
     },
     {
         modelo: 'Classe-A',
-        preco: '345.000',
-        tipo: 'Hatch',
+        preco: 345,
+        tipo: 'hatch',
         cor: 'Preto Fosco',
         marca: 'Mercedes',
         ano: 2023,
@@ -292,8 +294,8 @@ const allCars = [
     },
     {
         modelo: 'Serie 1',
-        preco: '314.000',
-        tipo: 'Hatch',
+        preco: 314,
+        tipo: 'hatch',
         cor: 'Azul',
         marca: 'BMW',
         ano: 2023,
@@ -301,8 +303,8 @@ const allCars = [
     },
     {
         modelo: 'City Hatchback Touring',
-        preco: '128.000',
-        tipo: 'Hatch',
+        preco: 128,
+        tipo: 'hatch',
         cor: 'Cinza',
         marca: 'Honda',
         ano: 2023,
@@ -310,8 +312,8 @@ const allCars = [
     },
     {
         modelo: 'Cooper S',
-        preco: '304.000',
-        tipo: 'Hatch',
+        preco: 304,
+        tipo: 'hatch',
         cor: 'Azul',
         marca: 'Mini',
         ano: 2023,
@@ -319,8 +321,8 @@ const allCars = [
     },
     {
         modelo: 'Yaris',
-        preco: '121.000',
-        tipo: 'Hatch',
+        preco: 121,
+        tipo: 'hatch',
         cor: 'Cinza Fosco',
         marca: 'Toyota',
         ano: 2023,
@@ -328,8 +330,8 @@ const allCars = [
     },
     {
         modelo: 'R8',
-        preco: '1.549.000',
-        tipo: 'Esportivo',
+        preco: 1549,
+        tipo: 'esportivo',
         cor: 'Laranja',
         marca: 'Audi',
         ano: 2023,
@@ -337,8 +339,8 @@ const allCars = [
     },
     {
         modelo: 'Aventador',
-        preco: '3.870.000',
-        tipo: 'Esportivo',
+        preco: 3870,
+        tipo: 'esportivo',
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
@@ -346,8 +348,8 @@ const allCars = [
     },
     {
         modelo: '458',
-        preco: '3.667.000',
-        tipo: 'Esportivo',
+        preco: 3667,
+        tipo: 'esportivo',
         cor: 'Vermelho',
         marca: 'Ferrari',
         ano: 2023,
@@ -355,8 +357,8 @@ const allCars = [
     },
     {
         modelo: 'Artura',
-        preco: '2.349.000',
-        tipo: 'Esportivo',
+        preco: 2349,
+        tipo: 'esportivo',
         cor: 'Verde Lima',
         marca: 'McLaren',
         ano: 2023,
@@ -364,8 +366,8 @@ const allCars = [
     },
     {
         modelo: 'Mustang GT',
-        preco: '566.000',
-        tipo: 'Esportivo',
+        preco: 566,
+        tipo: 'esportivo',
         cor: 'Preto',
         marca: 'Ford',
         ano: 2023,
@@ -373,173 +375,135 @@ const allCars = [
     }
 ]
 
-showSedans = () => {
-    let containerSedan = document.getElementById('sedan')
+const carros = [...new Set(allCars.map((item) => {return item}))]
+
+        // Mostrar os carros dinamicamente
+
+
+const showSedans = () => {
+    const containerSedan = document.getElementById('sedan');
+
     sedans.map((carro) => {
-       if(containerSedan != null) {
+        if(containerSedan != null) {
         containerSedan.innerHTML += 
             '<div class="carros">' +
                 '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-       }
+        }
     })
 }
 showSedans()
 
-showSuvs = () => {
-    let containerSuv = document.getElementById('suv')
+const showSuvs = () => {
+    const containerSuv = document.getElementById('suv');
+
     suvs.map((carro) => {
-       if(containerSuv != null) {
+        if(containerSuv != null) {
         containerSuv.innerHTML += 
             '<div class="carros">' +
                 '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-       }
+        }
     })
 }
 showSuvs()
 
-showHatchs = () => {
-    let containerHatch = document.getElementById('hatch')
+const showHatchs = () => {
+    const containerHatch = document.getElementById('hatch');
+
     hatchs.map((carro) => {
-       if(containerHatch != null) {
+        if(containerHatch != null) {
         containerHatch.innerHTML += 
             '<div class="carros">' +
                 '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-       }
+        }
     })
 }
 showHatchs()
 
-showSports = () => {
-    let containerSport = document.getElementById('esportivo')
+const showSports = () => {
+    const containerSport = document.getElementById('esportivo');
+
     sports.map((carro) => {
-       if(containerSport != null) {
+        if(containerSport != null) {
         containerSport.innerHTML += 
             '<div class="carros">' +
                 '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-       }
+        }
     })
 }
 showSports()
 
-const categorias = [...new Set(allCars.map((item) => {return item}))]
-
 const displayItem = (items) => {
-    document.getElementById('todosCarros').innerHTML = items.map((item) => {
+    const divCarrosFiltrados = document.getElementById('todosCarros');
+
+    divCarrosFiltrados.innerHTML = items.map((item) => {
         let {modelo, preco, tipo, cor, marca, ano, imagem} = item;
         return(
             `<div class="carros">
                 <img src="../imagens/${imagem}" alt="${marca} ${modelo}" />
                 <h4>${marca} ${modelo}</h4>
-                <span id="price">R$${preco}</span>
+                <span id="price">R$${preco.toFixed(3)}</span>
             </div>`
         )
     }).join('')
 };
-displayItem(categorias)
+displayItem(carros)
 
 
-  // filter Modelos
+        // chamar Inputs
 
-const modelo = document.getElementById('iModelo');
+const modeloInput = document.getElementById('iModelo');
+const marcaInput = document.getElementById('selectMarca');
+const tipoInput = document.getElementById('selectTipo');
+const precoInput = document.getElementById('iPreco');
 
-modelo.addEventListener('keyup', (e) => {
-    const searchData = e.target.value.toLowerCase()
-    const filterData = categorias.filter((item) => {
-        return (
-            item.modelo.toLocaleLowerCase().includes(searchData)
-        )
-    });
-    displayItem(filterData);
+
+        // filtrar carros
+
+const btnFiltro = document.getElementById('btnFiltrar');
+
+btnFiltro.addEventListener('click', () => {
+    const valueModeloInput = modeloInput.value.toLowerCase();
+    const valueMarcaSelect = marcaInput.value;
+    const valueTipoSelect = tipoInput.value;
+    const valuePrecoInput = parseFloat(precoInput.value);
+
+    const resultado = carros.filter(item =>  
+        item.modelo.toLowerCase().includes(valueModeloInput) &&
+        (valueMarcaSelect === '' || item.marca === valueMarcaSelect) &&
+        (valueTipoSelect === '' || item.tipo === valueTipoSelect) &&
+        (isNaN(valuePrecoInput) || item.preco <= valuePrecoInput)
+    );
+
+    exibirResultado(resultado);
 });
 
+function exibirResultado(resultado) {
+    const divCarrosFiltrados = document.getElementById('todosCarros');
+    divCarrosFiltrados.innerHTML = '';
 
-    // filter Marcas
-
-const selectBoxMarcas = document.querySelector('.selectBoxMarcas');
-const selectOptionMarcas = document.querySelector('.selectContentMarcas');
-const iconMarcas = document.querySelector(".selectContentMarcas i");
-const marca = document.querySelector('#selectMarca');
-const optionsMarcas = document.querySelector('.optionsMarcas');
-const optionsListMarcas = document.querySelectorAll('.optionsMarcas li');
-
-selectOptionMarcas.addEventListener('click', function() {
-    selectBoxMarcas.classList.toggle('active');
-    
-    if(selectBoxMarcas.classList.contains("active")) {
-        iconMarcas.style.transform = "rotateX(-180deg)";
-        iconMarcas.style.transition = "ease .5s";
+    if (resultado.length === 0) {
+        divCarrosFiltrados.innerHTML += 
+            `<h2 style="padding: 80px;">Nenhum resultado encontrado.</h2>`;
     } else {
-        iconMarcas.style.transform = "rotateX(0deg)";
-        iconMarcas.style.transition = "ease .5s";
+        resultado.forEach(carro => {
+            divCarrosFiltrados.innerHTML += 
+                `<div class="carros">
+                    <img src="../imagens/${carro.imagem}" alt="${carro.marca} ${carro.modelo}" />
+                    <h4>${carro.marca} ${carro.modelo}</h4>
+                    <span id="price">R$${carro.preco.toFixed(3)}</span>
+                </div>`;
+        });
     }
-});
-
-optionsListMarcas.forEach(function(optionsListMarcasSingle) {
-    optionsListMarcasSingle.addEventListener('click', function() {
-        text = this.textContent;
-        marca.value = text;
-        selectBoxMarcas.classList.remove('active');
-    });
-});
-
-marca.addEventListener('keyup', (e) => {
-    const searchData = e.target.value.toLowerCase()
-    const filterData = categorias.filter((item) => {
-        return (
-            item.marca.toLocaleLowerCase().includes(searchData)
-        )
-    });
-    displayItem(filterData);
-});
-
-
-    // filter Tipos
-
-const selectBoxTipos = document.querySelector('.selectBoxTipos');
-const selectOptionTipos = document.querySelector('.selectContentTipos');
-const iconTipos = document.querySelector(".selectContentTipos i");
-const tipo = document.querySelector('#selectTipo');
-const optionsTipos = document.querySelector('.optionsTipos');
-const optionsListTipos = document.querySelectorAll('.optionsTipos li')
-
-selectOptionTipos.addEventListener('click', function() {
-    selectBoxTipos.classList.toggle('active');
-    
-    if(selectBoxTipos.classList.contains("active")) {
-        iconTipos.style.transform = "rotateX(-180deg)";
-        iconTipos.style.transition = "ease .5s";
-    } else {
-        iconTipos.style.transform = "rotateX(0deg)";
-        iconTipos.style.transition = "ease .5s";
-    }
-});
-
-optionsListTipos.forEach(function(optionsListTiposSingle) {
-    optionsListTiposSingle.addEventListener('click', function() {
-        text = this.textContent;
-        tipo.value = text;
-        selectBoxTipos.classList.remove('active');
-    });
-});
-
-tipo.addEventListener('keyup', (e) => {
-    const searchData = e.target.value.toLowerCase()
-    const filterData = categorias.filter((item) => {
-        return (
-            item.tipo.toLocaleLowerCase().includes(searchData)
-        )
-    });
-    displayItem(filterData);
-});
+}

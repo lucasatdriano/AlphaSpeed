@@ -57,9 +57,12 @@
         font-size: 1.2rem;
     } 
 
-    main form.filtrar input, form.filtrar select {
-        font-size: 1.2rem;
-        height: 2em;
+    main form.filtrar #iModelo {
+        font-size: 1.6rem;
+    }
+
+    main form.filtrar select {
+        font-size: 1.6rem;
     }
 
     main form.filtrar input[type=range] {
@@ -76,8 +79,12 @@
         width: 14px;
     }
 
-    main form.filtrar input[type=button] {
-        font-size: 1.6rem;
+    main form.filtrar div:last-child {
+        margin: 20px 60% 0;
+    }
+     
+    main form.filtrar #btnFiltrar {
+        padding: 0 2em;
     }
 
     main hr {
@@ -173,7 +180,7 @@
         width: 70%;
     }
     
-    main .login button {
+    main #login button {
         margin: 0 -.5em 0 0;
     }
 }

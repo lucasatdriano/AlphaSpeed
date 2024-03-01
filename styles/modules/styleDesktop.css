@@ -92,6 +92,9 @@ header #navBarDesktop a:hover {
 
 header .btnlogin {
     color:var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 2em;
     border-radius: 3em;
     background-color: transparent;
@@ -103,7 +106,7 @@ header .btnlogin {
 header .btnlogin:hover {
     background-color: var(--color-white);
     color: var(--color-primary);
-    transition: ease-in-out 2s;
+    transition: ease-in-out .8s;
     box-shadow: 1px 1px 15px #d6d6d6c9;
 }
 
@@ -214,12 +217,12 @@ main #sedan, #suv, #hatch, #esportivo, #todosCarros {
 }
 
 main #sedan, #hatch {
-    width: 108.5%;
+    width: 100vw;
     margin-left: -2.7em;
 }
 
 main #suv, #esportivo {
-    width: 100%;
+    width: 100vw;
     padding-left: 1em;
 }
 
@@ -238,6 +241,9 @@ main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:ho
 main .carros {
     width: 30em;
     height: 18em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 0 -2em 0 0;
     object-fit: contain;
     transform: scale(0.9);
@@ -305,102 +311,22 @@ main form.filtrar label{
     font-size: 1.8rem;
 }
 
-main form.filtrar p {
-    color: var(--color-black);
-}
-
-main form.filtrar input[type="text"], input[type="search"] {
+main form.filtrar input[type="text"], select {
     text-indent: 10px;
     border-radius: 10px;
     font-size: 1.8rem;
     width: 95%;
     height: 1.5em;
     border: none;
-    border-bottom: 1px solid;
-    background-color: transparent;
-    box-shadow: 1px 1px 10px #000;
-}
-
-main form.filtrar .searchContent{
-    position: relative;
-    height: 10vh;
-}
-
-main form.filtrar .searchContent i{
-    position: absolute;
-    right: 2.5vw;
-    bottom: 1.5vh;
-    color: var(--color-gray);
-}
-
-main form.filtrar .selectContentMarcas, .selectContentTipos {
-    position: relative;
-}
-
-main form.filtrar .selectContentMarcas i, .selectContentTipos i{
-    position: absolute;
-    right: 2vw;
-    bottom: 1.5vh;
-    color: var(--color-gray);
-}
-
-main form.filtrar #selectMarca, #selectTipo {
-    border-radius: 0 10px 10px;
-    background-color: #ffffffef;
-    margin: 0 0 10px;
-}
-
-main form.filtrar .contentMarca, .contentTipo {
-    border-radius: 10px;
-    background-color: #ffffffef;
-    display: none;
-    box-shadow: 1px 1px 10px #000;
-    padding: 5px 10px;
-    width: 90%;
-}
-
-main form.filtrar .selectBoxMarcas.active .contentMarca {
-    display: block;
-}
-
-main form.filtrar .selectBoxTipos.active .contentTipo {
-    display: block;
-}
-
-
-main form.filtrar #searchMarca, #searchTipo {
-    text-indent: 30px;
-    border-radius: 15px;
-    font-size: 1.8rem;
-    width: 95%;
-    height: 1.5em;
-    border: .5px solid var(--color-gray);
     outline: none;
     background-color: transparent;
-    color: var(--color-gray);
-    margin: 0 0 5px;
+    box-shadow: 1px 1px 10px #000;
 }
 
-main form.filtrar .optionsMarcas, .optionsTipos {
-    list-style: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 125px;
-    padding: 10px; 
-}
-
-main form.filtrar .optionsMarcas::-webkit-scrollbar, .optionsTipos::-webkit-scrollbar {
-    width: .5em;
-}
-
-main form.filtrar .optionsMarcas li, .optionsTipos li {
-    border-bottom: 1px solid var(--color-gray);
-    padding: 3px 0 3px 7px;
+main form.filtrar select {
+    /* -webkit-appearance: none; */
+    /* padding: 0 5px; */
     cursor: pointer;
-}
-
-main form.filtrar .optionsMarcas li:hover, .optionsTipos li:hover {
-    background: #00000020;
 }
 
 main form.filtrar input[type=range] {
@@ -434,6 +360,29 @@ main form.filtrar input[type=range]::-webkit-slider-thumb {
     margin-top: -.3em;
 }
 
+main form.filtrar div:last-child {
+   margin: 0 65%;
+   width: 200%;
+}
+
+main form.filtrar #btnFiltrar {
+    color:var(--color-white);
+    padding: 0 8em;
+    border-radius: 10px;
+    background-color: #740b0b;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+    
+main form.filtrar #btnFiltrar:hover {
+    background-color: #fefefe;
+    color: var(--color-primary);
+    transition: ease-in-out .8s;
+    box-shadow: 1px 1px 10px #000;
+}
+
 main hr {
     position: relative;
     top: -13em;
@@ -442,6 +391,7 @@ main hr {
 main #todosCarros {
     margin: -5em 0 0 0;
     padding: 0;
+    width: 100vw;
 }
 
 main #todosCarros:hover .carros:not(:hover) {
@@ -639,7 +589,7 @@ footer .rodape a {
     /* CSS DO LOGIN E CADASTRO */
 
 
-main .login, .cadastro {
+main #login, #cadastro {
     width: 40%;
     margin: 1em 0 0;
     gap: 1.5em;
@@ -656,10 +606,6 @@ main .formLog, .formCad {
     position: relative;
     gap: 2em;
 } 
-
-main .formLog h2, .formCad h2 {
-    z-index: -1;
-}
 
 main #msgError {
     font-size: 1.5em;
@@ -680,10 +626,9 @@ main #msgSuccess{
 main .single-input {
     position: relative;
     margin: 15px 0;
-    z-index: 1 !important;
 }
 
-main .login label, .cadastro label {
+main #login label, #cadastro label {
     display: none;
 }
 
@@ -693,7 +638,6 @@ main .single-input i {
     font-size: 27px;
     left: 3px;
     padding: .15em;
-    z-index: -1;
 }
 
 main .single-input input {
@@ -722,12 +666,13 @@ main .single-input .visibility {
     left: 10em;
 }
 
-main .login span, .cadastro span {
+main #login span, #cadastro span {
     color: #bc0000;
     display: none;
 }
 
-main .login input[type=button], .cadastro input[type=button] {
+main #login input[type=button], 
+  #cadastro input[type=button] {
     width: 100%;
     height: 35px;
     color:var(--color-white);
@@ -740,12 +685,12 @@ main .login input[type=button], .cadastro input[type=button] {
     border-radius: 15px;
 }
 
-main .login input[type=button]:hover, .cadastro input[type=button]:hover {
+main #login input[type=button]:hover, #cadastro input[type=button]:hover {
     background-color: var(--color-primary);
     box-shadow: 1px 1px 30px var(--color-gray);
 }
 
-main .login a {
+main #login a {
     width: 100%;
     margin-top: 30px;
     height: 40px;
@@ -759,7 +704,7 @@ main .login a {
     cursor: pointer;
 }
 
-main .login a:hover {
+main #login a:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: 1px 1px 30px var(--color-gray);

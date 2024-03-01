@@ -99,59 +99,52 @@
             <div id="filtro">
                 <form class="filtrar">
 
-                    <p class="searchContent">
+                    <div class="searchContent">
                         <label for="iModelo">Modelo:
-                            <input type="search" name="iModelo" id="iModelo" placeholder="Search:">
-                            <i class="material-symbols-rounded">search</i>
+                            <input type="text" name="iModelo" id="iModelo" placeholder="Pesquise:">
                         </label>
-                    </p>
+                    </div>
 
                     <div class="selectBoxMarcas">
-                        <p class="selectContentMarcas">
-                            <label for="selectMarca">Marca:
-                                <input type="text" name="selectMarca" id="selectMarca" placeholder="Selecione:">
-                            </label>
-                            <i class="material-symbols-rounded">arrow_drop_down</i>
-                        </p>
-                        <div class="contentMarca">
-                            <ul class="optionsMarcas">
-                                <li>Audi</li>
-                                <li>BMW</li>
-                                <li>Ferrari</li>
-                                <li>Ford</li>
-                                <li>Honda</li>
-                                <li>Lamborghini</li>
-                                <li>Land Rover</li>
-                                <li>McLaren</li>
-                                <li>Mercedes</li>
-                                <li>Mini</li>
-                                <li>Toyota</li>
-                                <li>Volvo</li>
-                            </ul>
-                        </div>
+                        <label for="selectMarca">Marca:</label>
+                        <select id="selectMarca" >
+                            <option value="">Selecione:</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Landrover">Land Rover</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Mini">Mini</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volvo">Volvo</option>
+                        </select>
                     </div>
 
                     <div class="selectBoxTipos">
-                        <p class="selectContentTipos">
-                            <label for="selectTipo">Tipo:
-                                <input type="text" name="selectTipo" id="selectTipo" placeholder="Selecione:">
-                            </label>
-                            <i class="material-symbols-rounded">arrow_drop_down</i>
-                        </p>
-                        <div class="contentTipo">
-                            <ul class="optionsTipos">
-                                <li value="sedan">Sedan</li>
-                                <li value="suv">Suv</li>
-                                <li value="hatch">Hatch</li>
-                                <li value="esportivo">Esportivo</li>
-                            </ul>
-                        </div>
+                        <label for="selectTipo">Tipo:</label>
+                        <select id="selectTipo">
+                            <option value="">Selecione:</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">Suv</option>
+                            <option value="hatch">Hatch</option>
+                            <option value="esportivo">Esportivo</option>
+                        </select>
                     </div>
 
-                    <label for="iPreco">Preço:
-                        <input type="range" name="iPreco" id="iPreco" min="100000" max="4000000" value="4000000" step="100000"/>
-                        <p>min: R$ 100000 - max: R$ <output id="value"></output></p>
-                    </label>
+                    <div class="rangePreco">
+                        <label for="iPreco">Preço:
+                            <input type="range" name="iPreco" id="iPreco" min="100" max="4000" value="4000" step="100" oninput="filtrarPorPreco()"/>
+                            <p>min: R$ 100.000 - max: R$ <output id="value"></output>.000</p>
+                        </label>
+                    </div>
+
+                    <div class="btnFiltro">
+                        <button type="button" id="btnFiltrar">Filtrar</button>
+                    </div>
                 </form>
             
             </div>

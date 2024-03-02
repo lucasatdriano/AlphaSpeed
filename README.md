@@ -16,3 +16,4 @@ With JavaScript:
 - Create the button back to top;
 - Create the mobile nav;
 - Create the localization dinamic and most more in footer mobile;
+- Create the cars showcase dinamic and filter;

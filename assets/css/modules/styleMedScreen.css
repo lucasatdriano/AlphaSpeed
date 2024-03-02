@@ -124,7 +124,7 @@
     /* Main */
 
     main .carrossel img {
-        margin: 13vh 0 0;
+        margin: 12vh 0 0;
         object-fit: cover;
         height: 30em;
     }
@@ -153,10 +153,6 @@
 
     main form.filtrar select {
         font-size: 1.3rem;
-    }
-
-    main form.filtrar div:last-child {
-        margin: 0 75%;
     }
      
     main form.filtrar #btnFiltrar {

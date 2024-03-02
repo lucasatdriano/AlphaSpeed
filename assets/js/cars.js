@@ -1,4 +1,4 @@
-// Arrays dos carros
+        // Arrays dos carros
 
 const sedans = [
     {
@@ -384,14 +384,14 @@ const showSedans = () => {
     const containerSedan = document.getElementById('sedan');
 
     sedans.map((carro) => {
-        if(containerSedan != null) {
+       if(containerSedan != null) {
         containerSedan.innerHTML += 
             '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-        }
+       }
     })
 }
 showSedans()
@@ -400,14 +400,14 @@ const showSuvs = () => {
     const containerSuv = document.getElementById('suv');
 
     suvs.map((carro) => {
-        if(containerSuv != null) {
+       if(containerSuv != null) {
         containerSuv.innerHTML += 
             '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-        }
+       }
     })
 }
 showSuvs()
@@ -416,14 +416,14 @@ const showHatchs = () => {
     const containerHatch = document.getElementById('hatch');
 
     hatchs.map((carro) => {
-        if(containerHatch != null) {
+       if(containerHatch != null) {
         containerHatch.innerHTML += 
             '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-        }
+       }
     })
 }
 showHatchs()
@@ -432,14 +432,14 @@ const showSports = () => {
     const containerSport = document.getElementById('esportivo');
 
     sports.map((carro) => {
-        if(containerSport != null) {
+       if(containerSport != null) {
         containerSport.innerHTML += 
             '<div class="carros">' +
-                '<img src="../imagens/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" />' +
+                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
                 '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
                 '<span id="price">R$' + carro.preco + '</span>' +
             '</div>'
-        }
+       }
     })
 }
 showSports()
@@ -451,7 +451,7 @@ const displayItem = (items) => {
         let {modelo, preco, tipo, cor, marca, ano, imagem} = item;
         return(
             `<div class="carros">
-                <img src="../imagens/${imagem}" alt="${marca} ${modelo}" />
+                <img src="assets/images/${imagem}" alt="${marca} ${modelo}" loading="lazy" />
                 <h4>${marca} ${modelo}</h4>
                 <span id="price">R$${preco.toFixed(3)}</span>
             </div>`
@@ -500,7 +500,7 @@ function exibirResultado(resultado) {
         resultado.forEach(carro => {
             divCarrosFiltrados.innerHTML += 
                 `<div class="carros">
-                    <img src="../imagens/${carro.imagem}" alt="${carro.marca} ${carro.modelo}" />
+                    <img src="assets/images/${carro.imagem}" alt="${carro.marca} ${carro.modelo}" loading="lazy" />
                     <h4>${carro.marca} ${carro.modelo}</h4>
                     <span id="price">R$${carro.preco.toFixed(3)}</span>
                 </div>`;

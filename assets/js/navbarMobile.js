@@ -1,9 +1,9 @@
         // Script para abrir navbar mobile
 
-const btnNav = document.querySelectorAll(".btn-nav")
-const out = document.querySelector("main")
-const btnMob = document.getElementById('menuMob')
-const nav = document.getElementById('nav')
+const btnNav = document.querySelectorAll(".btn-nav");
+const out = document.querySelector("main");
+const btnMob = document.getElementById('menuMob');
+const nav = document.getElementById('nav');
 
 function ToggleMenu(event) {
     nav.classList.toggle('active')

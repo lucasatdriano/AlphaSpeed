@@ -12,10 +12,10 @@ btn.addEventListener('click', ()=>{
     }
 })
 
-function login(){
-    let usuario = document.querySelector('#iUsuario')
+function login() {
+    // let usuario = document.querySelector('#iUsuario')
     
-    let senha = document.querySelector('#iSenha')
+    // let senha = document.querySelector('#iSenha')
     
     let msgError = document.querySelector('#msgError')
     let listaUser = []
@@ -39,14 +39,15 @@ function login(){
     })
   
     if(usuario.value == userValid.user && senha.value == userValid.senha){
-        location.href = 'index.html'
+        location.href = '../html/index.html'
     
         let mathRandom = Math.random().toString(16).substr(2)
         let token = mathRandom + mathRandom
     
         localStorage.setItem('token', token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
-    } else {
+    }
+    else {
         usuario.setAttribute('style', 'border-color: red')
         senha.setAttribute('style', 'border-color: red')
         msgError.setAttribute('style', 'display: block')

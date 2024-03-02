@@ -24,7 +24,7 @@ let msgError = document.querySelector('#msgError')
 let msgSuccess = document.querySelector('#msgSuccess')
 
 usuario.addEventListener('keyup', () => {
-    if(usuario.value == ''){
+    if(usuario.value == '') {
         spanTel.style.display = "none";
         spanEmail.style.display = "none";
         spanSenha.style.display = "none";

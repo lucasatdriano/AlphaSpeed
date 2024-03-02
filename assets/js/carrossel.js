@@ -1,12 +1,12 @@
         // Script para rodar slides
 
 var contador = 1
-const img1 = "../imagens/carrossel/imgCarrossel2.jpg"
-const img2 = "../imagens/carrossel/imgCarrossel3.jpg"
-const img3 = "../imagens/carrossel/imgCarrossel4.jpg"
-const img4 = "../imagens/carrossel/imgCarrossel5.jpg"
-const img5 = "../imagens/carrossel/imgCarrossel6.jpg"
-const img6 = "../imagens/carrossel/imgCarrossel1.jpg"
+const img1 = "assets/images/carrossel/imgCarrossel2.jpg"
+const img2 = "assets/images/carrossel/imgCarrossel3.jpg"
+const img3 = "assets/images/carrossel/imgCarrossel4.jpg"
+const img4 = "assets/images/carrossel/imgCarrossel5.jpg"
+const img5 = "assets/images/carrossel/imgCarrossel6.jpg"
+const img6 = "assets/images/carrossel/imgCarrossel1.jpg"
 var tempo = 2500
 var exibir = setInterval("Exibindo()",tempo)
 

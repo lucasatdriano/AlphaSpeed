@@ -31,6 +31,37 @@ html {
     font-size: 62.5%;
 }
 
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 0 50em 0 50em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 0 2em 0 2em;
+    border: 1px solid var(--color-white);
+}
+
+body::-webkit-scrollbar {
+    width: 1.2em;
+    background: linear-gradient( var(--color-primary), var(--color-secundary));
+}
+
+body {
+    overflow-x: hidden;
+}
+
 input {
     outline: none;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+a, h3 {
+    color: var(--color-white);
+    text-decoration: none;
 }

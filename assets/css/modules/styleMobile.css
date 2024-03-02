@@ -78,10 +78,6 @@
         height: 14px;
         width: 14px;
     }
-
-    main form.filtrar div:last-child {
-        margin: 20px 60% 0;
-    }
      
     main form.filtrar #btnFiltrar {
         padding: 0 2em;
@@ -112,7 +108,6 @@
         
     main #sobre img {
         width: 100%;
-        /* height: 50%; */
         margin: 0;
     }
 

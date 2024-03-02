@@ -7,7 +7,7 @@
         justify-content: space-around;
         text-align-last: center;
         position: absolute;
-        z-index: 100 !important;
+        z-index: 10;
     }
 
     header #logo {
@@ -147,12 +147,8 @@
         width: 25em;
     }
 
-    main form.filtrar #iModelo {
+    main form.filtrar #iModelo, select {
         font-size: 1.6rem;
-    }
-
-    main form.filtrar select {
-        font-size: 1.3rem;
     }
      
     main form.filtrar #btnFiltrar {

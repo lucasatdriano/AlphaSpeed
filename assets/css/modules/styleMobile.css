@@ -2,6 +2,10 @@
 
 @media only screen and (max-width: 600px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     header {
         display: flex;
     }
@@ -25,8 +29,13 @@
     
         /* Main */
 
+    main .carrossel #setaSlidesAnt, #setaSlidesProx {
+        bottom: 30%;
+    }
+    
     main #sedan, #hatch {
-        width: 150%;
+        width: 110vw;
+        margin-left: -2.7em;
     }
 
     main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivo::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
@@ -42,27 +51,20 @@
         height: 13em;
     }
 
-    main #filtro {
-        top: -20vh;
-    }
-
     main form.filtrar {
         font-size: 1.8rem;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        gap: .2em;
+        gap: .5em;
     }
 
     main form.filtrar p {
         font-size: 1.2rem;
     } 
 
-    main form.filtrar #iModelo {
-        font-size: 1.6rem;
-    }
-
-    main form.filtrar select {
-        font-size: 1.6rem;
+    main form.filtrar input[type="text"], select {
+        width: 90%;
+        font-size: 1.4rem;
     }
 
     main form.filtrar input[type=range] {
@@ -80,13 +82,13 @@
     }
      
     main form.filtrar #btnFiltrar {
-        padding: 0 2em;
+        padding: 0 1em;
     }
 
-    main hr {
-        top: -35em;
+    main #filtragem hr {
+        bottom: 50vh; 
     }
-
+    
     main #sobre {
         margin: 5em 0em 0em;
     }

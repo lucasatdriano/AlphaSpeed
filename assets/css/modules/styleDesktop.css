@@ -102,8 +102,11 @@ main .topo.showBtn {
     right: 1em;
 }
 
-main .carrossel img {
+main .carrossel {
     position: relative;
+}
+
+main .carrossel img {
     z-index: -1;
     object-fit: cover;
     width: 100%;
@@ -175,7 +178,7 @@ main #modelos h2 {
 main #sedan, #suv, #hatch, #esportivo, #todosCarros {
     display: grid;
     grid-auto-flow: column;
-    width: 100%;
+    width: 100vw;
     font-size: 2.2rem;
     text-align: center;
     padding-right: 5em;
@@ -186,12 +189,10 @@ main #sedan, #suv, #hatch, #esportivo, #todosCarros {
 }
 
 main #sedan, #hatch {
-    width: 100vw;
     margin-left: -2.7em;
 }
 
 main #suv, #esportivo {
-    width: 100vw;
     padding-left: 1em;
 }
 
@@ -243,12 +244,15 @@ main .carros:hover span{
     visibility: visible;
 }
 
+main #filtragem {
+    position: relative;
+}
+
 main #imagemFundo img {
     height: 50vh;
     width: 100%;
     object-fit: cover;
     border: 1px double var(--color-black);
-    position: relative;
     border-radius: 10px;
     filter: blur(.8px);
     box-shadow: 3px 3px 30px #73737380;
@@ -257,13 +261,14 @@ main #imagemFundo img {
 main #filtro {
     position: relative;
     background-color: #fff;
-    top: -15vh;
-    left: 12%;
+    top: 50%;
+    left: 50%;
     width: 75vw;
     border-radius: 20px;
     border: 2px solid var(--color-black);
     z-index: 1;
     box-shadow: 5px 3px 30px #73737380;
+    transform: translate(-50%, -50%);
 }
 
 main form.filtrar {
@@ -293,8 +298,6 @@ main form.filtrar input[type="text"], select {
 }
 
 main form.filtrar select {
-    /* -webkit-appearance: none; */
-    /* padding: 0 5px; */
     cursor: pointer;
 }
 
@@ -353,13 +356,15 @@ main form.filtrar #btnFiltrar:hover {
     box-shadow: 1px 1px 10px #000;
 }
 
-main hr {
-    position: relative;
-    top: -13em;
+main #filtragem hr {
+    position: absolute;
+    width: 100vw;
+    bottom: 65vh; 
+    z-index: 0;
 }
 
 main #todosCarros {
-    margin: -5em 0 0 0;
+    margin: -7em 0 0 0;
     padding: 0;
     width: 100vw;
 }
@@ -405,7 +410,7 @@ main #sobre img {
 
 main #sobre p {
     color: var(--color-black);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: justify;
     width: 50%;
     margin: 0 2.5em 0;
@@ -685,7 +690,7 @@ main #login #btnRedCadastre:hover, #cadastro #btnRedLogin:hover {
     color: var(--color-white);
     box-shadow: 1px 1px 30px var(--color-gray);
     transition: all .5s;
-}
+} 
 
 main .imagemFundoLog img, .imagemFundoCad img {
     width: 100%;

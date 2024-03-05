@@ -102,11 +102,11 @@ main .topo.showBtn {
     right: 1em;
 }
 
-main .carrossel {
+main #carrossel {
     position: relative;
 }
 
-main .carrossel img {
+main #carrossel img {
     z-index: -1;
     object-fit: cover;
     width: 100%;
@@ -140,10 +140,10 @@ main #btnSlide input[type=radio]:checked {
     border: 3px solid red;
 }
 
-main .carrossel #setaSlidesAnt, #setaSlidesProx {
+main #carrossel #setaSlidesAnt, #setaSlidesProx {
     position: absolute;
     z-index: 0;
-    bottom: 40%;
+    bottom: 45%;
     padding: 2em 1em;
     color: var(--color-gray);
     background-color: #1c1c1caa;
@@ -151,16 +151,16 @@ main .carrossel #setaSlidesAnt, #setaSlidesProx {
     opacity: .3;
 }
 
-main .carrossel:hover #setaSlidesAnt, .carrossel:hover #setaSlidesProx {
+main #carrossel:hover #setaSlidesAnt, #carrossel:hover #setaSlidesProx {
     opacity: .8;
 }
 
-main .carrossel #setaSlidesAnt {
+main #carrossel #setaSlidesAnt {
     left: 0;
     border-radius: 0 15px 15px 0;
 }
 
-main .carrossel #setaSlidesProx{
+main #carrossel #setaSlidesProx{
     right: 0;
     border-radius: 15px 0 0 15px;
 }
@@ -387,7 +387,6 @@ main #sobre .about{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns:  1fr;
-
 }
 
 main #sobre .posicionamentoMob, .posicionamentoMobDois {
@@ -423,6 +422,7 @@ main .localidade {
     padding: .5em 2em;
     border-radius: 10px 10px 0 0;
     cursor: pointer;
+    transition: 2s ease;
 }
 
 main .localidade h3 {
@@ -619,6 +619,7 @@ main .single-input i {
     font-size: 27px;
     left: 3px;
     padding: .15em;
+    user-select: none;
 }
 
 main .single-input input {

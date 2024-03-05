@@ -5,7 +5,7 @@
     header {
         display: flex;
         justify-content: space-around;
-        text-align-last: center;
+        /* text-align-last: center; */
         position: absolute;
         z-index: 10;
     }
@@ -123,14 +123,14 @@
 
     /* Main */
 
-    main .carrossel img {
-        margin: 12vh 0 0;
+    main #carrossel img {
+        margin: 11.5vh 0 0;
         object-fit: cover;
-        height: 30em;
+        height: 35em;
     }
 
-    main .carrossel #setaSlidesAnt, #setaSlidesProx {
-        bottom: 60%;
+    main #carrossel #setaSlidesAnt, #setaSlidesProx {
+        bottom: 30%;
         padding: 2em .5em;
     }
 

@@ -29,10 +29,6 @@
     
         /* Main */
 
-    main .carrossel #setaSlidesAnt, #setaSlidesProx {
-        bottom: 30%;
-    }
-    
     main #sedan, #hatch {
         width: 110vw;
         margin-left: -2.7em;

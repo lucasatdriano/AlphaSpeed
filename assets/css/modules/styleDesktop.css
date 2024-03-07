@@ -6,6 +6,8 @@ header {
     background: linear-gradient( var(--color-primary), var(--color-secundary));
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 100;
     width: 100%;
     filter: drop-shadow(5px 3px 30px #4e4e4e80);
 }
@@ -83,7 +85,7 @@ header .btnlogin:hover {
 
 main .topo {
     position: fixed;
-    right: -10em;
+    right: -20em;
     bottom: 1em;
     background-color: var(--color-primary);
     padding: .5em .5em .2em;
@@ -99,7 +101,7 @@ main .topo:hover {
 }
 
 main .topo.showBtn {
-    right: 1em;
+    right: 2em;
 }
 
 main #carrossel {
@@ -110,7 +112,7 @@ main #carrossel img {
     z-index: -1;
     object-fit: cover;
     width: 100%;
-    height: 60em;
+    height: 50em;
     border-radius: 0 0 20px 20px;
     filter: drop-shadow(5px 3px 10px #73737380);
 }
@@ -171,7 +173,7 @@ main #modelos {
 
 main #modelos h2 {
     font-family: var(--font-main);
-    margin: 0 2em;
+    margin: 1em 2em;
     text-align: start;
 }
 
@@ -607,6 +609,7 @@ main .formulario {
 main .single-input {
     position: relative;
     margin: 15px 0;
+    z-index: 1;
 }
 
 main #login label, #cadastro label {
@@ -651,6 +654,8 @@ main .single-input .visibility {
 main #login span, #cadastro span {
     color: #bc0000;
     display: none;
+    margin: -30px 0 0;
+    font-size: 1.4rem;
 }
 
 main #login #btnLogin, 
@@ -696,7 +701,6 @@ main #login #btnRedCadastre:hover, #cadastro #btnRedLogin:hover {
 main .imagemFundoLog img, .imagemFundoCad img {
     width: 100%;
     position: relative;
-    /* margin-top: -27em; */
     left: 40%;
     object-fit: cover;
     filter: drop-shadow(7px 5px 30px #73737380);

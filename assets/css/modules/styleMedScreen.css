@@ -3,11 +3,7 @@
 @media only screen and (max-width: 1024px) {
     
     header {
-        display: flex;
         justify-content: space-around;
-        /* text-align-last: center; */
-        position: absolute;
-        z-index: 10;
     }
 
     header #logo {
@@ -68,11 +64,11 @@
         top: 9.1em;
         height: auto;
         padding: 0 0 1.5em;
-        border-radius: 0 0 15px 15px;
+        border-radius: 0 0 0 15px;
         border: 2px solid var(--color-white);
         border-top: none;
         border-right: none;
-        z-index: 100 !important;
+        z-index: 100;
 
         filter: drop-shadow(5px 5px 30px 5px #4e4e4e80);
         transition: all .6s ease-in;
@@ -112,11 +108,14 @@
         opacity: 1;
     }
 
-    header #nav.active #navBarMobile .btnlogin {
-        font-size: 1.8rem;
+    header #nav #navBarMobile .btnlogin {
+        font-size: 1.8rem;  
         margin: 15px 20% 0;
         opacity: 0;
         transition: .5s;
+    }
+
+    header #nav.active #navBarMobile .btnlogin {
         opacity: 1;
     }
 
@@ -124,17 +123,16 @@
     /* Main */
 
     main #carrossel img {
-        margin: 11.5vh 0 0;
         object-fit: cover;
         height: 35em;
     }
 
     main #carrossel #setaSlidesAnt, #setaSlidesProx {
-        bottom: 30%;
+        bottom: 40%;
         padding: 2em .5em;
     }
 
-    main #sedan,#hatch {
+    main #sedan, #hatch {
         margin-left: -4em;
     }
 
@@ -174,15 +172,9 @@
     /* CSS DO LOGIN E CADASTRO */
     
     main #login, #cadastro {
-        margin: 13vh 0 5em;
         width: 100%;
-    }
-
-    main .single-input {
-        position: relative;
-        margin: 15px 0;
-        z-index: 1;
-    }
+        margin: 0 0 40px;
+   }
 
     main .imagemFundoLog, .imagemFundoCad {
         display: none;

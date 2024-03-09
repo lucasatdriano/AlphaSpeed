@@ -83,9 +83,9 @@ header .btnlogin:hover {
 
     /* Main */
 
-main .topo {
+ main .topo {
     position: fixed;
-    right: -20em;
+    right: 2em;
     bottom: 1em;
     background-color: var(--color-primary);
     padding: .5em .5em .2em;
@@ -98,10 +98,6 @@ main .topo {
 
 main .topo:hover {
     opacity: .8;
-}
-
-main .topo.showBtn {
-    right: 2em;
 }
 
 main #carrossel {

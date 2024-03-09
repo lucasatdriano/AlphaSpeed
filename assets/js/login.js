@@ -13,9 +13,9 @@ btn.addEventListener('click', ()=>{
 })
 
 function login() {
-    // let usuario = document.querySelector('#iUsuario')
+    let usuario = document.querySelector('#iUsuario')
     
-    // let senha = document.querySelector('#iSenha')
+    let senha = document.querySelector('#iSenha')
     
     let msgError = document.querySelector('#msgError')
     let listaUser = []

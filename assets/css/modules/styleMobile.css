@@ -145,6 +145,7 @@
     footer #containerUm, #containerDois, #containerTres {
         display: flex;
         justify-content: space-between;
+        margin: 0 10px 0 0;
         border-top: 1.5px solid #b2b2b29f;
         text-indent: 10px; 
         overflow-y: hidden;

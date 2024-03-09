@@ -1,6 +1,5 @@
         // Script para mostrar mais no footer mobile
 
-
 // infos Um
 
 const infosUm = document.getElementById("moreUm")

@@ -577,7 +577,7 @@ main .formLog, .formCad {
     place-items: center;
 } 
 
-main #msgError {
+main #msgError, #msgSuccess {
     font-size: 1.5em;
     text-align: center;
     color: #bc0000;
@@ -585,12 +585,6 @@ main #msgError {
     display: none;
     position: absolute;
     top: 40px;
-}
-
-main #msgSuccess{
-    text-align: center;
-    padding: 1em;
-    display: none;
 }
 
 main .formulario {

@@ -1,4 +1,4 @@
-            // Script para utilizar a função login
+        // Script para utilizar a função login
 
 let btn = document.querySelector('.visibility')
 
@@ -19,12 +19,12 @@ function login() {
     
     let msgError = document.querySelector('#msgError')
     let listaUser = []
-  
+
     let userValid = {
         user: '',
         senha: ''
     }
-  
+
     listaUser = JSON.parse(localStorage.getItem('listaUser'))
     
     listaUser.forEach((item) => {
@@ -37,9 +37,9 @@ function login() {
         
         }
     })
-  
+    
     if(usuario.value == userValid.user && senha.value == userValid.senha){
-        location.href = '../html/index.html'
+        location.href = '../../index.html'
     
         let mathRandom = Math.random().toString(16).substr(2)
         let token = mathRandom + mathRandom

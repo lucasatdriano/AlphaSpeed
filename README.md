@@ -3,12 +3,12 @@ Este é um projeto de um site para uma concessionária de veículos desenvolvido
 ![Logo da Alpha Speed](assets/images/logoReadMe.png)
 
 ## Índice
-- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)<br />
-- [Funcionalidades](#️-funcionalidades)<br />
-- [Estrutura do Projeto](-#️estrutura-do-projeto)<br />
-- [Como Executar o Projeto](#️-como-executar-o-projeto)<br />
-- [Conclusão](#️-conclusão)<br />
-- [Contato](#️-contato)<br />
+- <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a>
+- <a href="#-funcionalidades">Funcionalidades</a>
+- <a href="#-estrutura-do-projeto">Estrutura do Projeto</a>
+- <a href="#-como-executar-o-projeto">Como Executar o Projeto</a>
+- <a href="#-conclusao">Conclusão</a>
+- <a href="#contato">Contato</a>
 
 ## 🛠️ Tecnologias Utilizadas
 **HTML**: Utilizado para a estruturação das páginas.  

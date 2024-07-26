@@ -24,7 +24,7 @@ O site inclui um sistema de login que utiliza o Local Storage do navegador para 
 Clone este repositório em sua máquina local.
 Abra o arquivo index.html em seu navegador para visualizar o site.
 Utilize a página de login (login.html) para fazer login e acessar o mostruário de veículos com filtros de busca.
-Conclusão
+## Conclusão
 Este projeto demonstra a utilização de HTML, CSS e JavaScript para criar um site funcional para uma concessionária de veículos. A inclusão de um mostruário dinâmico, filtros de busca e um sistema de login utilizando Local Storage mostra como essas tecnologias podem ser utilizadas para criar uma experiência de usuário dinâmica e interativa.
 
 Este projeto foi desenvolvido por Lucas Adriano como parte de um curso em desenvolvimento de sistemas.

@@ -1,50 +1,60 @@
 # Alpha Speed
 Este é um projeto de um site para uma concessionária de veículos desenvolvido como parte de um curso. O site possui um mostruário dinâmico de veículos, filtros de busca e um sistema de login utilizando Local Storage.
+![Logo da Alpha Speed](assets/images/logoReadMe.png)
+
+## Índice
+- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)<br />
+- [Funcionalidades](#️-funcionalidades)<br />
+- [Estrutura do Projeto](-#️estrutura-do-projeto)<br />
+- [Como Executar o Projeto](#️-como-executar-o-projeto)<br />
+- [Conclusão](#️-conclusão)<br />
+- [Contato](#️-contato)<br />
 
 ## 🛠️ Tecnologias Utilizadas
-<strong>HTML:</strong> Utilizado para a estruturação das páginas. <br />
-<strong>CSS(em módulos):</strong> Utilizado para a estilização das páginas e para tornar o site responsivo. <br />
-<strong>JavaScript:</strong> Utilizado para adicionar interatividade ao site, incluindo o sistema de login, os filtros de busca e o mostruário dinâmico de veículos.
+**HTML**: Utilizado para a estruturação das páginas.  
+**CSS (em módulos)**: Utilizado para a estilização das páginas e para tornar o site responsivo.  
+**JavaScript**: Utilizado para adicionar interatividade ao site, incluindo o sistema de login, os filtros de busca e o mostruário dinâmico de veículos.
 
-# 🚀 Funcionalidades
+## 🚀 Funcionalidades
 Algumas das funcionalidades desse projeto são: 
 
-## 📋 Mostruário de Veículos
-O site apresenta um mostruário dinâmico de veículos, onde os dados dos veículos são armazenados em um array e exibidos utilizando a função map do JavaScript. Cada veículo é apresentado com suas informações principais, como modelo, marca e preço ao passar o mouse por cima.
+### 📋 Mostruário de Veículos
+O site apresenta um mostruário dinâmico de veículos, onde os dados dos veículos são armazenados em um array e exibidos utilizando a função `map` do JavaScript. Cada veículo é apresentado com suas informações principais, como modelo, marca e preço ao passar o mouse por cima.
 
-## 🔍 Filtros de Busca
+### 🔍 Filtros de Busca
 Os filtros permitem que os usuários busquem por veículos específicos com base em critérios como marca, modelo, tipo e faixa de preço. Os filtros são aplicados em tempo real, atualizando o mostruário do filtro conforme o usuário ajusta as opções.
 
-## 🔑 Login com Local Storage
+### 🔑 Login com Local Storage
 O site inclui um sistema de login que utiliza o Local Storage do navegador para armazenar as informações de login do usuário. Ao fazer login, as informações do usuário são salvas localmente, permitindo que o site reconheça o usuário em visitas futuras sem a necessidade de um banco de dados.
 
 ## 📁 Estrutura do Projeto
 
-- **index.html:** Página inicial que contém o mostruário de veículos e os filtros de busca.
+- **index.html**: Página inicial que contém o mostruário de veículos e os filtros de busca.
 
-### assets:
-- **html:**
-  - **login.html:** Página de login para os usuários.
-  - **cadastrar.html:** Página de cadastro para os novos usuários.
+### assets
+- **html**
+  - **login.html**: Página de login para os usuários.
+  - **cadastrar.html**: Página de cadastro para os novos usuários.
 
-- **css:**
-  - **modules:** Pasta contendo os módulos CSS para estilização específica de componentes do site.
-  - **styles.css:** Arquivo CSS principal que centraliza a estilização geral do site.
+- **css**
+  - **modules**: Pasta contendo os módulos CSS para estilização específica de componentes do site.
+  - **styles.css**: Arquivo CSS principal que centraliza a estilização geral do site.
 
-- **js:**
-  - **scripts.js:** Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
+- **js**
+  - **scripts.js**: Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
 
-# 📝 Como Executar o Projeto
+## 📝 Como Executar o Projeto
 
 1. Clone este repositório em sua máquina local:
     ```bash
     git clone https://github.com/lucasatdriano/alphaSpeed
-
     ```
+
 2. Navegue até o diretório do projeto:
     ```bash
     cd alphaSpeed
     ```
+
 3. Abra o arquivo `index.html` em seu navegador:
     ```bash
     open index.html  # Para macOS
@@ -52,19 +62,14 @@ O site inclui um sistema de login que utiliza o Local Storage do navegador para 
     start index.html  # Para Windows
     # ou
     xdg-open index.html  # Para Linux
+    ```
 
-# 🎓 Conclusão
+## 🎓 Conclusão
 Este projeto demonstra a utilização de HTML, CSS e JavaScript para criar um site funcional para uma concessionária de veículos. A inclusão de um mostruário dinâmico, filtros de busca e um sistema de login utilizando Local Storage mostra como essas tecnologias podem ser utilizadas para criar uma experiência de usuário dinâmica e interativa.
 
-## Contato
+## 📞 Contato
 Este projeto foi desenvolvido por mim, Lucas Adriano, como parte de um curso em desenvolvimento de sistemas. Entre em contato em caso de dúvidas ou sugestões.
 
-### Redes Sociais
-
-### [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lucas-adriano-037003278/) [Lucas Adriano](https://linkedin.com/in/lucas-adriano-037003278/)
-
-### [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/__lgoncalves/) [@__lgoncalves](https://instagram.com/__lgoncalves/)
-
-### Email
-
-### [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucasatdriano@gmail.com) [lucasatdriano@gmail.com](mailto:lucasatdriano@gmail.com)
+- **Email**: [lucasatdriano@gmail.com](mailto:lucasatdriano@gmail.com)
+- **LinkedIn**: [Lucas Adriano](https://linkedin.com/in/lucas-adriano-037003278/)
+- **Instagram**: [@__lgoncalves](https://instagram.com/__lgoncalves/)

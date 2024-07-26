@@ -7,7 +7,7 @@ Este é um projeto de um site para uma concessionária de veículos desenvolvido
 - <a href="#-funcionalidades">Funcionalidades</a>
 - <a href="#-estrutura-do-projeto">Estrutura do Projeto</a>
 - <a href="#-como-executar-o-projeto">Como Executar o Projeto</a>
-- <a href="#-conclusao">Conclusão</a>
+- <a href="#-conclusão">Conclusão</a>
 - <a href="#-contato">Contato</a>
 
 ##  🛠️ Tecnologias Utilizadas

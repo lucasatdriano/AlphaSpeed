@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-        /* header */
+/* header */
 
 header {
-    background: linear-gradient( var(--color-primary), var(--color-secundary));
+    background: linear-gradient(var(--color-primary), var(--color-secundary));
     display: flex;
     align-items: center;
     position: relative;
@@ -37,7 +37,7 @@ header #navBarDesktop {
     justify-content: space-between;
     padding: 0 2em 0 0;
     margin: 0 3em 0 0;
-}    
+}
 
 header #navBarDesktop ul {
     display: flex;
@@ -48,21 +48,27 @@ header #navBarDesktop ul {
 
 header #navBarDesktop ul li {
     padding: 2em 0;
+    transition: ease-out 0.2s;
 }
 
 header #navBarDesktop ul li:hover {
     scale: 1.1;
-    transition: ease-out 0.3s; 
+}
+
+header #navBarDesktop a {
+    transition: ease-out 0.5s;
 }
 
 header #navBarDesktop a:hover {
     border-top: 1.5px solid var(--color-white);
     border-bottom: 1.5px solid var(--color-white);
-    transition: ease-out 0.3s; 
-}           
+}
 
 header .btnlogin {
-    color:var(--color-white);
+    position: absolute;
+    right: -50px;
+    opacity: 0;
+    color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,32 +78,34 @@ header .btnlogin {
     font-size: 2rem;
     border: 1.5px solid var(--color-white);
     cursor: pointer;
+    animation: appear 1.5s forwards;
 }
 
 header .btnlogin:hover {
     background-color: var(--color-white);
     color: var(--color-primary);
-    transition: ease-in-out .8s;
     box-shadow: 1px 1px 15px #d6d6d6c9;
 }
 
-    /* Main */
+/* Main */
 
- main .topo {
+main .topo {
     position: fixed;
-    right: 2em;
+    right: -1em;
     bottom: 1em;
     background-color: var(--color-primary);
-    padding: .5em .5em .2em;
+    padding: 0.5em 0.5em 0.2em;
     border-radius: 50%;
     font-size: 1.8rem;
     z-index: 100;
     transition: 1s;
-    opacity: .3;
+    opacity: 0;
+    animation: backTop 0.5s forwards;
 }
 
 main .topo:hover {
-    opacity: .8;
+    scale: 1.2;
+    transition: 0.5s ease;
 }
 
 main #carrossel {
@@ -105,28 +113,26 @@ main #carrossel {
 }
 
 main #carrossel img {
-    z-index: -1;
     object-fit: cover;
     width: 100%;
-    height: 50em;
+    height: 60em;
     border-radius: 0 0 20px 20px;
     filter: drop-shadow(5px 3px 10px #73737380);
 }
 
 main #btnSlide {
-    margin-top: -.5em;
+    margin-top: -0.5em;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    opacity: .5;
-    z-index: -1;
+    opacity: 0.5;
 }
 
 main #btnSlide:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
-main #btnSlide input[type=radio] {
+main #btnSlide input[type='radio'] {
     width: 20px;
     border: 3px solid;
     -webkit-appearance: none;
@@ -134,11 +140,12 @@ main #btnSlide input[type=radio] {
     cursor: pointer;
 }
 
-main #btnSlide input[type=radio]:checked {
+main #btnSlide input[type='radio']:checked {
     border: 3px solid red;
 }
 
-main #carrossel #setaSlidesAnt, #setaSlidesProx {
+main #carrossel #setaSlidesAnt,
+#setaSlidesProx {
     position: absolute;
     z-index: 0;
     bottom: 45%;
@@ -146,11 +153,12 @@ main #carrossel #setaSlidesAnt, #setaSlidesProx {
     color: var(--color-gray);
     background-color: #1c1c1caa;
     cursor: pointer;
-    opacity: .3;
+    opacity: 0.3;
 }
 
-main #carrossel:hover #setaSlidesAnt, #carrossel:hover #setaSlidesProx {
-    opacity: .8;
+main #carrossel:hover #setaSlidesAnt,
+#carrossel:hover #setaSlidesProx {
+    opacity: 0.8;
 }
 
 main #carrossel #setaSlidesAnt {
@@ -158,7 +166,7 @@ main #carrossel #setaSlidesAnt {
     border-radius: 0 15px 15px 0;
 }
 
-main #carrossel #setaSlidesProx{
+main #carrossel #setaSlidesProx {
     right: 0;
     border-radius: 15px 0 0 15px;
 }
@@ -173,7 +181,11 @@ main #modelos h2 {
     text-align: start;
 }
 
-main #sedan, #suv, #hatch, #esportivo, #todosCarros {
+main #sedan,
+#suv,
+#hatch,
+#esportivo,
+#todosCarros {
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
@@ -186,24 +198,33 @@ main #sedan, #suv, #hatch, #esportivo, #todosCarros {
     scroll-snap-type: x proximity;
 }
 
-main #sedan, #hatch {
+main #sedan,
+#hatch {
     margin-left: -2.7em;
 }
 
-main #suv, #esportivo {
+main #suv,
+#esportivo {
     padding-left: 1em;
 }
 
-main #sedan::-webkit-scrollbar, #suv::-webkit-scrollbar, #hatch::-webkit-scrollbar, #esportivo::-webkit-scrollbar, #todosCarros::-webkit-scrollbar {
-    height: .5em;
+main #sedan::-webkit-scrollbar,
+#suv::-webkit-scrollbar,
+#hatch::-webkit-scrollbar,
+#esportivo::-webkit-scrollbar,
+#todosCarros::-webkit-scrollbar {
+    height: 0.5em;
     background: var(--color-white);
 }
 
-main #sedan:hover .carros:not(:hover), #suv:hover .carros:not(:hover), #hatch:hover .carros:not(:hover), #esportivo:hover .carros:not(:hover) {
+main #sedan:hover .carros:not(:hover),
+#suv:hover .carros:not(:hover),
+#hatch:hover .carros:not(:hover),
+#esportivo:hover .carros:not(:hover) {
     transform: scale(0.8);
-    filter: blur(.7px);
-    opacity: .7;
-    transition: all .5s ease; 
+    filter: blur(0.7px);
+    opacity: 0.7;
+    transition: all 0.5s ease;
 }
 
 main .carros {
@@ -222,7 +243,7 @@ main .carros {
 main .carros:hover {
     transform: scale(1);
     max-height: 100%;
-    transition: all .5s ease; 
+    transition: all 0.5s ease;
 }
 
 main .carros img {
@@ -232,13 +253,13 @@ main .carros img {
     filter: drop-shadow(5px 3px 30px #73737380);
 }
 
-main .carros span{
+main .carros span {
     visibility: hidden;
     font-weight: 400;
     font-size: 2.2rem;
 }
 
-main .carros:hover span{
+main .carros:hover span {
     visibility: visible;
 }
 
@@ -248,28 +269,25 @@ main #filtragem {
 
 main #imagemFundo img {
     height: 50vh;
-    width: 100%;
+    width: 99.5vw;
     object-fit: cover;
     border: 1px double var(--color-black);
     border-radius: 10px;
-    filter: blur(.8px);
+    filter: blur(0.8px);
     box-shadow: 3px 3px 30px #73737380;
 }
 
-main #filtro {
+main .filtrar {
     position: relative;
     background-color: #fff;
-    top: 50%;
+    top: -100px;
     left: 50%;
     width: 75vw;
     border-radius: 20px;
     border: 2px solid var(--color-black);
-    z-index: 1;
+    z-index: 999;
+    transform: translateX(-50%);
     box-shadow: 5px 3px 30px #73737380;
-    transform: translate(-50%, -50%);
-}
-
-main form.filtrar {
     font-size: 2rem;
     padding: 1.5em;
     display: grid;
@@ -278,12 +296,13 @@ main form.filtrar {
     gap: 1.5em;
 }
 
-main form.filtrar label{
+main .filtrar label {
     text-indent: 5px;
     font-size: 1.8rem;
 }
 
-main form.filtrar input[type="text"], select {
+main .filtrar input[type='text'],
+select {
     text-indent: 10px;
     border-radius: 10px;
     font-size: 1.8rem;
@@ -295,70 +314,39 @@ main form.filtrar input[type="text"], select {
     box-shadow: 1px 1px 10px #000;
 }
 
-main form.filtrar select {
+main .filtrar select {
     cursor: pointer;
 }
 
-main form.filtrar input[type=range] {
+main .filtrar input[type='range'] {
     margin-top: 1.3em;
     height: 1.5em;
-    width: 75%;
+    width: 85%;
     border: none;
     background-color: transparent;
     -webkit-appearance: none;
     cursor: grab;
 }
 
-main form.filtrar input[type=range]:active  {
+main .filtrar input[type='range']:active {
     cursor: grabbing;
 }
 
-main form.filtrar input[type=range]::-webkit-slider-runnable-track {
+main .filtrar input[type='range']::-webkit-slider-runnable-track {
     width: 3em;
     height: 6px;
     background: var(--color-secundary);
     border-radius: 3px;
-    margin-top: .5em;
+    margin-top: 0.5em;
 }
 
-main form.filtrar input[type=range]::-webkit-slider-thumb {
+main .filtrar input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 16px;
     width: 16px;
     border-radius: 50%;
     background: var(--color-primary);
-    margin-top: -.3em;
-}
-
-main form.filtrar div:last-child {
-    display: grid;
-    place-items:center;
-    width: 200%;
-}
-
-main form.filtrar #btnFiltrar {
-    color:var(--color-white);
-    padding: 0 8em;
-    border-radius: 10px;
-    background-color: #740b0b;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-    
-main form.filtrar #btnFiltrar:hover {
-    background-color: #fefefe;
-    color: var(--color-primary);
-    transition: ease-in-out .8s;
-    box-shadow: 1px 1px 10px #000;
-}
-
-main #filtragem hr {
-    position: absolute;
-    width: 100vw;
-    bottom: 65vh; 
-    z-index: 0;
+    margin-top: -0.3em;
 }
 
 main #todosCarros {
@@ -369,9 +357,9 @@ main #todosCarros {
 
 main #todosCarros:hover .carros:not(:hover) {
     transform: scale(0.8);
-    filter: blur(.7px);
-    opacity: .7;
-    transition: all .3s ease; 
+    filter: blur(0.7px);
+    opacity: 0.7;
+    transition: all 0.3s ease;
 }
 
 main #sobre {
@@ -380,14 +368,15 @@ main #sobre {
     margin: 2.5em 0em;
 }
 
-main #sobre .about{
+main #sobre .about {
     margin: 2em;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
 }
 
-main #sobre .posicionamentoMob, .posicionamentoMobDois {
+main #sobre .posicionamentoMob,
+.posicionamentoMobDois {
     display: flex;
     flex-direction: row;
 }
@@ -395,7 +384,7 @@ main #sobre .posicionamentoMob, .posicionamentoMobDois {
 main #sobre .posicionamentoMobDois {
     margin-top: -10em;
 }
-  
+
 main #sobre img {
     height: 25em;
     width: 45%;
@@ -417,7 +406,7 @@ main .localidade {
     background: var(--color-darkGray);
     display: flex;
     justify-content: space-between;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
     border-radius: 10px 10px 0 0;
     cursor: pointer;
     transition: 2s ease;
@@ -432,7 +421,6 @@ main .localidade i {
     cursor: pointer;
     font-size: 3rem;
     color: var(--color-gray);
-    
 }
 
 main .localidade i:hover {
@@ -444,7 +432,7 @@ main #local {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: all .2s ease; 
+    transition: all 0.2s ease;
 }
 
 main #local p {
@@ -458,7 +446,7 @@ main #local hr {
     height: 16em;
     position: relative;
     top: 0;
-    margin: .5em;
+    margin: 0.5em;
     border: 2px solid var(--color-gray);
     border-radius: 5px;
 }
@@ -478,19 +466,20 @@ main #local {
 
 main #local.ativo {
     display: flex;
-    transition: all .5s ease; 
+    transition: all 0.5s ease;
 }
 
-
-    /* Footer */
+/* Footer */
 
 footer {
     border-top: 1.5px solid var(--color-gray);
-    background: linear-gradient( var(--color-primary), var(--color-secundary));
+    background: linear-gradient(var(--color-primary), var(--color-secundary));
     box-shadow: 5px 3px 15px 0 #73737380;
 }
 
-footer #arrowUm, #arrowDois, #arrowTres {
+footer #arrowUm,
+#arrowDois,
+#arrowTres {
     display: none;
 }
 
@@ -505,7 +494,6 @@ footer .services ul {
     list-style: none;
 }
 
-
 footer .services a:hover {
     text-decoration: underline;
 }
@@ -514,14 +502,14 @@ footer .socialMedias {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    margin: 0 2em 1em;
+    margin: 0 2em 1em 5em;
 }
 
 footer .socialMedias li {
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: all 0.3s ease;   
+    transition: all 0.3s ease;
 }
 
 footer .socialMedias li a {
@@ -532,7 +520,7 @@ footer .socialMedias li a {
 }
 
 footer .socialMedias img {
-    width: 3em;
+    width: 3.5em;
     stroke-width: 1.75;
     transition: all 0.8s ease;
 }
@@ -550,7 +538,7 @@ footer hr {
 
 footer p.rodape {
     color: var(--color-white);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -558,11 +546,10 @@ footer .rodape a {
     text-decoration: underline;
 }
 
+/* CSS DO LOGIN E CADASTRO */
 
-    /* CSS DO LOGIN E CADASTRO */
-
-
-main #login, #cadastro {
+main #login,
+#cadastro {
     width: 40%;
     margin: 1em 0 0;
     gap: 1.5em;
@@ -570,14 +557,16 @@ main #login, #cadastro {
     place-items: center;
 }
 
-main .formLog, .formCad {
+main .formLog,
+.formCad {
     margin: 4em 0 0;
     position: relative;
     display: grid;
     place-items: center;
-} 
+}
 
-main #msgError, #msgSuccess {
+main #msgError,
+#msgSuccess {
     font-size: 1.5em;
     text-align: center;
     color: #bc0000;
@@ -602,7 +591,8 @@ main .single-input {
     z-index: 1;
 }
 
-main #login label, #cadastro label {
+main #login label,
+#cadastro label {
     display: none;
 }
 
@@ -611,7 +601,7 @@ main .single-input i {
     color: var(--color-black);
     font-size: 27px;
     left: 3px;
-    padding: .15em;
+    padding: 0.15em;
     user-select: none;
 }
 
@@ -641,18 +631,19 @@ main .single-input .visibility {
     left: 10em;
 }
 
-main #login span, #cadastro span {
+main #login span,
+#cadastro span {
     color: #bc0000;
     display: none;
     margin: -30px 0 0;
     font-size: 1.4rem;
 }
 
-main #login #btnLogin, 
-  #cadastro #btnCadastrar {
+main #login #btnLogin,
+#cadastro #btnCadastrar {
     width: 100%;
     height: 35px;
-    color:var(--color-white);
+    color: var(--color-white);
     margin: 1.5em 0 0;
     letter-spacing: 1px;
     background-color: #740b0b;
@@ -663,15 +654,17 @@ main #login #btnLogin,
     border-radius: 15px;
 }
 
-main #login #btnLogin:hover, #cadastro #btnCadastrar:hover {
+main #login #btnLogin:hover,
+#cadastro #btnCadastrar:hover {
     background-color: var(--color-primary);
     box-shadow: 1px 1px 30px var(--color-gray);
 }
 
-main #login #btnRedCadastre, #cadastro #btnRedLogin {
+main #login #btnRedCadastre,
+#cadastro #btnRedLogin {
     width: 100%;
     height: 30px;
-    color:var(--color-primary);
+    color: var(--color-primary);
     border-radius: 15px;
     text-transform: uppercase;
     text-decoration: underline;
@@ -681,14 +674,16 @@ main #login #btnRedCadastre, #cadastro #btnRedLogin {
     cursor: pointer;
 }
 
-main #login #btnRedCadastre:hover, #cadastro #btnRedLogin:hover {
+main #login #btnRedCadastre:hover,
+#cadastro #btnRedLogin:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: 1px 1px 30px var(--color-gray);
-    transition: all .5s;
-} 
+    transition: all 0.5s;
+}
 
-main .imagemFundoLog img, .imagemFundoCad img {
+main .imagemFundoLog img,
+.imagemFundoCad img {
     width: 100%;
     position: relative;
     left: 40%;
@@ -705,4 +700,18 @@ main .imagemFundoLog img {
 main .imagemFundoCad img {
     height: 70em;
     margin-top: -65em;
+}
+
+@keyframes appear {
+    to {
+        right: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes backTop {
+    to {
+        right: 1.5em;
+        opacity: 0.3;
+    }
 }

@@ -1,4 +1,4 @@
-        // Arrays dos carros
+// Arrays dos carros
 
 const sedans = [
     {
@@ -8,7 +8,7 @@ const sedans = [
         cor: 'Vermelho',
         marca: 'Volvo',
         ano: 2023,
-        imagem: 'sedan/volvos60.png'
+        imagem: 'sedan/volvos60.png',
     },
     {
         modelo: 'A3',
@@ -17,7 +17,7 @@ const sedans = [
         cor: 'Azul',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'sedan/audia3.png'
+        imagem: 'sedan/audia3.png',
     },
     {
         modelo: 'A4',
@@ -26,7 +26,7 @@ const sedans = [
         cor: 'Cinza',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'sedan/audia4.png'
+        imagem: 'sedan/audia4.png',
     },
     {
         modelo: 'Serie 3E',
@@ -35,7 +35,7 @@ const sedans = [
         cor: 'Branco',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'sedan/bmwSeries3E.png'
+        imagem: 'sedan/bmwSeries3E.png',
     },
     {
         modelo: 'Civic',
@@ -44,9 +44,9 @@ const sedans = [
         cor: 'Preto Fosco',
         marca: 'Honda',
         ano: 2023,
-        imagem: 'sedan/hondaCivic.png'
-    }
-]
+        imagem: 'sedan/hondaCivic.png',
+    },
+];
 
 const suvs = [
     {
@@ -56,7 +56,7 @@ const suvs = [
         cor: 'Cinza',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'suv/bmwX6.png'
+        imagem: 'suv/bmwX6.png',
     },
     {
         modelo: 'X3',
@@ -65,7 +65,7 @@ const suvs = [
         cor: 'Preto',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'suv/bmwX3.png'
+        imagem: 'suv/bmwX3.png',
     },
     {
         modelo: 'Urus',
@@ -74,7 +74,7 @@ const suvs = [
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
-        imagem: 'suv/lamborghiniUrus.png'
+        imagem: 'suv/lamborghiniUrus.png',
     },
     {
         modelo: 'GLA',
@@ -83,7 +83,7 @@ const suvs = [
         cor: 'Vermelho',
         marca: 'Mercedes',
         ano: 2023,
-        imagem: 'suv/mercedesGla.png'
+        imagem: 'suv/mercedesGla.png',
     },
     {
         modelo: 'Ranger',
@@ -92,9 +92,9 @@ const suvs = [
         cor: 'Branca',
         marca: 'Land Rover',
         ano: 2023,
-        imagem: 'suv/landRoverRanger.png'
+        imagem: 'suv/landRoverRanger.png',
     },
-]
+];
 
 const hatchs = [
     {
@@ -104,7 +104,7 @@ const hatchs = [
         cor: 'Preto Fosco',
         marca: 'Mercedes',
         ano: 2023,
-        imagem: 'hatch/mercedesClasseA.png'
+        imagem: 'hatch/mercedesClasseA.png',
     },
     {
         modelo: 'Serie 1',
@@ -113,7 +113,7 @@ const hatchs = [
         cor: 'Azul',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'hatch/bmwSerie1.png'
+        imagem: 'hatch/bmwSerie1.png',
     },
     {
         modelo: 'City Hatchback Touring',
@@ -122,7 +122,7 @@ const hatchs = [
         cor: 'Cinza',
         marca: 'Honda',
         ano: 2023,
-        imagem: 'hatch/hondaCityhatchback.png'
+        imagem: 'hatch/hondaCityhatchback.png',
     },
     {
         modelo: 'Cooper S',
@@ -131,7 +131,7 @@ const hatchs = [
         cor: 'Azul',
         marca: 'Mini',
         ano: 2023,
-        imagem: 'hatch/miniCooperS.png'
+        imagem: 'hatch/miniCooperS.png',
     },
     {
         modelo: 'Yaris',
@@ -140,9 +140,9 @@ const hatchs = [
         cor: 'Cinza Fosco',
         marca: 'Toyota',
         ano: 2023,
-        imagem: 'hatch/toyotaYaris.png'
-    }
-]
+        imagem: 'hatch/toyotaYaris.png',
+    },
+];
 
 const sports = [
     {
@@ -152,7 +152,7 @@ const sports = [
         cor: 'Laranja',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'esportivo/audiR8.png'
+        imagem: 'esportivo/audiR8.png',
     },
     {
         modelo: 'Aventador',
@@ -161,7 +161,7 @@ const sports = [
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
-        imagem: 'esportivo/aventador.png'
+        imagem: 'esportivo/aventador.png',
     },
     {
         modelo: '458',
@@ -170,7 +170,7 @@ const sports = [
         cor: 'Vermelho',
         marca: 'Ferrari',
         ano: 2023,
-        imagem: 'esportivo/ferrari458.png'
+        imagem: 'esportivo/ferrari458.png',
     },
     {
         modelo: 'Artura',
@@ -179,7 +179,7 @@ const sports = [
         cor: 'Verde Lima',
         marca: 'McLaren',
         ano: 2023,
-        imagem: 'esportivo/mcLarenArtura.png'
+        imagem: 'esportivo/mcLarenArtura.png',
     },
     {
         modelo: 'Mustang GT',
@@ -188,9 +188,9 @@ const sports = [
         cor: 'Preto',
         marca: 'Ford',
         ano: 2023,
-        imagem: 'esportivo/mustangGT.png'
-    }
-]
+        imagem: 'esportivo/mustangGT.png',
+    },
+];
 
 const allCars = [
     {
@@ -200,7 +200,7 @@ const allCars = [
         cor: 'Vermelho',
         marca: 'Volvo',
         ano: 2023,
-        imagem: 'sedan/volvos60.png'
+        imagem: 'sedan/volvos60.png',
     },
     {
         modelo: 'A3',
@@ -209,7 +209,7 @@ const allCars = [
         cor: 'Azul',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'sedan/audia3.png'
+        imagem: 'sedan/audia3.png',
     },
     {
         modelo: 'A4',
@@ -218,7 +218,7 @@ const allCars = [
         cor: 'Cinza',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'sedan/audia4.png'
+        imagem: 'sedan/audia4.png',
     },
     {
         modelo: 'Serie 3E',
@@ -227,7 +227,7 @@ const allCars = [
         cor: 'Branco',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'sedan/bmwSeries3E.png'
+        imagem: 'sedan/bmwSeries3E.png',
     },
     {
         modelo: 'Civic',
@@ -236,7 +236,7 @@ const allCars = [
         cor: 'Preto Fosco',
         marca: 'Honda',
         ano: 2023,
-        imagem: 'sedan/hondaCivic.png'
+        imagem: 'sedan/hondaCivic.png',
     },
     {
         modelo: 'X6',
@@ -245,7 +245,7 @@ const allCars = [
         cor: 'Cinza',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'suv/bmwX6.png'
+        imagem: 'suv/bmwX6.png',
     },
     {
         modelo: 'X3',
@@ -254,7 +254,7 @@ const allCars = [
         cor: 'Preto',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'suv/bmwX3.png'
+        imagem: 'suv/bmwX3.png',
     },
     {
         modelo: 'Urus',
@@ -263,7 +263,7 @@ const allCars = [
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
-        imagem: 'suv/lamborghiniUrus.png'
+        imagem: 'suv/lamborghiniUrus.png',
     },
     {
         modelo: 'GLA',
@@ -272,7 +272,7 @@ const allCars = [
         cor: 'Vermelho',
         marca: 'Mercedes',
         ano: 2023,
-        imagem: 'suv/mercedesGla.png'
+        imagem: 'suv/mercedesGla.png',
     },
     {
         modelo: 'Ranger',
@@ -281,7 +281,7 @@ const allCars = [
         cor: 'Branca',
         marca: 'Land Rover',
         ano: 2023,
-        imagem: 'suv/landRoverRanger.png'
+        imagem: 'suv/landRoverRanger.png',
     },
     {
         modelo: 'Classe-A',
@@ -290,7 +290,7 @@ const allCars = [
         cor: 'Preto Fosco',
         marca: 'Mercedes',
         ano: 2023,
-        imagem: 'hatch/mercedesClasseA.png'
+        imagem: 'hatch/mercedesClasseA.png',
     },
     {
         modelo: 'Serie 1',
@@ -299,7 +299,7 @@ const allCars = [
         cor: 'Azul',
         marca: 'BMW',
         ano: 2023,
-        imagem: 'hatch/bmwSerie1.png'
+        imagem: 'hatch/bmwSerie1.png',
     },
     {
         modelo: 'City Hatchback Touring',
@@ -308,7 +308,7 @@ const allCars = [
         cor: 'Cinza',
         marca: 'Honda',
         ano: 2023,
-        imagem: 'hatch/hondaCityhatchback.png'
+        imagem: 'hatch/hondaCityhatchback.png',
     },
     {
         modelo: 'Cooper S',
@@ -317,7 +317,7 @@ const allCars = [
         cor: 'Azul',
         marca: 'Mini',
         ano: 2023,
-        imagem: 'hatch/miniCooperS.png'
+        imagem: 'hatch/miniCooperS.png',
     },
     {
         modelo: 'Yaris',
@@ -326,7 +326,7 @@ const allCars = [
         cor: 'Cinza Fosco',
         marca: 'Toyota',
         ano: 2023,
-        imagem: 'hatch/toyotaYaris.png'
+        imagem: 'hatch/toyotaYaris.png',
     },
     {
         modelo: 'R8',
@@ -335,7 +335,7 @@ const allCars = [
         cor: 'Laranja',
         marca: 'Audi',
         ano: 2023,
-        imagem: 'esportivo/audiR8.png'
+        imagem: 'esportivo/audiR8.png',
     },
     {
         modelo: 'Aventador',
@@ -344,7 +344,7 @@ const allCars = [
         cor: 'Azul',
         marca: 'Lamborghini',
         ano: 2023,
-        imagem: 'esportivo/aventador.png'
+        imagem: 'esportivo/aventador.png',
     },
     {
         modelo: '458',
@@ -353,7 +353,7 @@ const allCars = [
         cor: 'Vermelho',
         marca: 'Ferrari',
         ano: 2023,
-        imagem: 'esportivo/ferrari458.png'
+        imagem: 'esportivo/ferrari458.png',
     },
     {
         modelo: 'Artura',
@@ -362,7 +362,7 @@ const allCars = [
         cor: 'Verde Lima',
         marca: 'McLaren',
         ano: 2023,
-        imagem: 'esportivo/mcLarenArtura.png'
+        imagem: 'esportivo/mcLarenArtura.png',
     },
     {
         modelo: 'Mustang GT',
@@ -371,139 +371,214 @@ const allCars = [
         cor: 'Preto',
         marca: 'Ford',
         ano: 2023,
-        imagem: 'esportivo/mustangGT.png'
-    }
-]
+        imagem: 'esportivo/mustangGT.png',
+    },
+];
 
-const carros = [...new Set(allCars.map((item) => {return item}))]
+const carros = [
+    ...new Set(
+        allCars.map((item) => {
+            return item;
+        }),
+    ),
+];
 
-        // Mostrar os carros dinamicamente
-
+// Mostrar os carros dinamicamente
 
 const showSedans = () => {
     const containerSedan = document.getElementById('sedan');
 
     sedans.map((carro) => {
-       if(containerSedan != null) {
-        containerSedan.innerHTML += 
-            '<div class="carros">' +
-                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-showSedans()
+        if (containerSedan != null) {
+            containerSedan.innerHTML +=
+                '<div class="carros">' +
+                '<img src="assets/images/' +
+                carro.imagem +
+                '" alt="' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '" loading="lazy" />' +
+                '<h4>' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '</h4>' +
+                '<span id="price">R$' +
+                carro.preco +
+                '</span>' +
+                '</div>';
+        }
+    });
+};
+showSedans();
 
 const showSuvs = () => {
     const containerSuv = document.getElementById('suv');
 
     suvs.map((carro) => {
-       if(containerSuv != null) {
-        containerSuv.innerHTML += 
-            '<div class="carros">' +
-                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-showSuvs()
+        if (containerSuv != null) {
+            containerSuv.innerHTML +=
+                '<div class="carros">' +
+                '<img src="assets/images/' +
+                carro.imagem +
+                '" alt="' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '" loading="lazy" />' +
+                '<h4>' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '</h4>' +
+                '<span id="price">R$' +
+                carro.preco +
+                '</span>' +
+                '</div>';
+        }
+    });
+};
+showSuvs();
 
 const showHatchs = () => {
     const containerHatch = document.getElementById('hatch');
 
     hatchs.map((carro) => {
-       if(containerHatch != null) {
-        containerHatch.innerHTML += 
-            '<div class="carros">' +
-                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-showHatchs()
+        if (containerHatch != null) {
+            containerHatch.innerHTML +=
+                '<div class="carros">' +
+                '<img src="assets/images/' +
+                carro.imagem +
+                '" alt="' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '" loading="lazy" />' +
+                '<h4>' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '</h4>' +
+                '<span id="price">R$' +
+                carro.preco +
+                '</span>' +
+                '</div>';
+        }
+    });
+};
+showHatchs();
 
 const showSports = () => {
     const containerSport = document.getElementById('esportivo');
 
     sports.map((carro) => {
-       if(containerSport != null) {
-        containerSport.innerHTML += 
-            '<div class="carros">' +
-                '<img src="assets/images/' + carro.imagem + '" alt="' + carro.marca + ' ' + carro.modelo + '" loading="lazy" />' +
-                '<h4>' + carro.marca + ' ' + carro.modelo + '</h4>' +
-                '<span id="price">R$' + carro.preco + '</span>' +
-            '</div>'
-       }
-    })
-}
-showSports()
+        if (containerSport != null) {
+            containerSport.innerHTML +=
+                '<div class="carros">' +
+                '<img src="assets/images/' +
+                carro.imagem +
+                '" alt="' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '" loading="lazy" />' +
+                '<h4>' +
+                carro.marca +
+                ' ' +
+                carro.modelo +
+                '</h4>' +
+                '<span id="price">R$' +
+                carro.preco +
+                '</span>' +
+                '</div>';
+        }
+    });
+};
+showSports();
 
 const displayItem = (items) => {
     const divCarrosFiltrados = document.getElementById('todosCarros');
 
-    divCarrosFiltrados.innerHTML = items.map((item) => {
-        let {modelo, preco, tipo, cor, marca, ano, imagem} = item;
-        return(
-            `<div class="carros">
+    divCarrosFiltrados.innerHTML = items
+        .map((item) => {
+            let { modelo, preco, tipo, cor, marca, ano, imagem } = item;
+            return `<div class="carros">
                 <img src="assets/images/${imagem}" alt="${marca} ${modelo}" loading="lazy" />
                 <h4>${marca} ${modelo}</h4>
                 <span id="price">R$${preco.toFixed(3)}</span>
-            </div>`
-        )
-    }).join('')
+            </div>`;
+        })
+        .join('');
 };
-displayItem(carros)
+displayItem(carros);
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Chamar Inputs
+    const modeloInput = document.getElementById('iModelo');
+    const marcaInput = document.getElementById('selectMarca');
+    const tipoInput = document.getElementById('selectTipo');
+    const precoInput = document.getElementById('iPreco');
 
-        // chamar Inputs
-
-const modeloInput = document.getElementById('iModelo');
-const marcaInput = document.getElementById('selectMarca');
-const tipoInput = document.getElementById('selectTipo');
-const precoInput = document.getElementById('iPreco');
-
-
-        // filtrar carros
-
-const btnFiltro = document.getElementById('btnFiltrar');
-
-btnFiltro.addEventListener('click', () => {
-    const valueModeloInput = modeloInput.value.toLowerCase();
-    const valueMarcaSelect = marcaInput.value;
-    const valueTipoSelect = tipoInput.value;
-    const valuePrecoInput = parseFloat(precoInput.value);
-
-    const resultado = carros.filter(item =>  
-        item.modelo.toLowerCase().includes(valueModeloInput) &&
-        (valueMarcaSelect === '' || item.marca === valueMarcaSelect) &&
-        (valueTipoSelect === '' || item.tipo === valueTipoSelect) &&
-        (isNaN(valuePrecoInput) || item.preco <= valuePrecoInput)
-    );
-
-    exibirResultado(resultado);
-});
-
-function exibirResultado(resultado) {
-    const divCarrosFiltrados = document.getElementById('todosCarros');
-    divCarrosFiltrados.innerHTML = '';
-
-    if (resultado.length === 0) {
-        divCarrosFiltrados.innerHTML += 
-            `<h2 style="padding: 80px;">Nenhum resultado encontrado.</h2>`;
-    } else {
-        resultado.forEach(carro => {
-            divCarrosFiltrados.innerHTML += 
-                `<div class="carros">
-                    <img src="assets/images/${carro.imagem}" alt="${carro.marca} ${carro.modelo}" loading="lazy" />
-                    <h4>${carro.marca} ${carro.modelo}</h4>
-                    <span id="price">R$${carro.preco.toFixed(3)}</span>
-                </div>`;
-        });
+    if (!modeloInput || !marcaInput || !tipoInput || !precoInput) {
+        console.error('Um ou mais elementos de entrada não foram encontrados.');
+        return;
     }
-}
+
+    // Verifique se a variável 'carros' está definida e é um array
+    if (!Array.isArray(carros)) {
+        console.error(
+            'A variável "carros" não está definida ou não é um array.',
+        );
+        return;
+    }
+
+    // Função para filtrar carros
+    function filtrarCarros() {
+        const valueModeloInput = modeloInput.value.toLowerCase();
+        const valueMarcaSelect = marcaInput.value;
+        const valueTipoSelect = tipoInput.value;
+        const valuePrecoInput = parseFloat(precoInput.value);
+
+        const resultado = carros.filter(
+            (item) =>
+                item.modelo.toLowerCase().includes(valueModeloInput) &&
+                (valueMarcaSelect === '' || item.marca === valueMarcaSelect) &&
+                (valueTipoSelect === '' || item.tipo === valueTipoSelect) &&
+                (isNaN(valuePrecoInput) || item.preco <= valuePrecoInput),
+        );
+
+        exibirResultado(resultado);
+    }
+
+    // Função para exibir o resultado
+    function exibirResultado(resultado) {
+        const divCarrosFiltrados = document.getElementById('todosCarros');
+        divCarrosFiltrados.innerHTML = '';
+
+        if (resultado.length === 0) {
+            divCarrosFiltrados.innerHTML =
+                '<h2 style="padding: 80px;">Nenhum resultado encontrado.</h2>';
+        } else {
+            resultado.forEach((carro) => {
+                divCarrosFiltrados.innerHTML += `
+                    <div class="carros">
+                        <img src="assets/images/${carro.imagem}" alt="${
+                    carro.marca
+                } ${carro.modelo}" loading="lazy" />
+                        <h4>${carro.marca} ${carro.modelo}</h4>
+                        <span id="price">R$${carro.preco.toFixed(3)}</span>
+                    </div>`;
+            });
+        }
+    }
+
+    // Adiciona ouvintes de eventos para filtrar em tempo real
+    modeloInput.addEventListener('input', filtrarCarros);
+    marcaInput.addEventListener('change', filtrarCarros);
+    tipoInput.addEventListener('change', filtrarCarros);
+    precoInput.addEventListener('input', filtrarCarros);
+
+    // Chama a função de filtro inicialmente para mostrar todos os carros
+    filtrarCarros();
+});

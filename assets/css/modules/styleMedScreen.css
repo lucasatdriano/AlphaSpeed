@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 1024px) {
-    
     header {
         justify-content: space-around;
     }
@@ -31,7 +30,9 @@
         cursor: pointer;
     }
 
-    header #hamburguer, #hamburguer::after, #hamburguer::before {
+    header #hamburguer,
+    #hamburguer::after,
+    #hamburguer::before {
         content: '';
         display: block;
         border-radius: 2em;
@@ -51,14 +52,17 @@
     header #hamburguer::before {
         transform: translateY(calc(var(--menu-size) / -3));
     }
-    
+
     header #navBarMobile {
         display: flex;
         flex-direction: column;
         list-style: none;
         visibility: hidden;
         position: absolute;
-        background: linear-gradient( var(--color-secundary), var(--color-primary));
+        background: linear-gradient(
+            var(--color-secundary),
+            var(--color-primary)
+        );
         width: 0;
         right: 0;
         top: 9.1em;
@@ -71,9 +75,9 @@
         z-index: 100;
 
         filter: drop-shadow(5px 5px 30px 5px #4e4e4e80);
-        transition: all .6s ease-in;
+        transition: all 0.6s ease-in;
     }
-    
+
     header #navBarMobile li.btn-nav {
         display: flex;
         align-items: center;
@@ -82,7 +86,7 @@
         border-bottom: 1.5px solid var(--color-white);
         margin-left: 50px;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     header #nav.active #hamburguer {
@@ -91,8 +95,8 @@
 
     header #nav.active #hamburguer::after {
         transform: rotate(135deg);
-    } 
-    
+    }
+
     header #nav.active #hamburguer::before {
         transform: rotate(-135deg);
         top: -2px;
@@ -109,16 +113,15 @@
     }
 
     header #nav #navBarMobile .btnlogin {
-        font-size: 1.8rem;  
+        font-size: 1.8rem;
         margin: 15px 20% 0;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     header #nav.active #navBarMobile .btnlogin {
         opacity: 1;
     }
-
 
     /* Main */
 
@@ -127,12 +130,14 @@
         height: 35em;
     }
 
-    main #carrossel #setaSlidesAnt, #setaSlidesProx {
+    main #carrossel #setaSlidesAnt,
+    #setaSlidesProx {
         bottom: 40%;
-        padding: 2em .5em;
+        padding: 2em 0.5em;
     }
 
-    main #sedan, #hatch {
+    main #sedan,
+    #hatch {
         margin-left: -4em;
     }
 
@@ -145,22 +150,18 @@
         width: 25em;
     }
 
-    main form.filtrar #iModelo, select {
+    main .filtrar #iModelo,
+    select {
         font-size: 1.6rem;
-    }
-     
-    main form.filtrar #btnFiltrar {
-        padding: 0 3em;
     }
 
     main #sobre .posicionamentoMobDois {
         margin-top: -50em;
-    }    
+    }
 
     main #sobre img {
         height: 65%;
     }
-
 
     /* Footer */
 
@@ -168,15 +169,16 @@
         font-size: 1rem;
     }
 
-    
     /* CSS DO LOGIN E CADASTRO */
-    
-    main #login, #cadastro {
+
+    main #login,
+    #cadastro {
         width: 100%;
         margin: 0 0 40px;
-   }
+    }
 
-    main .imagemFundoLog, .imagemFundoCad {
+    main .imagemFundoLog,
+    .imagemFundoCad {
         display: none;
     }
 }

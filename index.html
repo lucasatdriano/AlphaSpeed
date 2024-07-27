@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="shortcut icon" href="assets/images/alphaSpeed.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
    
@@ -100,8 +100,8 @@
                 <img src="assets/images/imgIlustrativas/imagemFundo.png" alt="imagem de fundo" loading="lazy">
             </div>
             
-            <div id="filtro">
-                <form class="filtrar">
+            <form id="filtro">
+                <div class="filtrar">
 
                     <div class="searchContent">
                         <label for="iModelo">Modelo:
@@ -145,16 +145,9 @@
                             <p>min: R$ 100.000 - max: R$ <output id="value"></output>.000</p>
                         </label>
                     </div>
-
-                    <div class="btnFiltro">
-                        <button type="button" id="btnFiltrar">Filtrar</button>
-                    </div>
-                </form>
-            
-                
-            </div>
-            
-            <hr>
+                </div>
+            </form>
+        
             <div id="todosCarros">
             </div>
 

@@ -7,7 +7,7 @@
 @import url(modules/styleMobile.css);
 
 :root {
-    --color-primary: #5F1414;
+    --color-primary: #5f1414;
     --color-secundary: #6b2424;
     --color-gray: #747474;
     --color-darkGray: #222222;
@@ -43,8 +43,8 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 1.2em;
-    background: linear-gradient( var(--color-primary), var(--color-secundary));
+    width: 1em;
+    background: linear-gradient(var(--color-primary), var(--color-secundary));
 }
 
 body {
@@ -63,7 +63,8 @@ h2 {
     text-align: center;
 }
 
-a, h3 {
+a,
+h3 {
     color: var(--color-white);
     text-decoration: none;
 }

@@ -31,7 +31,7 @@ header #menuMob {
 
 header #navBarDesktop {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,7 +48,7 @@ header #navBarDesktop ul {
 
 header #navBarDesktop ul li {
     padding: 2em 0;
-    transition: ease-out 0.2s;
+    transition: ease-out 0.8s;
 }
 
 header #navBarDesktop ul li:hover {
@@ -56,7 +56,7 @@ header #navBarDesktop ul li:hover {
 }
 
 header #navBarDesktop a {
-    transition: ease-out 0.5s;
+    transition: ease 0.2s;
 }
 
 header #navBarDesktop a:hover {
@@ -75,7 +75,7 @@ header .btnLogin {
     padding: 0 2em;
     border-radius: 3em;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 2.4rem;
     border: 1.5px solid var(--color-white);
     cursor: pointer;
     animation: appear 1.5s forwards;
@@ -99,12 +99,13 @@ main .topo {
     font-size: 1.8rem;
     z-index: 100;
     transition: 1s;
-    opacity: 0;
+    opacity: 0.3;
     animation: backTop 0.5s forwards;
 }
 
 main .topo:hover {
     scale: 1.2;
+    opacity: 1;
     transition: 0.5s ease;
 }
 
@@ -177,7 +178,7 @@ main #modelos {
 
 main #modelos h2 {
     font-family: var(--font-main);
-    margin: 1em 2em;
+    margin: 1em 2em 0;
     text-align: start;
 }
 
@@ -189,7 +190,7 @@ main #sedan,
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     text-align: center;
     padding-right: 5em;
 
@@ -229,7 +230,7 @@ main #sedan:hover .carros:not(:hover),
 
 main .carros {
     width: 30em;
-    height: 18em;
+    height: 16em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -256,7 +257,7 @@ main .carros img {
 main .carros span {
     visibility: hidden;
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 main .carros:hover span {
@@ -269,7 +270,7 @@ main #filtragem {
 
 main #imagemFundo img {
     height: 50vh;
-    width: 99.5vw;
+    width: calc(100vw - 1em);
     object-fit: cover;
     border: 1px double var(--color-black);
     border-radius: 10px;
@@ -288,8 +289,7 @@ main .filtrar {
     z-index: 999;
     transform: translateX(-50%);
     box-shadow: 5px 3px 30px #73737380;
-    font-size: 2rem;
-    padding: 1.5em;
+    padding: 2.5em;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -298,14 +298,14 @@ main .filtrar {
 
 main .filtrar label {
     text-indent: 5px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 main .filtrar input[type='text'],
 select {
     text-indent: 10px;
     border-radius: 10px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     width: 95%;
     height: 1.5em;
     border: none;
@@ -350,7 +350,7 @@ main .filtrar input[type='range']::-webkit-slider-thumb {
 }
 
 main #todosCarros {
-    margin: -7em 0 0 0;
+    margin: -5em 0 0 0;
     padding: 0;
     width: 100vw;
 }
@@ -396,13 +396,14 @@ main #sobre img {
 
 main #sobre p {
     color: var(--color-black);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     text-align: justify;
     width: 50%;
     margin: 0 2.5em 0;
 }
 
 main .localidade {
+    width: calc(100vw - 1em);
     background: var(--color-darkGray);
     display: flex;
     justify-content: space-between;
@@ -414,12 +415,12 @@ main .localidade {
 
 main .localidade h3 {
     color: var(--color-gray);
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
 main .localidade i {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--color-gray);
 }
 
@@ -437,13 +438,13 @@ main #local {
 
 main #local p {
     color: var(--color-gray);
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 1em;
 }
 
 main #local hr {
     width: 0;
-    height: 16em;
+    height: 20em;
     position: relative;
     top: 0;
     margin: 0.5em;
@@ -452,10 +453,11 @@ main #local hr {
 }
 
 main #local iframe {
-    width: 40em;
-    height: 15em;
+    width: 70em;
+    height: 20em;
     margin-right: 1em;
-    border-radius: 2vw;
+    margin: 2.5em 0;
+    border-radius: 1vw;
     border: 2px solid var(--color-gray);
     filter: drop-shadow(5px 3px 30px #0c0c0cba);
 }
@@ -484,7 +486,7 @@ footer #arrowUm,
 }
 
 footer .services {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     display: flex;
     padding-top: 1em;
     justify-content: space-around;
@@ -492,6 +494,10 @@ footer .services {
 
 footer .services ul {
     list-style: none;
+}
+
+footer .services a {
+    transition: 1s ease;
 }
 
 footer .services a:hover {
@@ -538,7 +544,7 @@ footer hr {
 
 footer p.rodape {
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -567,7 +573,7 @@ main .formLog,
 
 main #msgError,
 #msgSuccess {
-    font-size: 1.5em;
+    font-size: 1.8rem;
     text-align: center;
     color: #bc0000;
     padding: 1em;
@@ -599,9 +605,9 @@ main #login label,
 main .single-input i {
     position: absolute;
     color: var(--color-black);
-    font-size: 27px;
+    font-size: 32px;
     left: 3px;
-    padding: 0.15em;
+    padding: 0;
     user-select: none;
 }
 
@@ -609,7 +615,7 @@ main .single-input input {
     text-indent: 40px;
     margin: 0;
     width: 18.5em;
-    font-size: 1.7rem;
+    font-size: 2rem;
     height: 2em;
     border: none;
     border-bottom: 2px solid #b16c6c;
@@ -636,22 +642,23 @@ main #login span,
     color: #bc0000;
     display: none;
     margin: -30px 0 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 main #login #btnLogin,
 #cadastro #btnCadastrar {
     width: 100%;
-    height: 35px;
+    padding: 0.5em;
     color: var(--color-white);
     margin: 1.5em 0 0;
     letter-spacing: 1px;
     background-color: #740b0b;
-    font-size: 16px;
+    font-size: 2rem;
     border: 2px solid var(--color-secundary);
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 15px;
+    transition: all 0.5s;
+    border-radius: 10px;
 }
 
 main #login #btnLogin:hover,
@@ -663,14 +670,14 @@ main #login #btnLogin:hover,
 main #login #btnRedCadastre,
 #cadastro #btnRedLogin {
     width: 100%;
-    height: 30px;
     color: var(--color-primary);
-    border-radius: 15px;
+    border-radius: 10px;
+    padding: 0.25em;
     text-transform: uppercase;
-    text-decoration: underline;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 2rem;
     border: 2px solid var(--color-primary);
+    transition: all 0.25s;
     cursor: pointer;
 }
 
@@ -679,7 +686,6 @@ main #login #btnRedCadastre:hover,
     background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: 1px 1px 30px var(--color-gray);
-    transition: all 0.5s;
 }
 
 main .imagemFundoLog img,
@@ -712,6 +718,5 @@ main .imagemFundoCad img {
 @keyframes backTop {
     to {
         right: 1.5em;
-        opacity: 0.3;
     }
 }

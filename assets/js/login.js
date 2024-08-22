@@ -5,7 +5,7 @@ let btn = document.querySelector('.visibility');
 btn.addEventListener('click', () => {
     let inputSenha = document.querySelector('#iSenha');
 
-    if (inputSenha.getAttribute('type') == 'password') {
+    if (inputSenha.getAttribute('type') === 'password') {
         inputSenha.setAttribute('type', 'text');
     } else {
         inputSenha.setAttribute('type', 'password');
@@ -23,18 +23,32 @@ function login() {
         senha: '',
     };
 
-    listaUser = JSON.parse(localStorage.getItem('listaUser'));
+    listaUser = JSON.parse(localStorage.getItem('listaUser')) || [];
 
+    msgError.setAttribute('style', 'display: none');
+    usuario.setAttribute('style', 'border-color: initial');
+    senha.setAttribute('style', 'border-color: initial');
+
+    if (usuario.value === '' || senha.value === '') {
+        usuario.setAttribute('style', 'border-color: red');
+        senha.setAttribute('style', 'border-color: red');
+        msgError.setAttribute('style', 'display: block');
+        msgError.innerHTML = 'Preencha os campos para realizar o login';
+        return;
+    }
+
+    let isValidUser = false;
     listaUser.forEach((item) => {
-        if (usuario.value == item.userCad && senha.value == item.senhaCad) {
+        if (usuario.value === item.userCad && senha.value === item.senhaCad) {
             userValid = {
                 user: item.userCad,
                 senha: item.senhaCad,
             };
+            isValidUser = true;
         }
     });
 
-    if (usuario.value == userValid.user && senha.value == userValid.senha) {
+    if (isValidUser) {
         location.href = '../../index.html';
 
         let mathRandom = Math.random().toString(16).substr(2);

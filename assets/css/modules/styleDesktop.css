@@ -64,7 +64,7 @@ header #navBarDesktop a:hover {
     border-bottom: 1.5px solid var(--color-white);
 }
 
-header .btnlogin {
+header .btnLogin {
     position: absolute;
     right: -50px;
     opacity: 0;
@@ -81,7 +81,7 @@ header .btnlogin {
     animation: appear 1.5s forwards;
 }
 
-header .btnlogin:hover {
+header .btnLogin:hover {
     background-color: var(--color-white);
     color: var(--color-primary);
     box-shadow: 1px 1px 15px #d6d6d6c9;

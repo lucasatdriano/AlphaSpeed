@@ -112,14 +112,14 @@
         opacity: 1;
     }
 
-    header #nav #navBarMobile .btnlogin {
+    header #nav #navBarMobile .btnLogin {
         font-size: 1.8rem;
         margin: 15px 20% 0;
         opacity: 0;
         transition: 0.5s;
     }
 
-    header #nav.active #navBarMobile .btnlogin {
+    header #nav.active #navBarMobile .btnLogin {
         opacity: 1;
     }
 

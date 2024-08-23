@@ -48,7 +48,7 @@ header #navBarDesktop ul {
 
 header #navBarDesktop ul li {
     padding: 2em 0;
-    transition: ease-out 0.8s;
+    transition: ease-out 0.5s;
 }
 
 header #navBarDesktop ul li:hover {
@@ -403,7 +403,6 @@ main #sobre p {
 }
 
 main .localidade {
-    width: calc(100vw - 1em);
     background: var(--color-darkGray);
     display: flex;
     justify-content: space-between;

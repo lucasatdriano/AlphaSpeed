@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     let btnLogin = document.querySelector('.btnLogin');
     let logged = localStorage.getItem('userLogado');
-    let userLogado = JSON.parse(logged);
-    if (logged !== null && userLogado !== null) {
-        btnLogin.innerText = `Olá, ${userLogado.user}`;
+
+    if (logged) {
+        let userLogado = JSON.parse(logged);
+
+        if (userLogado && userLogado.user) {
+            const firstName = userLogado.user.split(' ')[0];
+            btnLogin.innerText = `Olá, ${firstName}`;
+        } else {
+            btnLogin.innerText = 'Login';
+        }
     } else {
         btnLogin.innerText = 'Login';
     }

@@ -37,7 +37,7 @@ usuario.addEventListener('keyup', () => {
         return false;
     } else {
         usuario.setAttribute('style', 'border-color: green');
-        spanUsuario.innerText = '';
+        spanUsuario.style.display = 'none';
         validUsuario = true;
         return true;
     }
@@ -80,7 +80,7 @@ telefone.addEventListener('keyup', () => {
         return false;
     } else {
         telefone.setAttribute('style', 'border-color: green');
-        spanTel.innerText = '';
+        spanTel.style.display = 'none';
         validTel = true;
         return true;
     }
@@ -100,7 +100,7 @@ email.addEventListener('keyup', () => {
         return false;
     } else {
         email.setAttribute('style', 'border-color: green');
-        spanEmail.innerText = '';
+        spanEmail.style.display = 'none';
         validEmail = true;
         return true;
     }
@@ -132,7 +132,7 @@ senha.addEventListener('keyup', () => {
         return false;
     } else {
         senha.setAttribute('style', 'border-color: green');
-        spanSenha.innerText = '';
+        spanSenha.style.display = 'none';
         validSenha = true;
         return true;
     }
@@ -153,7 +153,7 @@ confirmSenha.addEventListener('keyup', () => {
         return false;
     } else {
         confirmSenha.setAttribute('style', 'border-color: green');
-        spanConf.innerText = '';
+        spanConf.style.display = 'none';
         validConfirmSenha = true;
         return true;
     }

@@ -10,15 +10,15 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <link rel="shortcut icon" href="assets/images/alphaSpeed.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="src/images/alphaSpeed.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
    
     <title translate="no">Alpha Speed</title>
 </head>
 
 <body id="header">
     <header >
-        <a id="logo" href="index.html"><img src="assets/images/alphaSpeed.png" alt="Logo da AlphaSpeed" loading="eager"></a>
+        <a id="logo" href="index.html"><img src="src/images/alphaSpeed.png" alt="Logo da AlphaSpeed" loading="eager"></a>
 
         <nav id="navBarDesktop">
             <ul>
@@ -27,7 +27,7 @@
                 <li><a href="#sobre" tabindex="3">Sobre</a></li>
                 <li><a href="#contato" tabindex="4">Contatos</a></li>
             </ul>
-            <a href="assets/html/login.html" translate="no" class="btnLogin" tabindex="5"></a>
+            <a href="src/html/login.html" translate="no" class="btnLogin" tabindex="5"></a>
         </nav>
         
         <nav id="nav">
@@ -39,7 +39,7 @@
                 <li class="btn-nav" id="op2"><a href="#filtragem">Filtrar</a></li>
                 <li class="btn-nav" id="op3"><a href="#sobre">Sobre</a></li>
                 <li class="btn-nav" id="op4"><a href="#contato">Contatos</a></li>
-                <li id="op5"><a href="assets/html/login.html" translate="no" class="btnLogin"></a></li>
+                <li id="op5"><a href="src/html/login.html" translate="no" class="btnLogin"></a></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +55,7 @@
         </div>
 
         <section id="carrossel">
-            <img src="assets/images/carrossel/imgCarrossel1.jpg" alt="carrossel" name="slide" loading="eager">
+            <img src="src/images/carrossel/imgCarrossel1.jpg" alt="carrossel" name="slide" loading="eager">
             
             <form id="btnSlide">
                 <input type="radio" id="v1" name="mudaSlide" onclick="Muda(1)">
@@ -97,7 +97,7 @@
         <section id="filtragem">
 
             <div id="imagemFundo">
-                <img src="assets/images/imgIlustrativas/imagemFundo.png" alt="imagem de fundo" loading="lazy">
+                <img src="src/images/imgIlustrativas/imagemFundo.png" alt="imagem de fundo" loading="lazy">
             </div>
             
             <form id="filtro">
@@ -156,37 +156,33 @@
         <section id="sobre">
             <h2>SOBRE</h2>
             <div class="about">
-                <div class="posicionamentoMob">
-                    <p>
-                        <strong>Bem-vindo à Alpha Speed! </strong> 
-                        Somos muito mais do que uma simples concessionária de automóveis. 
-                        Somos comprometidos em proporcionar a você uma experiência excepcional 
-                        na escolha do seu veículo.<br><br>
+                <img class="imagem1" src="src/images/imgIlustrativas/imgSob1.jpg" alt="imagem ilustrativa" loading="lazy">
+                <p class="texto1">
+                    <strong>Bem-vindo à Alpha Speed! </strong> 
+                    Somos muito mais do que uma simples concessionária de automóveis. 
+                    Somos comprometidos em proporcionar a você uma experiência excepcional 
+                    na escolha do seu veículo.<br><br>
 
-                        <strong>Nossa História: </strong>
-                        Fundada em 2021, Alpha Speed tem uma longa história de fornecer 
-                        veículos de alta qualidade e serviços excepcionais aos nossos clientes. 
-                        Desde o início, nosso foco tem sido construir relacionamentos duradouros 
-                        com os clientes, baseados na confiança, integridade e excelência no atendimento.
-                    </p>
-                    <img src="assets/images/imgIlustrativas/imgSob1.jpg" alt="imagem ilustrativa" loading="lazy">
-                </div>
+                    <strong>Nossa História: </strong>
+                    Fundada em 2021, Alpha Speed tem uma longa história de fornecer 
+                    veículos de alta qualidade e serviços excepcionais aos nossos clientes. 
+                    Desde o início, nosso foco tem sido construir relacionamentos duradouros 
+                    com os clientes, baseados na confiança, integridade e excelência no atendimento.
+                </p>
                 <br>
-                <div class="posicionamentoMobDois">
-                    <img src="assets/images/imgIlustrativas/imgSob2.jpg" alt="imagem ilustrativa" loading="lazy">
-                    <p>
-                        <strong>Compromisso com a Qualidade: </strong> 
-                        Garantimos a qualidade e autenticidade de cada veículo em nosso showroom. 
-                        Cada carro passa por rigorosas inspeções para garantir que você esteja recebendo 
-                        um produto confiável e seguro.<br><br>
+                <img class="imagem2" src="src/images/imgIlustrativas/imgSob2.jpg" alt="imagem ilustrativa" loading="lazy">
+                <p class="texto2">
+                    <strong>Compromisso com a Qualidade: </strong> 
+                    Garantimos a qualidade e autenticidade de cada veículo em nosso showroom. 
+                    Cada carro passa por rigorosas inspeções para garantir que você esteja recebendo 
+                    um produto confiável e seguro.<br><br>
 
-                        <strong>Nossa Seleção de Veículos: </strong>
-                        Em nossa concessionária, você encontrará uma ampla variedade de veículos novos 
-                        e usados, de diversas marcas e modelos. Nossos especialistas em vendas estão aqui 
-                        para ajudá-lo a encontrar o carro dos seus sonhos, adequado às suas necessidades e 
-                        orçamento.
-                    </p>
-                </div>
+                    <strong>Nossa Seleção de Veículos: </strong>
+                    Em nossa concessionária, você encontrará uma ampla variedade de veículos novos 
+                    e usados, de diversas marcas e modelos. Nossos especialistas em vendas estão aqui 
+                    para ajudá-lo a encontrar o carro dos seus sonhos, adequado às suas necessidades e 
+                    orçamento.
+                </p>
             </div>
         </section>
 
@@ -268,17 +264,17 @@
             <ul class="socialMedias">
                 <li>
                     <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/redesSociais/instagram.png" alt="Instagram" loading="lazy">
+                        <img src="src/images/redesSociais/instagram.png" alt="Instagram" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="http://pt-br.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/redesSociais/facebook.png" alt="Facebook" loading="lazy">
+                        <img src="src/images/redesSociais/facebook.png" alt="Facebook" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/redesSociais/linkedin.png" alt="linkedin" loading="lazy">
+                        <img src="src/images/redesSociais/linkedin.png" alt="linkedin" loading="lazy">
                     </a>
                 </li>
             </ul>
@@ -293,14 +289,14 @@
 
     </footer>
 
-    <script src="assets/js/logged.js"></script>
-    <script src="assets/js/carrossel.js"></script>
-    <script src="assets/js/cars.js"></script>
-    <script src="assets/js/valueRange.js"></script>
-    <script src="assets/js/openLocal.js"></script>
-    <script src="assets/js/navbarMobile.js"></script>
-    <script src="assets/js/mostMore.js"></script>
-    <script src="assets/js/scrollTop.js"></script>
+    <script src="src/js/logged.js"></script>
+    <script src="src/js/carrossel.js"></script>
+    <script src="src/js/cars.js"></script>
+    <script src="src/js/valueRange.js"></script>
+    <script src="src/js/openLocal.js"></script>
+    <script src="src/js/navbarMobile.js"></script>
+    <script src="src/js/mostMore.js"></script>
+    <script src="src/js/scrollTop.js"></script>
 </body>
 
 </html>

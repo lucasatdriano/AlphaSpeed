@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1024px) {
+    header {
+        justify-content: space-around;
+    }
+
+    header #logo {
+        width: 10em;
+        margin: 0 0 0 -20em;
+    }
+
+    header #logo img {
+        width: 9em;
+    }
+
+    header #navBarDesktop {
+        display: none;
+    }
+
+    header #nav {
+        margin: 0 -15em;
+    }
+
+    header #menuMob {
+        margin-left: 20em;
+        --menu-size: 3em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    header #hamburguer,
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        border-radius: 2em;
+        width: var(--menu-size);
+        height: calc(var(--menu-size) / 10);
+        background-color: var(--color-white);
+        position: absolute;
+
+        transition: all 200ms linear;
+    }
+
+    header #hamburguer::after {
+        transform: translateY(calc(var(--menu-size) / 2.5));
+        top: -2px;
+    }
+
+    header #hamburguer::before {
+        transform: translateY(calc(var(--menu-size) / -3));
+    }
+
+    header #navBarMobile {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        visibility: hidden;
+        position: absolute;
+        background: linear-gradient(
+            var(--color-secundary),
+            var(--color-primary)
+        );
+        width: 0;
+        right: 0;
+        top: 9.1em;
+        height: auto;
+        padding: 0 0 1.5em;
+        border-radius: 0 0 0 15px;
+        border: 2px solid var(--color-white);
+        border-top: none;
+        border-right: none;
+        z-index: 100;
+
+        filter: drop-shadow(5px 5px 30px 5px #4e4e4e80);
+        transition: all 0.6s ease-in;
+    }
+
+    header #navBarMobile li.btn-nav {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        padding: 20px 25% 5px;
+        border-bottom: 1.5px solid var(--color-white);
+        margin-left: 50px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    header #nav.active #hamburguer {
+        background-color: transparent;
+    }
+
+    header #nav.active #hamburguer::after {
+        transform: rotate(135deg);
+    }
+
+    header #nav.active #hamburguer::before {
+        transform: rotate(-135deg);
+        top: -2px;
+    }
+
+    header #nav.active #navBarMobile {
+        width: 30%;
+        visibility: visible;
+    }
+
+    header #nav.active #navBarMobile li.btn-nav {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    header #nav #navBarMobile .btnLogin {
+        font-size: 1.8rem;
+        margin: 15px 20% 0;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    header #nav.active #navBarMobile .btnLogin {
+        opacity: 1;
+    }
+
+    /* Main */
+
+    main #carrossel img {
+        object-fit: cover;
+        height: 35em;
+    }
+
+    main #carrossel #setaSlidesAnt,
+    #setaSlidesProx {
+        bottom: 40%;
+        padding: 2em 0.5em;
+    }
+
+    main .carros img {
+        height: 10em;
+    }
+
+    main .filtrar #iModelo,
+    select {
+        font-size: 2rem;
+    }
+
+    main #sobre .about {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 800px) {
+        main #sobre {
+            margin: 2.5em;
+        }
+
+        main #sobre .about {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+                'imagem1'
+                'texto1'
+                'imagem2'
+                'texto2';
+        }
+    }
+
+    /* Footer */
+
+    footer small {
+        font-size: 1.6rem;
+    }
+
+    /* CSS DO LOGIN E CADASTRO */
+
+    main #login,
+    #cadastro {
+        width: 100%;
+        margin: 0 0 40px;
+    }
+
+    main .imagemFundoLog,
+    .imagemFundoCad {
+        display: none;
+    }
+}

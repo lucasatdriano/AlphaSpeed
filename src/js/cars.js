@@ -392,7 +392,7 @@ const showSedans = () => {
         if (containerSedan != null) {
             containerSedan.innerHTML +=
                 '<div class="carros">' +
-                '<img src="assets/images/' +
+                '<img src="src/images/' +
                 carro.imagem +
                 '" alt="' +
                 carro.marca +
@@ -420,7 +420,7 @@ const showSuvs = () => {
         if (containerSuv != null) {
             containerSuv.innerHTML +=
                 '<div class="carros">' +
-                '<img src="assets/images/' +
+                '<img src="src/images/' +
                 carro.imagem +
                 '" alt="' +
                 carro.marca +
@@ -448,7 +448,7 @@ const showHatchs = () => {
         if (containerHatch != null) {
             containerHatch.innerHTML +=
                 '<div class="carros">' +
-                '<img src="assets/images/' +
+                '<img src="src/images/' +
                 carro.imagem +
                 '" alt="' +
                 carro.marca +
@@ -476,7 +476,7 @@ const showSports = () => {
         if (containerSport != null) {
             containerSport.innerHTML +=
                 '<div class="carros">' +
-                '<img src="assets/images/' +
+                '<img src="src/images/' +
                 carro.imagem +
                 '" alt="' +
                 carro.marca +
@@ -504,7 +504,7 @@ const displayItem = (items) => {
         .map((item) => {
             let { modelo, preco, tipo, cor, marca, ano, imagem } = item;
             return `<div class="carros">
-                <img src="assets/images/${imagem}" alt="${marca} ${modelo}" loading="lazy" />
+                <img src="src/images/${imagem}" alt="${marca} ${modelo}" loading="lazy" />
                 <h4>${marca} ${modelo}</h4>
                 <span id="price">R$${preco.toFixed(3)}</span>
             </div>`;
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultado.forEach((carro) => {
                 divCarrosFiltrados.innerHTML += `
                     <div class="carros">
-                        <img src="assets/images/${carro.imagem}" alt="${
+                        <img src="src/images/${carro.imagem}" alt="${
                     carro.marca
                 } ${carro.modelo}" loading="lazy" />
                         <h4>${carro.marca} ${carro.modelo}</h4>

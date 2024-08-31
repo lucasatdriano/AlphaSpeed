@@ -28,10 +28,21 @@
 
     /* Main */
 
+    main #modelos h2 {
+        font-family: var(--font-main);
+        margin: 1em 0.5em 0;
+        text-align: start;
+    }
+
     main #sedan,
     #hatch {
         width: 110vw;
-        margin-left: -2.7em;
+        margin-left: -2em;
+    }
+
+    main #suv,
+    #esportivo {
+        padding-left: 0em;
     }
 
     main #sedan::-webkit-scrollbar,
@@ -43,7 +54,7 @@
     }
 
     main .carros {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     main .carros img {
@@ -55,17 +66,17 @@
         font-size: 1.8rem;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        gap: 0.5em;
+        gap: 0em;
     }
 
     main .filtrar p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     main .filtrar input[type='text'],
     select {
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     main .filtrar input[type='range'] {
@@ -86,34 +97,12 @@
         bottom: 50vh;
     }
 
-    main #sobre {
-        margin: 5em 0em 0em;
-    }
-
-    main #sobre .about {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
     main #sobre .posicionamentoMob {
-        display: flex;
-        flex-direction: column-reverse;
+        margin-top: 55em;
     }
 
     main #sobre .posicionamentoMobDois {
-        flex-direction: column;
-        margin-top: -80em;
-    }
-
-    main #sobre img {
-        width: 100%;
-        margin: 0;
-    }
-
-    main #sobre p {
-        width: 100%;
-        margin: 2em 0;
-        font-size: 1.6rem;
+        margin-top: -130em;
     }
 
     main #local {
@@ -133,6 +122,16 @@
         margin-bottom: 1em;
     }
 
+    main #sobre .posicionamentoMob {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 60em 0 0;
+    }
+
+    main #sobre .posicionamentoMobDois {
+        margin: -70em 0 60em;
+    }
+
     /* Footer */
 
     footer .services {
@@ -147,7 +146,7 @@
     #containerTres {
         display: flex;
         justify-content: space-between;
-        margin: 0 10px 0 0;
+        margin: 0.5em 10px 0 0;
         border-top: 1.5px solid #b2b2b29f;
         text-indent: 10px;
         overflow-y: hidden;
@@ -173,6 +172,14 @@
     #moreDois.informacoes,
     #moreTres.informacoes {
         display: block;
+    }
+
+    footer .socialMedias {
+        place-content: center;
+    }
+
+    footer .rodape {
+        font-size: 1.4rem;
     }
 
     /* CSS DA TELA DE LOGIN*/

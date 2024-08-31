@@ -379,14 +379,15 @@ main #sobre .posicionamentoMob,
 .posicionamentoMobDois {
     display: flex;
     flex-direction: row;
+    height: 35em;
 }
 
 main #sobre .posicionamentoMobDois {
-    margin-top: -10em;
+    margin-top: -25em;
 }
 
 main #sobre img {
-    height: 25em;
+    height: 100%;
     width: 45%;
     object-fit: cover;
     border-radius: 10px;

@@ -84,5 +84,5 @@ Este projeto demonstra a utilização de HTML, CSS e JavaScript para criar um si
 Este projeto foi desenvolvido por mim, Lucas Adriano, como parte de um curso em desenvolvimento de sistemas. Entre em contato em caso de dúvidas ou sugestões.
 
 - **Email**: [lucasatdriano@gmail.com](mailto:lucasatdriano@gmail.com)
-- **LinkedIn**: [Lucas Adriano](https://linkedin.com/in/lucas-adriano-037003278/)
+- **LinkedIn**: [Lucas Adriano](https://linkedin.com/in/lucasadrianodev/)
 - **Instagram**: [@\_\_lgoncalves](https://instagram.com/__lgoncalves/)

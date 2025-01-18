@@ -2,12 +2,8 @@
 
 @media only screen and (max-width: 1024px) {
     header {
-        justify-content: space-around;
-    }
-
-    header #logo {
-        width: 10em;
-        margin: 0 0 0 -20em;
+        justify-content: space-between;
+        padding: 0 2em;
     }
 
     header #logo img {
@@ -18,16 +14,18 @@
         display: none;
     }
 
-    header #nav {
-        margin: 0 -15em;
+    header #navBarMobile {
+        display: flex;
     }
 
     header #menuMob {
-        margin-left: 20em;
+        position: relative;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
         --menu-size: 3em;
         display: flex;
         align-items: center;
-        cursor: pointer;
     }
 
     header #hamburguer,
@@ -40,6 +38,7 @@
         height: calc(var(--menu-size) / 10);
         background-color: var(--color-white);
         position: absolute;
+        left: 0;
 
         transition: all 200ms linear;
     }
@@ -53,7 +52,7 @@
         transform: translateY(calc(var(--menu-size) / -3));
     }
 
-    header #navBarMobile {
+    header #navButtonsMobile {
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -65,8 +64,8 @@
         );
         width: 0;
         right: 0;
-        top: 9.1em;
-        height: auto;
+        top: 9em;
+        height: fit-content;
         padding: 0 0 1.5em;
         border-radius: 0 0 0 15px;
         border: 2px solid var(--color-white);
@@ -78,7 +77,7 @@
         transition: all 0.6s ease-in;
     }
 
-    header #navBarMobile li.btn-nav {
+    header #navButtonsMobile li.btn-nav {
         display: flex;
         align-items: center;
         font-size: 2rem;
@@ -89,37 +88,38 @@
         transition: 0.5s;
     }
 
-    header #nav.active #hamburguer {
+    header #navBarMobile.active #hamburguer {
         background-color: transparent;
     }
 
-    header #nav.active #hamburguer::after {
+    header #navBarMobile.active #hamburguer::after {
         transform: rotate(135deg);
     }
 
-    header #nav.active #hamburguer::before {
+    header #navBarMobile.active #hamburguer::before {
         transform: rotate(-135deg);
         top: -2px;
     }
 
-    header #nav.active #navBarMobile {
-        width: 30%;
+    header #navBarMobile.active #navButtonsMobile {
+        width: 60%;
         visibility: visible;
     }
 
-    header #nav.active #navBarMobile li.btn-nav {
+    header #navBarMobile.active #navButtonsMobile li.btn-nav {
         margin-left: 0;
         opacity: 1;
     }
 
-    header #nav #navBarMobile .btnLogin {
+    header #navBarMobile #navButtonsMobile .btnLogin {
         font-size: 1.8rem;
-        margin: 15px 20% 0;
+        margin: 15px 25% 0;
+        padding-block: 5px;
         opacity: 0;
         transition: 0.5s;
     }
 
-    header #nav.active #navBarMobile .btnLogin {
+    header #navBarMobile.active #navButtonsMobile .btnLogin {
         opacity: 1;
     }
 
@@ -155,13 +155,19 @@
         }
 
         main #sobre .about {
-            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            align-items: center;
+            grid-template-rows: repeat(4, 1fr);
             grid-template-columns: repeat(1, 1fr);
             grid-template-areas:
                 'imagem1'
                 'texto1'
                 'imagem2'
                 'texto2';
+        }
+
+        main #sobre .about [class^='imagem'] {
+            max-height: 45em;
         }
     }
 

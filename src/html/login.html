@@ -12,7 +12,7 @@
         />
         <link
             rel="shortcut icon"
-            href="../images/alphaSpeed.png"
+            href="../assets/images/alphaSpeed.png"
             type="image/x-icon"
         />
         <link rel="stylesheet" href="../css/style.css" />
@@ -22,35 +22,36 @@
     <body>
         <header id="header">
             <a id="logo" href="../../index.html"
-                ><img src="../images/alphaSpeed.png" alt="Logo da AlphaSpeed"
+                ><img
+                    src="../assets/images/alphaSpeed.png"
+                    alt="Logo da AlphaSpeed"
             /></a>
 
             <nav id="navBarDesktop">
                 <ul>
-                    <li><a href="../../index.html" tabindex="1">Modelos</a></li>
-                    <li><a href="../../index.html" tabindex="2">Filtrar</a></li>
-                    <li><a href="../../index.html" tabindex="3">Sobre</a></li>
-                    <li><a href="#contato" tabindex="4">Contatos</a></li>
+                    <li><a href="../../index.html#modelos">Modelos</a></li>
+                    <li><a href="../../index.html#filtragem">Filtrar</a></li>
+                    <li><a href="../../index.html#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contatos</a></li>
                 </ul>
                 <a
                     href="./login.html"
+                    title="Botão Login"
                     translate="no"
                     class="btnLogin"
-                    tabindex="5"
                 ></a>
             </nav>
 
-            <nav id="nav">
+            <nav id="navBarMobile">
                 <a
                     id="menuMob"
                     aria-label="Abrir Menu"
                     aria-haspopup="true"
                     aria-controls="menu"
-                    aria-expanded="false"
                 >
                     <i id="hamburguer"></i>
                 </a>
-                <ul id="navBarMobile">
+                <ul id="navButtonsMobile">
                     <li class="btn-nav" id="op1">
                         <a href="../../index.html">Modelos</a>
                     </li>
@@ -66,6 +67,7 @@
                     <li id="op5">
                         <a
                             href="./login.html"
+                            title="Botão Login"
                             translate="no"
                             class="btnLogin"
                         ></a>
@@ -110,7 +112,9 @@
                                 placeholder="Digite sua Senha"
                                 required
                             />
-                            <i class="material-symbols-rounded visibility"
+                            <i
+                                class="material-symbols-rounded visibility"
+                                id="verSenhaLogin"
                                 >visibility</i
                             >
                         </p>
@@ -119,9 +123,8 @@
                         <p>
                             <input
                                 type="button"
-                                id="btnLogin"
+                                id="btnSubmitLogin"
                                 value="LOGIN"
-                                onclick="login()"
                             />
                         </p>
 
@@ -138,7 +141,7 @@
 
             <section class="imagemFundoLog">
                 <img
-                    src="../images/imgIlustrativas/imgLog.jpg"
+                    src="../assets/images/imgIlustrativas/imgLog.jpg"
                     alt="imagem de fundo"
                     loading="eager"
                 />
@@ -168,7 +171,7 @@
                         width="400"
                         height="300"
                         allowfullscreen=""
-                        loading="lazy"
+                        title="Nossa localização"
                     ></iframe>
                 </div>
             </section>
@@ -241,7 +244,7 @@
                             rel="noopener noreferrer"
                         >
                             <img
-                                src="../images/redesSociais/instagram.png"
+                                src="../assets/images/redesSociais/instagram.png"
                                 alt="Instagram"
                             />
                         </a>
@@ -253,7 +256,7 @@
                             rel="noopener noreferrer"
                         >
                             <img
-                                src="../images/redesSociais/facebook.png"
+                                src="../assets/images/redesSociais/facebook.png"
                                 alt="Facebook"
                             />
                         </a>
@@ -265,7 +268,7 @@
                             rel="noopener noreferrer"
                         >
                             <img
-                                src="../images/redesSociais/linkedin.png"
+                                src="../assets/images/redesSociais/linkedin.png"
                                 alt="linkedin"
                             />
                         </a>
@@ -283,12 +286,6 @@
             </p>
         </footer>
 
-        <script src="../js/redirect.js"></script>
-        <script src="../js/login.js"></script>
-        <script src="../js/logged.js"></script>
-        <script src="../js/openLocal.js"></script>
-        <script src="../js/navbarMobile.js"></script>
-        <script src="../js/mostMore.js"></script>
-        <script src="../js/scrollTop.js"></script>
+        <script type="module" src="../js/main.js" defer></script>
     </body>
 </html>

@@ -8,13 +8,14 @@ header {
     align-items: center;
     position: relative;
     z-index: 100;
-    width: 100%;
+    width: 100vw;
     filter: drop-shadow(5px 3px 30px #4e4e4e80);
 }
 
 header #logo {
     width: 10em;
-    margin: 0 7em 0 2em;
+    width: fit-content;
+    padding: 0 2em;
 }
 
 header #logo img {
@@ -65,8 +66,6 @@ header #navBarDesktop a:hover {
 }
 
 header .btnLogin {
-    position: absolute;
-    right: -50px;
     opacity: 0;
     color: var(--color-white);
     display: flex;
@@ -136,7 +135,7 @@ main #btnSlide:hover {
 main #btnSlide input[type='radio'] {
     width: 20px;
     border: 3px solid;
-    -webkit-appearance: none;
+    appearance: none;
     filter: drop-shadow(5px 3px 30px #73737380);
     cursor: pointer;
 }
@@ -180,6 +179,7 @@ main #modelos h2 {
     font-family: var(--font-main);
     text-align: start;
     text-indent: 1.5em;
+    font-size: clamp(28px, 2vw, 32px);
 }
 
 main #sedan,
@@ -310,7 +310,7 @@ main .filtrar input[type='range'] {
     width: 85%;
     border: none;
     background-color: transparent;
-    -webkit-appearance: none;
+    appearance: none;
     cursor: grab;
 }
 
@@ -339,6 +339,11 @@ main #todosCarros {
     margin: -5em 0 0 0;
     padding: 0;
     width: 100vw;
+}
+
+main #todosCarros .resultEmpty {
+    padding: 80px;
+    font-size: clamp(20px, 2vw, 32px);
 }
 
 main #todosCarros:hover .carros:not(:hover) {
@@ -423,11 +428,13 @@ main .localidade i:hover {
 }
 
 main #local {
+    overflow: hidden;
     background: var(--color-darkGray);
     display: flex;
+    max-height: 0;
     justify-content: space-around;
     align-items: center;
-    transition: all 0.2s ease;
+    transition: max-height 0.5s ease, opacity 0.2s ease;
 }
 
 main #local p {
@@ -456,13 +463,8 @@ main #local iframe {
     filter: drop-shadow(5px 3px 30px #0c0c0cba);
 }
 
-main #local {
-    display: none;
-}
-
 main #local.ativo {
-    display: flex;
-    transition: all 0.5s ease;
+    max-height: 500px;
 }
 
 /* Footer */
@@ -602,6 +604,7 @@ main .single-input i {
     font-size: 32px;
     left: 3px;
     padding: 0;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -629,6 +632,7 @@ main .single-input input:valid {
 
 main .single-input .visibility {
     left: 10em;
+    cursor: pointer;
 }
 
 main #login span,
@@ -639,8 +643,8 @@ main #login span,
     font-size: 1.6rem;
 }
 
-main #login #btnLogin,
-#cadastro #btnCadastrar {
+main #login #btnSubmitLogin,
+#cadastro #btnSubmitCadastrar {
     width: 100%;
     padding: 0.5em;
     color: var(--color-white);
@@ -655,8 +659,8 @@ main #login #btnLogin,
     border-radius: 10px;
 }
 
-main #login #btnLogin:hover,
-#cadastro #btnCadastrar:hover {
+main #login #btnSubmitLogin:hover,
+#cadastro #btnSubmitCadastrar:hover {
     background-color: var(--color-primary);
     box-shadow: 1px 1px 30px var(--color-gray);
 }

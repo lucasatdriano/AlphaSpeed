@@ -1,8 +1,8 @@
 # Alpha Speed
 
 Este é um projeto de um site para uma concessionária de veículos desenvolvido como parte de um curso. O site possui um mostruário dinâmico de veículos, filtros de busca e um sistema de login utilizando Local Storage.
-![Logo da Alpha Speed](assets/images/readMe/logoReadMe.png)
-![Capa da Alpha Speed](assets/images/readMe/capaReadMe.png)
+![Logo da Alpha Speed](src/assets/images/readMe/logoReadMe.png)
+![Capa da Alpha Speed](src/assets/images/readMe/capaReadMe.png)
 
 ## Índice
 

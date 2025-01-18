@@ -52,7 +52,8 @@ O site inclui um sistema de login que utiliza o Local Storage do navegador para 
     -   **styles.css**: Arquivo CSS principal que centraliza a estilização geral do site.
 
 -   **js**
-    -   **scripts.js**: Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
+    -   **modules**: Pasta contendo os módulos JS para criação específica de funcionalidades do site. Como o mostruário dinâmico, filtros de busca e sistema de login.
+    -   **main.js**: Arquivo JavaScript principal que centraliza a lógica geral do site.
 
 ## 📝 Como Executar o Projeto
 

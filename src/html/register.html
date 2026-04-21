@@ -16,17 +16,17 @@
             type="image/x-icon"
         />
         <link rel="stylesheet" href="../css/style.css" />
-        <title>Login</title>
+        <title>Cadastro</title>
     </head>
 
     <body>
         <header id="header">
-            <a id="logo" href="../../index.html">
-                <img
+            <a id="logo" href="../../index.html"
+                ><img
                     src="../assets/images/alphaSpeed.png"
                     alt="Logo da AlphaSpeed"
-                />
-            </a>
+                    loading="eager"
+            /></a>
 
             <nav id="desktopNav">
                 <ul>
@@ -82,64 +82,86 @@
         </header>
 
         <main>
-            <section id="loginSection">
-                <div class="loginContainer">
-                    <form class="loginForm" method="post">
-                        <h2 class="formTitle">LOGIN</h2>
+            <section id="registerSection">
+                <div class="registerContainer">
+                    <form class="registerForm" method="post">
+                        <h2 class="formTitle">CADASTRO</h2>
 
                         <div class="formContainer">
                             <div
-                                id="loginErrorMessage"
+                                id="registerErrorMessage"
                                 class="errorMessage"
                             ></div>
                             <div
-                                id="loginSuccessMessage"
+                                id="registerSuccessMessage"
                                 class="successMessage"
                             ></div>
 
                             <div class="inputGroup">
                                 <p class="inputField">
                                     <label
-                                        id="usernameLabel"
-                                        for="loginUsernameInput"
+                                        id="registerUsernameLabel"
+                                        for="registerUsernameInput"
+                                        >Usuário:</label
                                     >
-                                        Usuário:
-                                    </label>
                                     <i
                                         class="material-symbols-rounded iconInput"
                                         >person</i
                                     >
                                     <input
                                         type="text"
-                                        name="loginUsernameInput"
-                                        id="loginUsernameInput"
-                                        placeholder="Digite seu Nome de usuário"
-                                        required
+                                        name="registerUsernameInput"
+                                        id="registerUsernameInput"
+                                        placeholder="Digite seu Nome"
+                                        maxlength="40"
                                     />
                                 </p>
+                                <span id="registerUsernameError"></span>
                             </div>
 
                             <div class="inputGroup">
                                 <p class="inputField">
                                     <label
-                                        id="passwordLabel"
-                                        for="loginPasswordInput"
+                                        id="registerEmailLabel"
+                                        for="registerEmailInput"
+                                        >E-mail:</label
                                     >
-                                        Senha:
-                                    </label>
+                                    <i
+                                        class="material-symbols-rounded iconInput"
+                                        >mail</i
+                                    >
+                                    <input
+                                        type="email"
+                                        name="registerEmailInput"
+                                        id="registerEmailInput"
+                                        placeholder="Digite seu Email"
+                                        pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$"
+                                        maxlength="30"
+                                    />
+                                </p>
+                                <span id="registerEmailError"></span>
+                            </div>
+
+                            <div class="inputGroup">
+                                <p class="inputField">
+                                    <label
+                                        id="registerPasswordLabel"
+                                        for="registerPasswordInput"
+                                        >Senha:</label
+                                    >
                                     <i
                                         class="material-symbols-rounded iconInput"
                                         >password</i
                                     >
                                     <input
                                         type="password"
-                                        name="loginPasswordInput"
-                                        id="loginPasswordInput"
+                                        name="registerPasswordInput"
+                                        id="registerPasswordInput"
                                         placeholder="Digite sua Senha"
-                                        required
+                                        minlength="8"
                                     />
                                     <i
-                                        id="loginTogglePassword"
+                                        id="registerTogglePassword"
                                         class="material-symbols-rounded visibility"
                                         tabindex="0"
                                         aria-label="Mostrar senha"
@@ -147,26 +169,56 @@
                                         >visibility</i
                                     >
                                 </p>
+                                <span id="registerPasswordError"></span>
+                            </div>
+
+                            <div class="inputGroup">
+                                <p class="inputField">
+                                    <label
+                                        id="confirmPasswordLabel"
+                                        for="registerConfirmPasswordInput"
+                                        >Confirmar senha:</label
+                                    >
+                                    <i
+                                        class="material-symbols-rounded iconInput"
+                                        >encrypted</i
+                                    >
+                                    <input
+                                        type="password"
+                                        name="registerConfirmPasswordInput"
+                                        id="registerConfirmPasswordInput"
+                                        placeholder="Confirme a sua Senha"
+                                    />
+                                    <i
+                                        id="registerToggleConfirmPassword"
+                                        class="material-symbols-rounded visibility"
+                                        tabindex="0"
+                                        aria-label="Mostrar senha"
+                                        role="button"
+                                        >visibility</i
+                                    >
+                                </p>
+                                <span id="registerConfirmPasswordError"></span>
                             </div>
 
                             <div class="buttonGroup">
-                                <button type="submit" id="submitLoginButton">
-                                    Login
+                                <button type="submit" id="submitRegisterButton">
+                                    Cadastrar
                                 </button>
 
                                 <a
-                                    href="../html/register.html"
-                                    id="redirectRegisterButton"
-                                    >Cadastre-se</a
+                                    href="../html/login.html"
+                                    id="redirectLoginButton"
+                                    >Voltar</a
                                 >
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <div class="backgroundLoginImage">
+                <div class="backgroundRegisterImage">
                     <img
-                        src="../assets/images/imgIlustrativas/imgLog.jpg"
+                        src="../assets/images/imgIlustrativas/imgCad.jpg"
                         alt="imagem de fundo"
                         loading="eager"
                     />
@@ -271,6 +323,7 @@
                             <img
                                 src="../assets/images/redesSociais/instagram.png"
                                 alt="Instagram"
+                                loading="lazy"
                             />
                         </a>
                     </li>
@@ -283,6 +336,7 @@
                             <img
                                 src="../assets/images/redesSociais/facebook.png"
                                 alt="Facebook"
+                                loading="lazy"
                             />
                         </a>
                     </li>
@@ -295,6 +349,7 @@
                             <img
                                 src="../assets/images/redesSociais/linkedin.png"
                                 alt="linkedin"
+                                loading="lazy"
                             />
                         </a>
                     </li>

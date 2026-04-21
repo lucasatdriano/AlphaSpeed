@@ -6,12 +6,12 @@ Este é um projeto de um site para uma concessionária de veículos desenvolvido
 
 ## Índice
 
--   <a href="#%EF%B8%8F-tecnologias-utilizadas">Tecnologias Utilizadas</a>
--   <a href="#-funcionalidades">Funcionalidades</a>
--   <a href="#-estrutura-do-projeto">Estrutura do Projeto</a>
--   <a href="#-como-executar-o-projeto">Como Executar o Projeto</a>
--   <a href="#-conclusão">Conclusão</a>
--   <a href="#-contato">Contato</a>
+- <a href="#%EF%B8%8F-tecnologias-utilizadas">Tecnologias Utilizadas</a>
+- <a href="#-funcionalidades">Funcionalidades</a>
+- <a href="#-estrutura-do-projeto">Estrutura do Projeto</a>
+- <a href="#-como-executar-o-projeto">Como Executar o Projeto</a>
+- <a href="#-conclusão">Conclusão</a>
+- <a href="#-contato">Contato</a>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -37,22 +37,20 @@ O site inclui um sistema de login que utiliza o Local Storage do navegador para 
 
 ## 📁 Estrutura do Projeto
 
--   **index.html**: Página inicial que contém o mostruário de veículos e os filtros de busca.
+- **index.html**: Página inicial que contém o mostruário de veículos e os filtros de busca.
 
 ### assets
 
--   **html**
+- **html**
+    - **login.html**: Página de login para os usuários.
+    - **register.html**: Página de cadastro para os novos usuários.
 
-    -   **login.html**: Página de login para os usuários.
-    -   **cadastrar.html**: Página de cadastro para os novos usuários.
+- **css**
+    - **modules**: Pasta contendo os módulos CSS para estilização específica de componentes do site.
+    - **styles.css**: Arquivo CSS principal que centraliza a estilização geral do site.
 
--   **css**
-
-    -   **modules**: Pasta contendo os módulos CSS para estilização específica de componentes do site.
-    -   **styles.css**: Arquivo CSS principal que centraliza a estilização geral do site.
-
--   **js**
-    -   **scripts.js**: Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
+- **js**
+    - **scripts.js**: Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
 
 ## 📝 Como Executar o Projeto
 
@@ -85,6 +83,6 @@ Este projeto demonstra a utilização de HTML, CSS e JavaScript para criar um si
 
 Este projeto foi desenvolvido por mim, Lucas Adriano, como parte de um curso em desenvolvimento de sistemas. Entre em contato em caso de dúvidas ou sugestões.
 
--   **Email**: [lucasatdriano@gmail.com](mailto:lucasatdriano@gmail.com)
--   **LinkedIn**: [Lucas Adriano](https://linkedin.com/in/lucasadrianodev/)
--   **Instagram**: [@\_\_lgoncalves](https://instagram.com/__lgoncalves/)
+- **Email**: [lucasatdriano@gmail.com](mailto:lucasatdriano@gmail.com)
+- **LinkedIn**: [Lucas Adriano](https://linkedin.com/in/lucasadrianodev/)
+- **Instagram**: [@\_\_lgoncalves](https://instagram.com/__lgoncalves/)

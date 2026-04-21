@@ -1,8 +1,8 @@
 # Alpha Speed
 
 Este é um projeto de um site para uma concessionária de veículos desenvolvido como parte de um curso. O site possui um mostruário dinâmico de veículos, filtros de busca e um sistema de login utilizando Local Storage.
-![Logo da Alpha Speed](assets/images/readMe/logoReadMe.png)
-![Capa da Alpha Speed](assets/images/readMe/capaReadMe.png)
+![Logo da Alpha Speed](src/assets/images/readMe/logoReadMe.png)
+![Capa da Alpha Speed](src/assets/images/readMe/capaReadMe.png)
 
 ## Índice
 
@@ -50,7 +50,8 @@ O site inclui um sistema de login que utiliza o Local Storage do navegador para 
     - **styles.css**: Arquivo CSS principal que centraliza a estilização geral do site.
 
 - **js**
-    - **scripts.js**: Arquivo JavaScript contendo a lógica para o mostruário dinâmico, filtros de busca e sistema de login.
+    - **modules**: Pasta contendo os arquivos JS em módulos para criação de funcionalidades do site. Como o mostruário dinâmico, filtros de busca e sistema de login.
+    - **main.js**: Arquivo JavaScript principal que centraliza a lógica geral do site.
 
 ## 📝 Como Executar o Projeto
 

@@ -15,7 +15,7 @@ export function initUserStatus() {
 
 function getAuthenticatedUser() {
     try {
-        const storedUser = localStorage.getItem('currentUser');
+        const storedUser = localStorage.getItem('authUser');
         if (!storedUser) return null;
 
         const user = JSON.parse(storedUser);
